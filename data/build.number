@@ -1,0 +1,9 @@
+#Ant properties
+#Mon May 12 09:07:02 BRT 2025
+build.version=2211.38
+build.vendor=hybris
+build.group.id=de.hybris.platform
+build.module.name=platform-module
+build.builddate=20250512 0906
+build.version.api=2211
+build.releasedate=20250331 1900

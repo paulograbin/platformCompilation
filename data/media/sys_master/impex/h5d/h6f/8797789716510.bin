@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+#% if: de.hybris.platform.core.Registry.getCurrentTenant().getTenantSpecificExtensionNames().contains("adaptivesearch")
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+$lang=fr
+
+INSERT_UPDATE AsFacet ; uid[unique=true]                      ; name[lang=$lang]    ;  
+                      ;  185ede1c-b230-8304-64f1-403bc7bf5f9c ;   Couleur           ;  
+                      ;  f2bc9ded-8028-ba37-b6e9-87717ecf49de ;   Magnétophone      ;   
+                      ;  90f14be7-3659-3c1d-5f74-52ec933ee864 ;   Hauteur           ;            
+                      ;  9b37d0fa-5210-6a2a-0ef4-3feda1efc0b0 ;   Poids             ;            
+                      ;  88e7b8a0-e258-df19-7966-4c000ef5f92f ;   Largeur           ;  
+
+#% endif:

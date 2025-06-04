@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+$productCatalog=powertoolsProductCatalog
+$productCatalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+#% if: de.hybris.platform.jalo.extension.ExtensionManager.getInstance().isExtensionInstalled("adaptivesearch")
+
+INSERT_UPDATE AsFacet	;searchConfiguration(uid,$productCatalogVersion)	;uid[unique=true]						;indexProperty	;name[lang=en]			;facetType(code)	;priority	;$productCatalogVersion[unique=true]	;ranged[default=false]	;searchConfigurationPOS
+						;1e7517ee-2a9b-4426-b72d-ac519c1008aa				;9f0e2b3a-3fee-11ee-be56-0242ac120002	;MODE			;Screwdriver Mode		;REFINE				;2000		;										;						; 101
+						;1e7517ee-2a9b-4426-b72d-ac519c1008aa				;9f0e53ca-3fee-11ee-be56-0242ac120002	;DRILL_CHUCK	;Drill Chuck Size		;REFINE				;1000		;										;						; 102
+						;1e7517ee-2a9b-4426-b72d-ac519c1008aa				;9f0e5612-3fee-11ee-be56-0242ac120002	;CPQ_PIPE_TYPE	;Pipe Type				;REFINE				;6000		;										;						; 103
+						;1e7517ee-2a9b-4426-b72d-ac519c1008aa				;9f0e7a34-3fee-11ee-be56-0242ac120002	;CPQ_PIPE_OUTER	;Pipe Outer Diameter	;REFINE				;4000		;										;						; 104
+						;1e7517ee-2a9b-4426-b72d-ac519c1008aa				;9f0e98b7-3fee-11ee-be56-0242ac120002	;CPQ_PIPE_INNER	;Pipe Inner Diameter	;REFINE				;2000		;										;						; 105
+
+#% endif:

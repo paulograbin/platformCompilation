@@ -1,0 +1,37 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+$lang=ko
+
+### APPAREL DE ###
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang]
+;28375600-0d17-46f6-9bc3-c3aebe233a26;범주
+;b4504ef1-612c-4b41-89ae-d79d260680eb;브랜드
+;9093095e-aafc-4b81-94a7-4765efe829c0;컬렉션
+;a99739e5-790f-4bde-8d63-ecae28cba8df;크기
+;07b450a5-3d60-409c-81e7-68bfe177236b;색
+;14f9af68-646b-11ea-bc55-0242ac130003;가격
+;5d7fa2e2-3ff0-11ee-be56-0242ac120002;스타일
+
+INSERT_UPDATE AsSort;uid[unique=true];name[lang=$lang]
+;86f3f9ab-256b-46d0-ae22-2331d96e6e9c;관련성
+;3af394d8-6667-4249-adde-18d7825ab87c;가격(낮은 가격순)
+;e6d25279-78e2-42f7-9b82-b90007fcf402;가격(높은 가격순)
+
+### APPAREL UK ###
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang]
+;2209947c-f037-495c-9f59-af6c533689cb;범주
+;ff41cb9b-f92b-4a57-b0e7-4fcd16032f73;브랜드
+;136665bb-40c5-45e1-91ca-c0baf2891a2e;컬렉션
+;8936222c-caba-48d6-a6ec-02c57f1daf53;크기
+;947b5bb3-9f50-49dd-8b84-303bb5706133;색
+;757374a8-d8ec-452f-bb63-645991adb7a8;가격
+;e0bab7d2-3ff0-11ee-be56-0242ac120002;스타일
+
+INSERT_UPDATE AsSort;uid[unique=true];name[lang=$lang]
+;ce2b8564-a873-4b54-a284-d6da478576b4;관련성
+;2ccd4c9c-ff20-4df0-9ef5-77bcbd8cad05;가격(낮은 가격순)
+;1bac1084-234d-4321-a897-35b5e484fdb4;가격(높은 가격순)

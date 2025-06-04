@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+$lang=hi
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang]
+;9f0e2032-3fee-11ee-be56-0242ac120002;श्रेणी
+;9f0e21b8-3fee-11ee-be56-0242ac120002;ब्रांड
+;9f0e28ca-3fee-11ee-be56-0242ac120002;उत्पाद का रंग
+
+INSERT_UPDATE AsSort;uid[unique=true];name[lang=$lang]
+;1b81ad52-7b31-48d1-ac48-4f6d4921a947;प्रासंगिकता
+;a6fe5b44-408b-47ef-963c-0368137d63e9;मूल्य (पहले सबसे कम)
+;5fa2b34d-80ec-42b3-bd1b-0ea0908cd7c4;मूल्य (पहले सबसे ज़्यादा)

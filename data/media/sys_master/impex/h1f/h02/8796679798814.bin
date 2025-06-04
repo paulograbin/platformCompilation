@@ -1,0 +1,21 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+
+# sample data: Adding B2B customer to the in store list for nakano store
+
+INSERT_UPDATE StoreEmployeeGroup; UID[unique = true]   ; locname[lang = en]          ; store(name); groups[ignorenull = false, default = ]
+                                ; nakanostoreemployees ; Nakano Store Employee Group ; Nakano     ;
+
+INSERT_UPDATE UserGroup; UID[unique = true]; locname[lang = en]          ; groups[ignorenull = false, default = ]
+                       ; POS_NAKANO        ; Nakano Store Customer Group ;
+
+INSERT_UPDATE PrincipalGroupRelation; source(uid)[unique = true]   ; target(uid)[unique = true]
+                                    ; mark.rivers@rustic-hw.com    ; POS_NAKANO
+                                    ; william.hunter@rustic-hw.com ; POS_NAKANO
+                                    ; linda.wolf@pronto-hw.com     ; POS_NAKANO
+                                    ; carla.torres@rustic-hw.com   ; POS_NAKANO
+                                    ; axel.krause@rustic-hw.com    ; POS_NAKANO
+                                    ; akiro.nakamura@rustic-hw.com ; POS_NAKANO
+                                    ; anil.gupta@pronto-hw.com     ; POS_NAKANO
+                                    ; gi.sun@pronto-hw.com         ; POS_NAKANO

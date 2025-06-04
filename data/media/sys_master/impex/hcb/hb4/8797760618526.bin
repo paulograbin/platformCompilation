@@ -1,0 +1,20 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved
+# -----------------------------------------------------------------------
+
+$lang=ja
+
+INSERT_UPDATE AsFacet;uid[unique=true];name[lang=$lang]
+;9556c788-9370-4cee-af21-a09edde45ffa;カテゴリ
+;d40f7cf2-1834-4f16-82f1-5d10208da42c;ブランド
+;8c3e2d66-646f-11ea-bc55-0242ac130003;価格
+;095c04e1-6ff5-4371-aba2-ba95fd5d2d44;メガピクセル
+;cd161544-c70a-4e06-963b-6e9c51b0d50f;取り付け
+;e6db6742-e91d-466a-b0e1-29c9d3c37b85;色
+;dfbbcdc2-c6ac-4602-8196-6b72920c2549;レンズタイプ
+;98751d4c-dfd0-44e2-8244-b3c33470e69c;解像度
+
+INSERT_UPDATE AsSort;uid[unique=true];name[lang=$lang]
+;48e6e6f2-268c-4678-af48-d27901452dd8;関連性
+;a7b31bcb-a66e-449b-8518-22929715cf59;価格 (安い順)
+;a5f6cd23-e087-473e-a77d-65c98ba9b195;価格 (高い順)

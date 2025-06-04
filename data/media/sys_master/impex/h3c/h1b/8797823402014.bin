@@ -1,0 +1,16 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+
+"#% impex.setValidationMode(""import_relaxed"");"
+
+$productCatalog=electronicsProductCatalog
+$productCatalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+#% if: de.hybris.platform.jalo.extension.ExtensionManager.getInstance().isExtensionInstalled("adaptivesearch")
+
+INSERT_UPDATE AsFacet	;searchConfiguration(uid,$productCatalogVersion)	;uid[unique=true]						;indexProperty	;name[lang=en]		;facetType(code)	;priority	;$productCatalogVersion[unique=true]	;ranged[default=false]	;searchConfigurationPOS
+						;99b502fc-4219-4a1e-b9fc-2588004aaeff				;d40f332a-1834-4f16-82f1-0242ac130003	;CAMERA_MODE	;Camera Mode		;REFINE				;2000		;										;						; 101
+						;99b502fc-4219-4a1e-b9fc-2588004aaeff				;cb0b1ca3-8864-4a67-bfd7-6e9c51b0d50f	;CAMERA_COLOR	;Camera Body Color	;REFINE				;1000		;										;						; 102
+
+#% endif:

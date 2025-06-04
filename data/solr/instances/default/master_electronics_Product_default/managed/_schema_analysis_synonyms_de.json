@@ -1,0 +1,9 @@
+{
+  "initArgs":{"ignoreCase":"true"},
+  "initializedOn":"2025-05-09T14:35:07.753Z",
+  "managedMap":{
+    "Angebote":["Sonderangebote"],
+    "Videokamera":["Camcorder"],
+    "af":["Autofokus"],
+    "klein":["kompakt"],
+    "mini":["kompakt"]}}

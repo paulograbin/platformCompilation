@@ -1,0 +1,9 @@
+8796177630280;;;;8796120319040->8796120384576;true
+8796177630280;;;;;true
+8796120319040;8796120384576;8797098607211;entries;;true
+8796293268522;8796294612010;8797098213995;allDocuments,cmsComponents,assignedCockpitItemTemplates,comments,originalSlot,active,activeFrom,activeUntil,currentPosition,name,synchronizationBlocked,uid;;true
+8796293268522;8796294612010;8797098213995;cmsComponents,assignedCockpitItemTemplates,comments,originalSlot,uid;;true
+8796293268522;8796294612010;8797098213995;allDocuments,cmsComponents,assignedCockpitItemTemplates,comments,originalSlot;;true
+8796192244796;8796193752124;8797098082923;actions,allDocuments,children,containers,parents,restrictions,slots,assignedCockpitItemTemplates,comments;;true
+8796192277564;8796193981500;8797098312299;actions,allDocuments,children,containers,parents,restrictions,slots,assignedCockpitItemTemplates,comments;;true
+8796192277564;8796193981500;8797098312299;actions,allDocuments,children,containers,parents,restrictions,slots,assignedCockpitItemTemplates,comments,name,onlyOneRestrictionMustApply,page,styleClasses,synchronizationBlocked,title,uid,visible;;true
