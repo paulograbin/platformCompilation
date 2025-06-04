@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="b2bacceleratorservices" />
+        <option name="packageRoot" value="de.hybris.platform.b2bacceleratorservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="b2bacceleratorservicesspring" name="b2bacceleratorservicesspring" removed="false">
+          <dependency>acceleratorcmsspring==Hybris.core-accelerator.acceleratorcms</dependency>
+          <dependency>b2bapprovalprocessspring==Hybris.b2b-commerce.b2bapprovalprocess</dependency>
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/resources/b2bacceleratorservices-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="b2bacceleratorservices - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="b2bacceleratorservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/b2bacceleratorservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorcms" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-commerce.b2bapprovalprocess" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

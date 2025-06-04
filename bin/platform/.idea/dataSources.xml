@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="[y] local" group="[y] SAP Commerce" uuid="ab7387cf-3f9f-46e2-92ab-867ce8cc4f67">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/lkbennett?useConfigs=maxPerformance&amp;rewriteBatchedStatements=true&amp;characterEncoding=utf8</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/LICENSE.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/mysql/mysql-connector-j/8.2.0/_remote.repositories</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.jar.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-java/3.21.9/_remote.repositories</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-parent/3.21.9/protobuf-parent-3.21.9.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-parent/3.21.9/protobuf-parent-3.21.9.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-parent/3.21.9/_remote.repositories</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-bom/3.21.9/protobuf-bom-3.21.9.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-bom/3.21.9/protobuf-bom-3.21.9.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.2.0/com/google/protobuf/protobuf-bom/3.21.9/_remote.repositories</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL ConnectorJ/8.0.25/mysql-connector-java-8.0.25.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

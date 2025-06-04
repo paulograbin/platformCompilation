@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="apiregistryservices" />
+        <option name="packageRoot" value="de.hybris.platform.apiregistryservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="apiregistryservicesspring" name="apiregistryservicesspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/resources/apiregistryservices-cache-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/resources/apiregistryservices-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="apiregistryservices - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="apiregistryservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/api-registry/apiregistryservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

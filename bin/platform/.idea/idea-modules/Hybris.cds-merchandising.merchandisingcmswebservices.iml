@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="merchandisingcmswebservices" />
+        <option name="packageRoot" value="com.hybris.merchandising" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/merchandisingcmswebservices" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="merchandisingcmswebservicesspring" name="merchandisingcmswebservicesspring" removed="false">
+          <dependency>apiregistryservicesspring==Hybris.api-registry.apiregistryservices</dependency>
+          <dependency>cmswebservicesspring==Hybris.web-content-management-system.cmswebservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/resources/merchandisingcmswebservices-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/resources/merchandisingcmswebservices-structuretypes-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="merchandisingcmswebservices - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="merchandisingcmswebservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="merchandisingcmswebservices - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingcmswebservices/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.api-registry.apiregistryservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cmswebservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

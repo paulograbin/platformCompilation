@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="searchbackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.searchbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="searchbackofficespring" name="searchbackofficespring" removed="false">
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>platformbackofficespring==Hybris.backoffice-framework.platformbackoffice</dependency>
+          <dependency>searchservicesspring==Hybris.search-services.searchservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/resources/searchbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/resources/searchbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="searchbackoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="searchbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="searchbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-services/searchbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.platformbackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.search-services.searchservices" exported="" />
+  </component>
+</module>

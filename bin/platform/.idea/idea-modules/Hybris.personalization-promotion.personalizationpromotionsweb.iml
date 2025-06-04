@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="personalizationpromotionsweb" />
+        <option name="packageRoot" value="de.hybris.platform.personalizationpromotionsweb" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="personalizationpromotionswebspring" name="personalizationpromotionswebspring" removed="false">
+          <dependency>personalizationpromotionsspring==Hybris.personalization-promotion.personalizationpromotions</dependency>
+          <dependency>personalizationwebservicesspring==Hybris.personalization.personalizationwebservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/resources/personalizationpromotionsweb-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationpromotionsweb - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationpromotionsweb - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/bin/personalizationpromotionswebserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-promotion/personalizationpromotionsweb/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.personalization-promotion.personalizationpromotions" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization.personalizationwebservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,75 @@
+/*
+ * ----------------------------------------------------------------
+ * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
+ * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * ----------------------------------------------------------------
+ *  
+ * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
+ */
+package de.hybris.platform.promotionengineservices.model;
+
+import de.hybris.platform.core.model.ItemModel;
+import de.hybris.platform.servicelayer.model.ItemModelContext;
+import de.hybris.platform.validation.model.constraints.TypeConstraintModel;
+
+/**
+ * Generated model class for type PromotionSourceRuleConditionConstraint first defined at extension promotionengineservices.
+ * <p>
+ * Promotion source rule condition valid constraint.
+ */
+@SuppressWarnings("all")
+public class PromotionSourceRuleConditionConstraintModel extends TypeConstraintModel
+{
+	/**<i>Generated model type code constant.</i>*/
+	public static final String _TYPECODE = "PromotionSourceRuleConditionConstraint";
+	
+	
+	/**
+	 * <i>Generated constructor</i> - Default constructor for generic creation.
+	 */
+	public PromotionSourceRuleConditionConstraintModel()
+	{
+		super();
+	}
+	
+	/**
+	 * <i>Generated constructor</i> - Default constructor for creation with existing context
+	 * @param ctx the model context to be injected, must not be null
+	 */
+	public PromotionSourceRuleConditionConstraintModel(final ItemModelContext ctx)
+	{
+		super(ctx);
+	}
+	
+	/**
+	 * <i>Generated constructor</i> - Constructor with all mandatory attributes.
+	 * @deprecated since 4.1.1 Please use the default constructor without parameters
+	 * @param _annotation initial attribute declared by type <code>PromotionSourceRuleConditionConstraint</code> at extension <code>promotionengineservices</code>
+	 * @param _id initial attribute declared by type <code>AbstractConstraint</code> at extension <code>validation</code>
+	 */
+	@Deprecated(since = "4.1.1", forRemoval = true)
+	public PromotionSourceRuleConditionConstraintModel(final Class _annotation, final String _id)
+	{
+		super();
+		setAnnotation(_annotation);
+		setId(_id);
+	}
+	
+	/**
+	 * <i>Generated constructor</i> - for all mandatory and initial attributes.
+	 * @deprecated since 4.1.1 Please use the default constructor without parameters
+	 * @param _annotation initial attribute declared by type <code>PromotionSourceRuleConditionConstraint</code> at extension <code>promotionengineservices</code>
+	 * @param _id initial attribute declared by type <code>AbstractConstraint</code> at extension <code>validation</code>
+	 * @param _owner initial attribute declared by type <code>Item</code> at extension <code>core</code>
+	 */
+	@Deprecated(since = "4.1.1", forRemoval = true)
+	public PromotionSourceRuleConditionConstraintModel(final Class _annotation, final String _id, final ItemModel _owner)
+	{
+		super();
+		setAnnotation(_annotation);
+		setId(_id);
+		setOwner(_owner);
+	}
+	
+	
+}

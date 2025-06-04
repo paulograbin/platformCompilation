@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="mediaweb.web" />
+        <option name="packageRoot" value="de.hybris.platform.mediaweb" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="WEB" />
+        <option name="type" value="EXT" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/medias" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../ext/mediaweb/web/webroot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../ext/mediaweb/web/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="web application context" name="mediaweb.webspring" removed="false">
+          <dependency>mediawebspring==Platform.mediaweb</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/mediaweb/web/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/mediaweb/web/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/mediaweb/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/mediaweb/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Platform.mediaweb" exported="" />
+  </component>
+</module>

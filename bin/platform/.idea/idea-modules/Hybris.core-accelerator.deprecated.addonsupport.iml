@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="name" value="addonsupport" />
+        <option name="packageRoot" value="de.hybris.platform.addonsupport" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="addonsupportspring" name="addonsupportspring" removed="false">
+          <dependency>acceleratorfacadesspring==Hybris.core-accelerator.acceleratorfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/resources/addonsupport-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="addonsupport - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="addonsupport - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/addonsupport/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

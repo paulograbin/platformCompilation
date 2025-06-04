@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="deprecated" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="moduleGenName" value="accelerator" />
+        <option name="name" value="yacceleratorstorefront.web" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="WEB" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/yacceleratorstorefront" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="web application context" name="yacceleratorstorefront.webspring" removed="false">
+          <dependency>yacceleratorstorefrontspring==Hybris.base-accelerator.deprecated.yacceleratorstorefront</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/web-application-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/spring-filter-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/spring-security-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/spring-mvc-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources/acceleratorcms/spring/web-spring-context.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/spring-cms-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/config/multi-step-checkout-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorstorefront.web - Web Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/configurablebundleaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/eventtrackingwsaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/merchandisingaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/notificationaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/ordermanagementaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/orderselfserviceaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/profiletagaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/textfieldconfiguratortemplateaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/personalizationaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/captchaaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/chineseaddressaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/consignmenttrackingaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/customerinterestsaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/stocknotificationaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/assistedservicecustomerinterestsaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/assistedservicestorefront" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/customerticketingaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/assistedservicepromotionaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/customercouponaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/customercouponsamplesaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/timedaccesspromotionengineaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/smarteditaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/selectivecartsplitlistaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/xyformsstorefrontcommons" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/xyformssamples" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/assistedserviceyprofileaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/addonsrc/ysapproductconfigaddon" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/commonwebsrc/acceleratorstorefrontcommons" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorstorefront.web - Web Library">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib" />
+          <root url="jar://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib/jsoup-1.16.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib/rhino-1.7.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib/wro4j-core-1.10.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot/WEB-INF/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.base-accelerator.deprecated.yacceleratorstorefront" exported="" />
+  </component>
+</module>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="customercouponbackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.customercouponbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="customercouponbackofficespring" name="customercouponbackofficespring" removed="false">
+          <dependency>backofficespring==Hybris.backoffice-framework.backoffice</dependency>
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>customercouponservicesspring==Hybris.customer-coupon.customercouponservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/resources/customercouponbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/resources/customercouponbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="customercouponbackoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="customercouponbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="customercouponbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-coupon/customercouponbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-coupon.customercouponservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

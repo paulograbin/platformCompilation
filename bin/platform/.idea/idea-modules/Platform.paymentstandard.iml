@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="paymentstandard" />
+        <option name="packageRoot" value="de.hybris.platform.paymentstandard" />
+        <option name="readonly" value="true" />
+        <option name="type" value="EXT" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="paymentstandardspring" name="paymentstandardspring" removed="false">
+          <dependency>corespring==Platform.core</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/paymentstandard/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/paymentstandard/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/paymentstandard">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/paymentstandard/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="paymentstandard - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/paymentstandard/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="paymentstandard - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ext/paymentstandard/bin/paymentstandardserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../ext/paymentstandard/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="paymentstandard - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/paymentstandard/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/paymentstandard/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.core" exported="" />
+  </component>
+</module>

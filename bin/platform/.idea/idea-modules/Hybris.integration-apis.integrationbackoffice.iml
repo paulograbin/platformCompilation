@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="integrationbackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.integrationbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="integrationbackofficespring" name="integrationbackofficespring" removed="false">
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>odata2webservicesspring==Hybris.integration-apis.odata2webservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>platformbackofficespring==Hybris.backoffice-framework.platformbackoffice</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/resources/integrationbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/resources/integrationbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="integrationbackoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="integrationbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="integrationbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/integrationbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Hybris.integration-apis.odata2webservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.platformbackoffice" exported="" />
+  </component>
+</module>

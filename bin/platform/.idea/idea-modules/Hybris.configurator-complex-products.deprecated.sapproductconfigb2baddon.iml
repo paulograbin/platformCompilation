@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="sapproductconfigb2baddon extension" />
+        <option name="name" value="sapproductconfigb2baddon" />
+        <option name="packageRoot" value="de.hybris.platform.sap.productconfig.b2bfrontend" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="sapproductconfigb2baddonspring" name="sapproductconfigb2baddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>b2bacceleratorfacadesspring==Hybris.b2b-accelerator.b2bacceleratorfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>sapproductconfigb2bservicesspring==Hybris.configurator-complex-products.sapproductconfigb2bservices</dependency>
+          <dependency>sapproductconfigfacadesspring==Hybris.configurator-complex-products.sapproductconfigfacades</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/resources/sapproductconfigb2baddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigb2baddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigb2baddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/deprecated/sapproductconfigb2baddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-accelerator.b2bacceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.sapproductconfigb2bservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.sapproductconfigfacades" exported="" />
+  </component>
+</module>

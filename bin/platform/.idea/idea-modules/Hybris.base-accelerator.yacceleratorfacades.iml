@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="moduleGenName" value="accelerator" />
+        <option name="name" value="yacceleratorfacades" />
+        <option name="packageRoot" value="de.hybris.platform.yacceleratorfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yacceleratorfacadesspring" name="yacceleratorfacadesspring" removed="false">
+          <dependency>acceleratorfacadesspring==Hybris.core-accelerator.acceleratorfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>yacceleratorcorespring==Hybris.base-accelerator.yacceleratorcore</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/resources/yacceleratorfacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-accelerator.yacceleratorcore" exported="" />
+  </component>
+</module>

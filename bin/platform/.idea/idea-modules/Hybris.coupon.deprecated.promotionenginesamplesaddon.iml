@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="promotionenginesamplesaddon extension" />
+        <option name="name" value="promotionenginesamplesaddon" />
+        <option name="packageRoot" value="de.hybris.platform" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="promotionenginesamplesaddonspring" name="promotionenginesamplesaddonspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>couponservicesspring==Hybris.coupon.couponservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/resources/promotionenginesamplesaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="promotionenginesamplesaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="promotionenginesamplesaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/coupon/deprecated/promotionenginesamplesaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.coupon.couponservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

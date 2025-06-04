@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="commerceservicesbackoffice.backoffice" />
+        <option name="packageRoot" value="de.hybris.platform.commerceservices.backoffice" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="BACKOFFICE" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="commerceservicesbackoffice.backoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/commerceservicesbackoffice/backoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.base-commerce.basecommercebackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commerceservicesbackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-commerce.promotionsbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.search-services.searchbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.search-and-navigation.solrfacetsearchbackoffice.backoffice" exported="" />
+  </component>
+</module>

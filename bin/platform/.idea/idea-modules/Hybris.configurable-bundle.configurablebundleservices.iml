@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="configurablebundleservices" />
+        <option name="packageRoot" value="de.hybris.platform.configurablebundleservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="configurablebundleservicesspring" name="configurablebundleservicesspring" removed="false">
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>commerceservicesspring==Hybris.commerce-services.commerceservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/resources/configurablebundleservices-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundleservices - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundleservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/configurablebundleservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commerceservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="personalizationintegration" />
+        <option name="packageRoot" value="de.hybris.platform.personalizationintegration" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="personalizationintegrationspring" name="personalizationintegrationspring" removed="false">
+          <dependency>personalizationservicesspring==Hybris.personalization.personalizationservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/resources/personalizationintegration-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationintegration - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationintegration - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/bin/personalizationintegrationserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationintegration - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/personalization/personalizationintegration/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.personalization.personalizationservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

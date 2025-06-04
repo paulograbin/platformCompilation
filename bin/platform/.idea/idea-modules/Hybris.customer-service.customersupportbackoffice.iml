@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="customersupportbackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.customersupportbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="customersupportbackofficespring" name="customersupportbackofficespring" removed="false">
+          <dependency>acceleratorservicesspring==Hybris.core-accelerator.acceleratorservices</dependency>
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>commerceservicesbackofficespring==Hybris.commerce-services.commerceservicesbackoffice</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>ticketsystemspring==Hybris.customer-service.ticketsystem</dependency>
+          <dependency>ticketsystembackofficespring==Hybris.customer-service.ticketsystembackoffice</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/resources/customersupportbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="customersupportbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="customersupportbackoffice - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/bin/customersupportbackofficeserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="customersupportbackoffice - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="customersupportbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/customersupportbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commerceservicesbackoffice" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-service.ticketsystem" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-service.ticketsystembackoffice" exported="" />
+  </component>
+</module>

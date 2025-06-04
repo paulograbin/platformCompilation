@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="name" value="acceleratorstorefrontcommons.commonweb" />
+        <option name="packageRoot" value="de.hybris.platform.acceleratorstorefrontcommons" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="COMMON_WEB" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="acceleratorstorefrontcommons.commonwebspring" name="acceleratorstorefrontcommons.commonwebspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorstorefrontcommons.commonweb - Common Web Library">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/webroot/WEB-INF/lib" />
+          <root url="jar://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/webroot/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/webroot/WEB-INF/lib/jsoup-1.16.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/core-accelerator/deprecated/acceleratorstorefrontcommons/commonweb/webroot/WEB-INF/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+  </component>
+</module>

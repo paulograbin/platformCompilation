@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="personalizationsmartedit" />
+        <option name="packageRoot" value="de.hybris.platform.personalizationsmartedit" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/personalizationsmartedit" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="personalizationsmarteditspring" name="personalizationsmarteditspring" removed="false">
+          <dependency>npmancillaryspring==Hybris.npm-ancillary.npmancillary</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>smarteditspring==Hybris.smartedit.smartedit</dependency>
+          <dependency>smarteditwebservicesspring==Hybris.smartedit.smarteditwebservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/resources/personalizationsmartedit-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationsmartedit - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationsmartedit - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/personalization/personalizationsmartedit/bin/personalizationsmarteditserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.npm-ancillary.npmancillary" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smartedit" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smarteditwebservices" exported="" />
+  </component>
+</module>

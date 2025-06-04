@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="b2bapprovalprocessfacades" />
+        <option name="packageRoot" value="de.hybris.platform.b2bapprovalprocessfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="b2bapprovalprocessfacadesspring" name="b2bapprovalprocessfacadesspring" removed="false">
+          <dependency>b2bapprovalprocessspring==Hybris.b2b-commerce.b2bapprovalprocess</dependency>
+          <dependency>b2bcommercefacadesspring==Hybris.b2b-commerce.b2bcommercefacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/resources/b2bapprovalprocessfacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="b2bapprovalprocessfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="b2bapprovalprocessfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-commerce/b2bapprovalprocessfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.b2b-commerce.b2bapprovalprocess" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-commerce.b2bcommercefacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

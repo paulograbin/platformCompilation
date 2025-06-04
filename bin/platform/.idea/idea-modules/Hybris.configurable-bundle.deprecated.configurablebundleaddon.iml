@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="configurablebundleaddon extension" />
+        <option name="name" value="configurablebundleaddon" />
+        <option name="packageRoot" value="de.hybris.platform.configurablebundleaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="configurablebundleaddonspring" name="configurablebundleaddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>configurablebundlefacadesspring==Hybris.configurable-bundle.configurablebundlefacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/resources/configurablebundleaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundleaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundleaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundleaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurable-bundle.configurablebundlefacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

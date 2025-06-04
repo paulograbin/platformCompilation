@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="warehousingfacades" />
+        <option name="packageRoot" value="de.hybris.platform.warehousingfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="warehousingfacadesspring" name="warehousingfacadesspring" removed="false">
+          <dependency>acceleratorfacadesspring==Hybris.core-accelerator.acceleratorfacades</dependency>
+          <dependency>ordermanagementfacadesspring==Hybris.order-management.ordermanagementfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>warehousingspring==Hybris.order-management.warehousing</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/resources/warehousingfacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="warehousingfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="warehousingfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/warehousingfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.order-management.ordermanagementfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.order-management.warehousing" exported="" />
+  </component>
+</module>

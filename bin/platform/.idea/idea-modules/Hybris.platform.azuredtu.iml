@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="azuredtu" />
+        <option name="packageRoot" value="de.hybris.platform.azure.dtu" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="azuredtuspring" name="azuredtuspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/platform/azuredtu/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/platform/azuredtu/resources/azuredtu-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/platform/azuredtu">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="azuredtu - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="azuredtu - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="azuredtu - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/platform/azuredtu/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

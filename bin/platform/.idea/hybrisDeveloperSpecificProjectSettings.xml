@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HybrisDeveloperSpecificProjectSettings">
+    <option name="activeRemoteConnectionID" value="f231d31c-c31a-43f1-8f99-31296624b612" />
+    <option name="activeSolrConnectionID" value="e6f83cd8-75c1-4ac2-bb5f-3a488a81c737" />
+    <option name="beanSystemSettings">
+      <BeanSystemSettings />
+    </option>
+    <option name="bpSettings">
+      <BpSettings />
+    </option>
+    <option name="ccv2Settings">
+      <CCv2Settings />
+    </option>
+    <option name="cngSettings">
+      <CngSettings />
+    </option>
+    <option name="flexibleSearchSettings">
+      <FlexibleSearchSettings />
+    </option>
+    <option name="groovySettings">
+      <GroovySettings />
+    </option>
+    <option name="impexSettings">
+      <ImpexSettings />
+    </option>
+    <option name="polyglotQuerySettings">
+      <PolyglotQuerySettings />
+    </option>
+    <option name="remoteConnectionSettingsList">
+      <list>
+        <HybrisRemoteConnectionSettings>
+          <option name="hacWebroot" />
+          <option name="port" value="9002" />
+          <option name="type" value="Hybris" />
+          <option name="uuid" value="f231d31c-c31a-43f1-8f99-31296624b612" />
+        </HybrisRemoteConnectionSettings>
+        <HybrisRemoteConnectionSettings>
+          <option name="port" value="8983" />
+          <option name="type" value="SOLR" />
+          <option name="uuid" value="e6f83cd8-75c1-4ac2-bb5f-3a488a81c737" />
+        </HybrisRemoteConnectionSettings>
+      </list>
+    </option>
+    <option name="typeSystemDiagramSettings">
+      <TSDiagramSettings />
+    </option>
+    <option name="typeSystemSettings">
+      <TypeSystemSettings />
+    </option>
+  </component>
+</project>

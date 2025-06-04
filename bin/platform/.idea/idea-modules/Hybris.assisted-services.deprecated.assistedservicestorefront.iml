@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="assistedservicestorefront extension" />
+        <option name="name" value="assistedservicestorefront" />
+        <option name="packageRoot" value="de.hybris.platform.assistedservicestorefront" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="assistedservicestorefrontspring" name="assistedservicestorefrontspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>assistedservicefacadesspring==Hybris.assisted-services.assistedservicefacades</dependency>
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/resources/assistedservicestorefront-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicestorefront - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicestorefront - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicestorefront/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services.assistedservicefacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

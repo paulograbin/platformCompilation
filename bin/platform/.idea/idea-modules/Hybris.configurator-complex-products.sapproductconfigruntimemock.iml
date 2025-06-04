@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="sapproductconfigruntimemock" />
+        <option name="packageRoot" value="de.hybris.platform.sap.productconfig.runtime.mock" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="sapproductconfigruntimemockspring" name="sapproductconfigruntimemockspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>sapproductconfigruntimeinterfacespring==Hybris.configurator-complex-products.sapproductconfigruntimeinterface</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/resources/sapproductconfigruntimemock-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigruntimemock - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigruntimemock - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigruntimemock/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.sapproductconfigruntimeinterface" exported="" />
+  </component>
+</module>

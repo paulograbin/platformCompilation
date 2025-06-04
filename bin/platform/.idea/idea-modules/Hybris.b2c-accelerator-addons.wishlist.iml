@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="description" value="wishlist extension" />
+        <option name="name" value="wishlist" />
+        <option name="packageRoot" value="de.hybris.platform.wishlist2" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="wishlistspring" name="wishlistspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/resources/wishlist-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="wishlist - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="wishlist - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/bin/wishlistserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2c-accelerator-addons/wishlist/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

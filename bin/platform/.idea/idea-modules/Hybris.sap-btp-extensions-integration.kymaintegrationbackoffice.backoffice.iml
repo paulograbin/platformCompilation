@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="kymaintegrationbackoffice.backoffice" />
+        <option name="packageRoot" value="de.hybris.platform.kymaintegrationbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="BACKOFFICE" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="kymaintegrationbackoffice.backoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="kymaintegrationbackoffice.backoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/sap-btp-extensions-integration/kymaintegrationbackoffice/backoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.api-registry.apiregistrybackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.sap-btp-extensions-integration.kymaintegrationbackoffice" exported="" />
+  </component>
+</module>

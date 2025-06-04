@@ -1,0 +1,13 @@
+.resultBox {
+	display: none;
+	clear: both;
+	padding-top: 20px;
+}
+
+button {
+	float: none;
+}
+
+#overallTestNames {
+	word-wrap: break-word;
+}

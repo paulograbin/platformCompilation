@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="javaeeApplication" />
+    <type id="Spring" />
+    <type id="web" />
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://www.hybris.com/cockpit/config/hybris" location="$PROJECT_DIR$/../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/schemas/config/hybris/cockpit-configuration-hybris.xsd" />
+    <resource url="http://www.hybris.com/schema/cockpitng/action-definition.xsd" location="$PROJECT_DIR$/../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/schemas/action-definition.xsd" />
+    <resource url="http://www.hybris.com/schema/cockpitng/editor-definition.xsd" location="$PROJECT_DIR$/../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/schemas/editor-definition.xsd" />
+    <resource url="http://www.hybris.com/schema/cockpitng/widget-definition.xsd" location="$PROJECT_DIR$/../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/schemas/widget-definition.xsd" />
+    <resource url="http://www.hybris.com/schema/cockpitng/widgets.xsd" location="$PROJECT_DIR$/../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/schemas/widgets.xsd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

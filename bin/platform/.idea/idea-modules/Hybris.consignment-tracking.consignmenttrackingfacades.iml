@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="consignmenttrackingfacades" />
+        <option name="packageRoot" value="de.hybris.platform.consignmenttrackingfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="consignmenttrackingfacadesspring" name="consignmenttrackingfacadesspring" removed="false">
+          <dependency>commercefacadesspring==Hybris.commerce-services.commercefacades</dependency>
+          <dependency>consignmenttrackingservicesspring==Hybris.consignment-tracking.consignmenttrackingservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/resources/consignmenttrackingfacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="consignmenttrackingfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="consignmenttrackingfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/consignment-tracking/consignmenttrackingfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercefacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.consignment-tracking.consignmenttrackingservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

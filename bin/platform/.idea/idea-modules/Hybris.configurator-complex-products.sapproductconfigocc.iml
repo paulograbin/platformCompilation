@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="description" value="sapproductconfigocc extension" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="sapproductconfigocc" />
+        <option name="packageRoot" value="de.hybris.platform.sap.productconfig.occ" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="sapproductconfigoccspring" name="sapproductconfigoccspring" removed="false">
+          <dependency>commercefacadesspring==Hybris.commerce-services.commercefacades</dependency>
+          <dependency>commercewebservicesspring==Hybris.commerce-services.commercewebservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>sapproductconfigfacadesspring==Hybris.configurator-complex-products.sapproductconfigfacades</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/resources/sapproductconfigocc-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigocc - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigocc - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigocc/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercefacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercewebservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.sapproductconfigfacades" exported="" />
+  </component>
+</module>

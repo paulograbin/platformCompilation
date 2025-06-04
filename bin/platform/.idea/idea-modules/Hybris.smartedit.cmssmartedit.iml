@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="cmssmartedit" />
+        <option name="packageRoot" value="de.hybris.cmssmartedit" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/cmssmartedit" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="cmssmarteditspring" name="cmssmarteditspring" removed="false">
+          <dependency>acceleratorcmsspring==Hybris.core-accelerator.acceleratorcms</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>smarteditspring==Hybris.smartedit.smartedit</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/resources/cmssmartedit-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="cmssmartedit - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="cmssmartedit - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/smartedit/cmssmartedit/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorcms" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smartedit" exported="" />
+  </component>
+</module>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="europe1" />
+        <option name="packageRoot" value="de.hybris.platform.europe1" />
+        <option name="readonly" value="true" />
+        <option name="type" value="EXT" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="europe1spring" name="europe1spring" removed="false">
+          <dependency>catalogspring==Platform.catalog</dependency>
+          <file>file://$MODULE_DIR$/../../ext/europe1/project.properties</file>
+          <file>file://$MODULE_DIR$/../../ext/europe1/resources/europe1-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/europe1/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/europe1/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/europe1">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/europe1/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/europe1/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="europe1 - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/europe1/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="europe1 - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ext/europe1/bin/europe1server.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../ext/europe1/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="europe1 - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/europe1/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/europe1/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.catalog" exported="" />
+  </component>
+</module>

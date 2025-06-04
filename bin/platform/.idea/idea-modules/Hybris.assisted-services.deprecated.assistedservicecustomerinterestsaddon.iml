@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="assistedservicecustomerinterestsaddon extension" />
+        <option name="name" value="assistedservicecustomerinterestsaddon" />
+        <option name="packageRoot" value="de.hybris.platform.assistedservicecustomerinterestsaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="assistedservicecustomerinterestsaddonspring" name="assistedservicecustomerinterestsaddonspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>assistedservicecustomerinterestsfacadesspring==Hybris.assisted-services.assistedservicecustomerinterestsfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/resources/assistedservicecustomerinterestsaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicecustomerinterestsaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicecustomerinterestsaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/deprecated/assistedservicecustomerinterestsaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services.assistedservicecustomerinterestsfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

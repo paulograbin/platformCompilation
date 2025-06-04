@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="customerinterestsaddon extension" />
+        <option name="installedIntoExtensions">
+          <set>
+            <option value="yacceleratorstorefront" />
+            <option value="yb2bacceleratorstorefront" />
+          </set>
+        </option>
+        <option name="name" value="customerinterestsaddon.web" />
+        <option name="packageRoot" value="de.hybris.platform.customerinterestsaddon" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="ADDON" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="customerinterestsaddon.acceleratoraddon.webspring" name="customerinterestsaddon.acceleratoraddon.webspring" removed="false" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/acceleratoraddon/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="yacceleratorstorefront - Addon's Target Resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yacceleratorstorefront/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="yb2bacceleratorstorefront - Addon's Target Resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/yb2bacceleratorstorefront/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.customer-interest.deprecated.customerinterestsaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-accelerator.deprecated.yacceleratorstorefront.web" exported="" />
+    <orderEntry type="module" module-name="Custom.yb2bacceleratorstorefront.web" exported="" />
+  </component>
+</module>

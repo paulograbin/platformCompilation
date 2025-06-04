@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="basecommercebackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.basecommerce.backoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="basecommercebackofficespring" name="basecommercebackofficespring" removed="false">
+          <dependency>apiregistrybackofficespring==Hybris.api-registry.apiregistrybackoffice</dependency>
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>basecommercespring==Hybris.base-commerce.basecommerce</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/resources/basecommercebackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="basecommercebackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="basecommercebackoffice - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/bin/basecommercebackofficeserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="basecommercebackoffice - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="basecommercebackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-commerce/basecommercebackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.api-registry.apiregistrybackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-commerce.basecommerce" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="customerinterestsaddon extension" />
+        <option name="name" value="customerinterestsaddon" />
+        <option name="packageRoot" value="de.hybris.platform.customerinterestsaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="customerinterestsaddonspring" name="customerinterestsaddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>customerinterestsfacadesspring==Hybris.customer-interest.customerinterestsfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/resources/customerinterestsaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="customerinterestsaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="customerinterestsaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-interest/deprecated/customerinterestsaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-interest.customerinterestsfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

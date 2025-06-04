@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="entitlementfacades" />
+        <option name="packageRoot" value="de.hybris.platform.entitlementfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="entitlementfacadesspring" name="entitlementfacadesspring" removed="false">
+          <dependency>commercefacadesspring==Hybris.commerce-services.commercefacades</dependency>
+          <dependency>entitlementservicesspring==Hybris.entitlements.entitlementservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/resources/entitlementfacades-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/resources/entitlementfacades/ycommercewebservices/spring/typealiasmappings.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="entitlementfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="entitlementfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/entitlements/entitlementfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercefacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.entitlements.entitlementservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

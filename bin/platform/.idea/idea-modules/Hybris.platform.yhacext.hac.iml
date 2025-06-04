@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="hacModule" value="true" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="yhacext.hac" />
+        <option name="packageRoot" value="yhacextpackage" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="HAC" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yhacext.hacspring" name="yhacext.hacspring" removed="false">
+          <dependency>web application context==Platform.hac.web</dependency>
+          <dependency>yhacextspring==Hybris.platform.yhacext</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yhacext.hac - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yhacext.hac - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/yhacext/hac/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="yhacext.hac - HAC Web Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.hac.web" exported="" />
+    <orderEntry type="module" module-name="Hybris.platform.yhacext" exported="" />
+  </component>
+</module>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="description" value="cms2lib description" />
+        <option name="name" value="cms2lib" />
+        <option name="packageRoot" value="de.hybris.platform.cms2lib" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="cms2libspring" name="cms2libspring" removed="false">
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/resources/cms2lib-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="cms2lib - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="cms2lib - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/bin/cms2libserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-content-management-system/cms2lib/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

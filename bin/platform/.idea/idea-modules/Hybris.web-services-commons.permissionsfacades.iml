@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="permissionsfacades" />
+        <option name="packageRoot" value="de.hybris.platform.permissionsfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="permissionsfacadesspring" name="permissionsfacadesspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/resources/permissionsfacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="permissionsfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="permissionsfacades - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/bin/permissionsfacadesserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/permissionsfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="assistedservicefacades" />
+        <option name="packageRoot" value="de.hybris.platform.assistedservicefacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="assistedservicefacadesspring" name="assistedservicefacadesspring" removed="false">
+          <dependency>assistedserviceservicesspring==Hybris.assisted-services.assistedserviceservices</dependency>
+          <dependency>commercefacadesspring==Hybris.commerce-services.commercefacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/resources/assistedservicefacades-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicefacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="assistedservicefacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/assisted-services/assistedservicefacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.assisted-services.assistedserviceservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercefacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

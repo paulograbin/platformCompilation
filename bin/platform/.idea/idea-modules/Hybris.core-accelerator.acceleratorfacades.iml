@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="acceleratorfacades" />
+        <option name="packageRoot" value="de.hybris.platform.acceleratorfacades" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="acceleratorfacadesspring" name="acceleratorfacadesspring" removed="false">
+          <dependency>acceleratorcmsspring==Hybris.core-accelerator.acceleratorcms</dependency>
+          <dependency>cmsfacadesspring==Hybris.web-content-management-system.cmsfacades</dependency>
+          <dependency>commercefacadesspring==Hybris.commerce-services.commercefacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources/acceleratorfacades-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources/config/acceleratorfacades-cmsitems-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources/config/acceleratorfacades-pages-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources/config/acceleratorfacades-components-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources/config/acceleratorfacades-visitors-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorfacades - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorfacades - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorfacades - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorfacades/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorcms" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cmsfacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercefacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="swaggerintegration" />
+        <option name="packageRoot" value="de.hybris.platform.swaggerintegration" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="swaggerintegrationspring" name="swaggerintegrationspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>webservicescommonsspring==Hybris.web-services-commons.webservicescommons</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/resources/swaggerintegration-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="swaggerintegration - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="swaggerintegration - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="swaggerintegration - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/web-services-commons/swaggerintegration/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-services-commons.webservicescommons" exported="" />
+  </component>
+</module>

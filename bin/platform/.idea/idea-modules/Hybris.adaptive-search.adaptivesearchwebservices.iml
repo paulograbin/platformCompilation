@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="adaptivesearchwebservices" />
+        <option name="packageRoot" value="de.hybris.platform.adaptivesearchwebservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/adaptivesearchwebservices" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="adaptivesearchwebservicesspring" name="adaptivesearchwebservicesspring" removed="false">
+          <dependency>adaptivesearchfacadesspring==Hybris.adaptive-search.adaptivesearchfacades</dependency>
+          <dependency>groovynaturespring==Hybris.platform.groovynature</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>webservicescommonsspring==Hybris.web-services-commons.webservicescommons</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/resources/adaptivesearchwebservices-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="adaptivesearchwebservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="adaptivesearchwebservices - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/bin/adaptivesearchwebservicesserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/groovysrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/testsrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/groovytestsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="adaptivesearchwebservices - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/adaptive-search/adaptivesearchwebservices/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.adaptive-search.adaptivesearchfacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.platform.groovynature" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-services-commons.webservicescommons" exported="" />
+  </component>
+</module>

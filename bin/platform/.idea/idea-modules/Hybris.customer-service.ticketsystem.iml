@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="ticketsystem" />
+        <option name="packageRoot" value="de.hybris.platform.ticket" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="ticketsystemspring" name="ticketsystemspring" removed="false">
+          <dependency>commerceservicesspring==Hybris.commerce-services.commerceservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/resources/ticketsystem-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/resources/ticketsystem/ticketsystem-spring-services.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/resources/ticketsystem/ticketsystem-spring-interceptors.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="ticketsystem - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="ticketsystem - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/bin/ticketsystemserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/customer-service/ticketsystem/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commerceservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

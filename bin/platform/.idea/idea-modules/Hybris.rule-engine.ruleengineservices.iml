@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="ruleengineservices" />
+        <option name="packageRoot" value="de.hybris.platform.ruleengineservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="ruleengineservicesspring" name="ruleengineservicesspring" removed="false">
+          <dependency>basecommercespring==Hybris.base-commerce.basecommerce</dependency>
+          <dependency>ordercalculationspring==Hybris.rule-engine.ordercalculation</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>ruleenginespring==Hybris.rule-engine.ruleengine</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources/ruleengineservices-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources/ruleengineservices-spring-rule.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources/ruleengineservices-spring-compiler.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources/ruleengineservices-spring-definitions.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="ruleengineservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="ruleengineservices - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/bin/ruleengineservicesserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="ruleengineservices - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/rule-engine/ruleengineservices/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.base-commerce.basecommerce" exported="" />
+    <orderEntry type="module" module-name="Hybris.rule-engine.ordercalculation" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.rule-engine.ruleengine" exported="" />
+  </component>
+</module>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="promotionenginebackoffice.backoffice" />
+        <option name="packageRoot" value="de.hybris.platform.promotionenginebackoffice" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="BACKOFFICE" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="promotionenginebackoffice.backoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="promotionenginebackoffice.backoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/promotion-engine/promotionenginebackoffice/backoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.promotion-engine.promotionenginebackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-commerce.promotionsbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.rule-engine.ruleenginebackoffice.backoffice" exported="" />
+  </component>
+</module>

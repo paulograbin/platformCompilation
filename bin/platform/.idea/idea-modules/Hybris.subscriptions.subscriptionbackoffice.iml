@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="subscriptionbackoffice" />
+        <option name="packageRoot" value="de.hybris.subscriptionbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="subscriptionbackofficespring" name="subscriptionbackofficespring" removed="false">
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>promotionsbackofficespring==Hybris.base-commerce.promotionsbackoffice</dependency>
+          <dependency>subscriptionservicesspring==Hybris.subscriptions.subscriptionservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/resources/subscriptionbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/resources/subscriptionbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="subscriptionbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="subscriptionbackoffice - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/bin/subscriptionbackofficeserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="subscriptionbackoffice - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="subscriptionbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/subscriptions/subscriptionbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.base-commerce.promotionsbackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.subscriptions.subscriptionservices" exported="" />
+  </component>
+</module>

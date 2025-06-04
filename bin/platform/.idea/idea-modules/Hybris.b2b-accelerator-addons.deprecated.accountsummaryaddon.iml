@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="accountsummaryaddon extension" />
+        <option name="name" value="accountsummaryaddon" />
+        <option name="packageRoot" value="de.hybris.platform.accountsummaryaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/accountsummaryaddon" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="accountsummaryaddonspring" name="accountsummaryaddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>acceleratorstorefrontcommons.commonwebspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons.commonweb</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>b2bacceleratorfacadesspring==Hybris.b2b-accelerator.b2bacceleratorfacades</dependency>
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/resources/accountsummaryaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="accountsummaryaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="accountsummaryaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="accountsummaryaddon - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/b2b-accelerator-addons/deprecated/accountsummaryaddon/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons.commonweb" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-accelerator.b2bacceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

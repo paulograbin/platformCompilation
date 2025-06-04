@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="timedaccesspromotionengineaddon extension" />
+        <option name="name" value="timedaccesspromotionengineaddon" />
+        <option name="packageRoot" value="de.hybris.platform.timedaccesspromotionengineaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="timedaccesspromotionengineaddonspring" name="timedaccesspromotionengineaddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>timedaccesspromotionenginefacadesspring==Hybris.timed-access-promotion-engine.timedaccesspromotionenginefacades</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/resources/timedaccesspromotionengineaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="timedaccesspromotionengineaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="timedaccesspromotionengineaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/timed-access-promotion-engine/deprecated/timedaccesspromotionengineaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.timed-access-promotion-engine.timedaccesspromotionenginefacades" exported="" />
+  </component>
+</module>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="merchandisingsmartedit" />
+        <option name="packageRoot" value="com.hybris.merchandising" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/merchandisingsmartedit" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="merchandisingsmarteditspring" name="merchandisingsmarteditspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>smarteditspring==Hybris.smartedit.smartedit</dependency>
+          <dependency>smartedittoolsspring==Hybris.smartedit.smartedittools</dependency>
+          <dependency>smarteditwebservicesspring==Hybris.smartedit.smarteditwebservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/resources/merchandisingsmartedit-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="merchandisingsmartedit - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="merchandisingsmartedit - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-merchandising/merchandisingsmartedit/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smartedit" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smartedittools" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.smarteditwebservices" exported="" />
+  </component>
+</module>

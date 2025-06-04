@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="name" value="platform" />
+        <option name="readonly" value="true" />
+        <option name="type" value="PLATFORM" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="platformspring" name="platformspring" removed="false">
+          <dependency>advancedsavedqueryspring==Platform.advancedsavedquery</dependency>
+          <dependency>catalogspring==Platform.catalog</dependency>
+          <dependency>commentsspring==Platform.comments</dependency>
+          <dependency>commonsspring==Platform.commons</dependency>
+          <dependency>corespring==Platform.core</dependency>
+          <dependency>deliveryzonespring==Platform.deliveryzone</dependency>
+          <dependency>europe1spring==Platform.europe1</dependency>
+          <dependency>hacspring==Platform.hac</dependency>
+          <dependency>impexspring==Platform.impex</dependency>
+          <dependency>maintenancewebspring==Platform.maintenanceweb</dependency>
+          <dependency>mediawebspring==Platform.mediaweb</dependency>
+          <dependency>oauth2spring==Platform.oauth2</dependency>
+          <dependency>paymentstandardspring==Platform.paymentstandard</dependency>
+          <dependency>platformservicesspring==Platform.platformservices</dependency>
+          <dependency>processingspring==Platform.processing</dependency>
+          <dependency>scriptingspring==Platform.scripting</dependency>
+          <dependency>testwebspring==Platform.testweb</dependency>
+          <dependency>validationspring==Platform.validation</dependency>
+          <dependency>workflowspring==Platform.workflow</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../bootstrap/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../bootstrap/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../bootstrap/gensrc" />
+      <excludeFolder url="file://$MODULE_DIR$/../../bootstrap/modelclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../../bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../../tomcat" />
+      <excludePattern pattern="apache-ant-*" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="Database Drivers">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../lib/dbdriver" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../lib/dbdriver" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.advancedsavedquery" exported="" />
+    <orderEntry type="module" module-name="Platform.catalog" exported="" />
+    <orderEntry type="module" module-name="Platform.comments" exported="" />
+    <orderEntry type="module" module-name="Platform.commons" exported="" />
+    <orderEntry type="module" module-name="Platform.core" exported="" />
+    <orderEntry type="module" module-name="Platform.deliveryzone" exported="" />
+    <orderEntry type="module" module-name="Platform.europe1" exported="" />
+    <orderEntry type="module" module-name="Platform.hac" exported="" />
+    <orderEntry type="module" module-name="Platform.impex" exported="" />
+    <orderEntry type="module" module-name="Platform.maintenanceweb" exported="" />
+    <orderEntry type="module" module-name="Platform.mediaweb" exported="" />
+    <orderEntry type="module" module-name="Platform.oauth2" exported="" />
+    <orderEntry type="module" module-name="Platform.paymentstandard" exported="" />
+    <orderEntry type="module" module-name="Platform.platformservices" exported="" />
+    <orderEntry type="module" module-name="Platform.processing" exported="" />
+    <orderEntry type="module" module-name="Platform.scripting" exported="" />
+    <orderEntry type="module" module-name="Platform.testweb" exported="" />
+    <orderEntry type="module" module-name="Platform.validation" exported="" />
+    <orderEntry type="module" module-name="Platform.workflow" exported="" />
+    <orderEntry type="module" module-name="Custom.config" exported="" />
+  </component>
+</module>

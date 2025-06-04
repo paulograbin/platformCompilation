@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="odata2services" />
+        <option name="packageRoot" value="de.hybris.platform.odata2services" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="odata2servicesspring" name="odata2servicesspring" removed="false">
+          <dependency>inboundservicesspring==Hybris.integration-apis.inboundservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/resources/odata2services-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/resources/odata2services-persistence-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/resources/odata2services-error-handling-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="odata2services - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="odata2services - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="odata2services - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/integration-apis/odata2services/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.integration-apis.inboundservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

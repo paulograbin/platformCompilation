@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="yaddon extension" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="name" value="yaddon" />
+        <option name="packageRoot" value="yaddonpackage" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yaddonspring" name="yaddonspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/deprecated/yaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

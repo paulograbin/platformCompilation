@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="name" value="configurablebundlecockpits" />
+        <option name="packageRoot" value="de.hybris.platform.configurablebundlecockpits" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="configurablebundlecockpitsspring" name="configurablebundlecockpitsspring" removed="false">
+          <dependency>admincockpitspring==Hybris.cockpit-applications.deprecated.admincockpit</dependency>
+          <dependency>configurablebundlefacadesspring==Hybris.configurable-bundle.configurablebundlefacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>productcockpitspring==Hybris.cockpit-applications.deprecated.productcockpit</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/resources/configurablebundlecockpits-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundlecockpits - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="configurablebundlecockpits - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/bin/configurablebundlecockpitsserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurable-bundle/deprecated/configurablebundlecockpits/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.cockpit-applications.deprecated.admincockpit" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurable-bundle.configurablebundlefacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.cockpit-applications.deprecated.productcockpit" exported="" />
+  </component>
+</module>

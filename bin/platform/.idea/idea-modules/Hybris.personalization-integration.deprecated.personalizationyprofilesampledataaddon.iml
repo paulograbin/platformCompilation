@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="personalizationyprofilesampledataaddon extension" />
+        <option name="name" value="personalizationyprofilesampledataaddon" />
+        <option name="packageRoot" value="de.hybris.platform.personalizationyprofilesampledataaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="personalizationyprofilesampledataaddonspring" name="personalizationyprofilesampledataaddonspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>personalizationyprofilespring==Hybris.personalization-integration.personalizationyprofile</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/resources/personalizationyprofilesampledataaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationyprofilesampledataaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationyprofilesampledataaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-integration/deprecated/personalizationyprofilesampledataaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization-integration.personalizationyprofile" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

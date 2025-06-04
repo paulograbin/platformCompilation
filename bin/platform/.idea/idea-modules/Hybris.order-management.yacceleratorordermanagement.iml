@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="moduleGenName" value="acceleratorordermanagement" />
+        <option name="name" value="yacceleratorordermanagement" />
+        <option name="packageRoot" value="de.hybris.platform.yacceleratorordermanagement" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yacceleratorordermanagementspring" name="yacceleratorordermanagementspring" removed="false">
+          <dependency>acceleratorservicesspring==Hybris.core-accelerator.acceleratorservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>warehousingspring==Hybris.order-management.warehousing</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement-process-definitions-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement/process/order-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement/process/consignment-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement/process/return-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement/process/email-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources/yacceleratorordermanagement/hot-folder-warehousing-score-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorordermanagement - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorordermanagement - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/order-management/yacceleratorordermanagement/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.order-management.warehousing" exported="" />
+  </component>
+</module>

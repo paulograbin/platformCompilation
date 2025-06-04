@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="catalog" />
+        <option name="packageRoot" value="de.hybris.platform.catalog" />
+        <option name="readonly" value="true" />
+        <option name="type" value="EXT" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="catalogspring" name="catalogspring" removed="false">
+          <dependency>validationspring==Platform.validation</dependency>
+          <file>file://$MODULE_DIR$/../../ext/catalog/project.properties</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/catalog/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/catalog/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/catalog">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/catalog/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/catalog/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="catalog - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/catalog/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="catalog - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ext/catalog/bin/catalogserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../ext/catalog/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="catalog - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/catalog/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/catalog/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.validation" exported="" />
+  </component>
+</module>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="hac.web" />
+        <option name="packageRoot" value="de.hybris.platform.hac" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="WEB" />
+        <option name="type" value="EXT" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../ext/hac/web/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="web application context" name="hac.webspring" removed="false">
+          <dependency>hacspring==Platform.hac</dependency>
+          <file>file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/config/web-app-config.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/config/spring-security-config.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/config/spring-mvc-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/hac/web/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/hac/web/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/hac/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/hac/web/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/hac/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="hac.web - Web Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="hac.web - Web Library">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib" />
+          <root url="jar://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib/codemirror-5.65.18.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib/js-cookie-2.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib/sitemesh-3.0-alpha-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib/yhacext_hac.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/hac/web/webroot/WEB-INF/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.hac" exported="" />
+  </component>
+</module>

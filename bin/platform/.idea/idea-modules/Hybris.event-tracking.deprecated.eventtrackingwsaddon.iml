@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="eventtrackingwsaddon extension" />
+        <option name="name" value="eventtrackingwsaddon" />
+        <option name="packageRoot" value="de.hybris.eventtracking.ws" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="eventtrackingwsaddonspring" name="eventtrackingwsaddonspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>eventtrackingservicesspring==Hybris.event-tracking.deprecated.eventtrackingservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/resources/eventtrackingwsaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="eventtrackingwsaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="eventtrackingwsaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="eventtrackingwsaddon - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/event-tracking/deprecated/eventtrackingwsaddon/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.event-tracking.deprecated.eventtrackingservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

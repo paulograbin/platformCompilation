@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="acceleratorcms" />
+        <option name="packageRoot" value="de.hybris.platform.acceleratorcms" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="acceleratorcmsspring" name="acceleratorcmsspring" removed="false">
+          <dependency>acceleratorservicesspring==Hybris.core-accelerator.acceleratorservices</dependency>
+          <dependency>cms2libspring==Hybris.web-content-management-system.cms2lib</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources/acceleratorcms-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources/acceleratorcms-cache-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorcms - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="acceleratorcms - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2lib" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="xyformsstorefrontcommons extension" />
+        <option name="name" value="xyformsstorefrontcommons" />
+        <option name="packageRoot" value="de.hybris.platform.xyformsstorefrontcommons" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="xyformsstorefrontcommonsspring" name="xyformsstorefrontcommonsspring" removed="false">
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>xyformsfacadesspring==Hybris.yforms.xyformsfacades</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/resources/xyformsstorefrontcommons-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="xyformsstorefrontcommons - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="xyformsstorefrontcommons - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/yforms/deprecated/xyformsstorefrontcommons/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.yforms.xyformsfacades" exported="" />
+  </component>
+</module>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="sapproductconfigrulesbackoffice.backoffice" />
+        <option name="packageRoot" value="de.hybris.platform.sap.productconfig.rules.backoffice" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="BACKOFFICE" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigrulesbackoffice.backoffice - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="sapproductconfigrulesbackoffice.backoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/configurator-complex-products/sapproductconfigrulesbackoffice/backoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commerceservicesbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.rule-engine.rulebuilderbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.sapproductconfigrulesbackoffice" exported="" />
+  </component>
+</module>

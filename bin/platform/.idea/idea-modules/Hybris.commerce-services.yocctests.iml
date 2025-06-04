@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="jaloLogicFree" value="true" />
+        <option name="name" value="yocctests" />
+        <option name="packageRoot" value="yocctestspackage" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yocctestsspring" name="yocctestsspring" removed="false">
+          <dependency>commercewebservicestestsspring==Hybris.commerce-services.commercewebservicestests</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/resources/yocctests-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yocctests - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yocctests - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yocctests - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/commerce-services/yocctests/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.commerce-services.commercewebservicestests" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="patches" />
+        <option name="packageRoot" value="de.hybris.platform.patches" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="patchesspring" name="patchesspring" removed="false">
+          <dependency>groovynaturespring==Hybris.platform.groovynature</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/platform/patches/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/platform/patches/resources/patches-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/platform/patches/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/platform/patches/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/platform/patches">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/platform/patches/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="patches - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/patches/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="patches - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/platform/patches/bin/patchesserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/platform/patches/testsrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/platform/patches/groovytestsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.platform.groovynature" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

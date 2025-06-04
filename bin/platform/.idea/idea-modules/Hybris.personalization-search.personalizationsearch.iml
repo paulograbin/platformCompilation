@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="personalizationsearch" />
+        <option name="packageRoot" value="de.hybris.platform.personalizationsearch" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="personalizationsearchspring" name="personalizationsearchspring" removed="false">
+          <dependency>adaptivesearchspring==Hybris.adaptive-search.adaptivesearch</dependency>
+          <dependency>personalizationservicesspring==Hybris.personalization.personalizationservices</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/resources/personalizationsearch-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationsearch - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="personalizationsearch - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/bin/personalizationsearchserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/personalization-search/personalizationsearch/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.adaptive-search.adaptivesearch" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization.personalizationservices" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

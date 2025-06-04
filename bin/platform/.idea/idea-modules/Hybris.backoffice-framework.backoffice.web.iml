@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="backoffice.web" />
+        <option name="packageRoot" value="com.hybris.backoffice" />
+        <option name="readonly" value="true" />
+        <option name="subModuleType" value="WEB" />
+        <option name="type" value="OOTB" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/backoffice" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="web application context" name="backoffice.webspring" removed="false">
+          <dependency>backofficespring==Hybris.backoffice-framework.backoffice</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-web-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-spring-filter.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-spring-security.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-spring-eventing.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-spring-widgets.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/backoffice-excel-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/backoffice-workflow-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/workflow-designer/backoffice-workflow-designer-handlers-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/workflow-designer/backoffice-workflow-designer-validation-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/workflow-designer/backoffice-workflow-designer-services-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/workflow-designer/backoffice-workflow-designer-persisters-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/workflow-designer/backoffice-workflow-designer-renderers-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/backoffice-sync-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/backoffice-processes-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/conf/backoffice-userprofile-settings-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/backoffice-spring-testing.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitcore-2211.FP8-RC5.jar!/META-INF/cockpitcore-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitadmin-2211.FP8-RC5.jar!/META-INF/cockpitadmin-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpittesting-2211.FP8-RC5.jar!/META-INF/cockpittesting-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/backoffice-core-2211.FP8-RC5.jar!/META-INF/backoffice-core-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/backoffice-core-2211.FP8-RC5.jar!/META-INF/backoffice-core-spring-security.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpitframework-2211.FP8-RC5.jar!/META-INF/cockpitframework-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/backoffice-widgets-2211.FP8-RC5.jar!/META-INF/backoffice-widgets-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpit-data-integration-2211.FP8-RC5.jar!/META-INF/cockpit-data-integration-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpit-standard-editors-2211.FP8-RC5.jar!/META-INF/standard-editors-spring.xml</file>
+          <file>jar://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/webroot/WEB-INF/lib/cockpit-module-aggregator-2211.FP8-RC5.jar!/META-INF/cockpit-module-aggregator-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/backoffice-framework/backoffice/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice" exported="" />
+  </component>
+</module>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="outboundservices" />
+        <option name="packageRoot" value="de.hybris.platform.outboundservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="outboundservicesspring" name="outboundservicesspring" removed="false">
+          <dependency>apiregistryservicesspring==Hybris.api-registry.apiregistryservices</dependency>
+          <dependency>integrationservicesspring==Hybris.integration-apis.integrationservices</dependency>
+          <dependency>odata2servicesspring==Hybris.integration-apis.odata2services</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/resources/outboundservices-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/resources/outboundservices-global-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="outboundservices - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="outboundservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="outboundservices - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/integration-apis/outboundservices/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.api-registry.apiregistryservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.integration-apis.integrationservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.integration-apis.odata2services" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

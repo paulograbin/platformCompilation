@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="b2bpunchoutbackoffice" />
+        <option name="packageRoot" value="de.hybris.platform.b2bpunchoutbackoffice" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="b2bpunchoutbackofficespring" name="b2bpunchoutbackofficespring" removed="false">
+          <dependency>b2bcommercebackofficespring==Hybris.b2b-commerce.b2bcommercebackoffice</dependency>
+          <dependency>b2bpunchoutspring==Hybris.b2b-punchout.b2bpunchout</dependency>
+          <dependency>backofficespring==Hybris.backoffice-framework.backoffice</dependency>
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="b2bpunchoutbackoffice - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="b2bpunchoutbackoffice - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/bin/b2bpunchoutbackofficeserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="b2bpunchoutbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-punchout/b2bpunchoutbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.b2b-commerce.b2bcommercebackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-punchout.b2bpunchout" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

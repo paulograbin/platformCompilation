@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="b2bacceleratoraddon extension" />
+        <option name="name" value="b2bacceleratoraddon" />
+        <option name="packageRoot" value="de.hybris.platform.b2bacceleratoraddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="b2bacceleratoraddonspring" name="b2bacceleratoraddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>b2bacceleratorfacadesspring==Hybris.b2b-accelerator.b2bacceleratorfacades</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/resources/b2bacceleratoraddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="b2bacceleratoraddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="b2bacceleratoraddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/b2b-accelerator/deprecated/b2bacceleratoraddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2b-accelerator.b2bacceleratorfacades" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

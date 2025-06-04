@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="platformservices" />
+        <option name="packageRoot" value="de.hybris.platform.platformservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="EXT" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="platformservicesspring" name="platformservicesspring" removed="false">
+          <dependency>deliveryzonespring==Platform.deliveryzone</dependency>
+          <dependency>europe1spring==Platform.europe1</dependency>
+          <dependency>paymentstandardspring==Platform.paymentstandard</dependency>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/accesscode-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/catalog-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/order-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/product-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/category-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/classification-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/jobs-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/converters-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/platformservices/resources/commons-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/platformservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/platformservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/platformservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/platformservices/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/platformservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="platformservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/platformservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="platformservices - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/platformservices/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/platformservices/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.deliveryzone" exported="" />
+    <orderEntry type="module" module-name="Platform.europe1" exported="" />
+    <orderEntry type="module" module-name="Platform.paymentstandard" exported="" />
+  </component>
+</module>

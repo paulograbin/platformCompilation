@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="addon" value="true" />
+        <option name="classPathGen" value="false" />
+        <option name="coreModule" value="true" />
+        <option name="deprecated" value="true" />
+        <option name="description" value="profiletagaddon extension" />
+        <option name="name" value="profiletagaddon" />
+        <option name="packageRoot" value="com.hybris.yprofile.profiletagaddon" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="profiletagaddonspring" name="profiletagaddonspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>addonsupportspring==Hybris.core-accelerator.deprecated.addonsupport</dependency>
+          <dependency>cms2spring==Hybris.web-content-management-system.cms2</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>profileservicesspring==Hybris.cds-integration.profileservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/resources/profiletagaddon-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="profiletagaddon - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="profiletagaddon - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/cds-integration/deprecated/profiletagaddon/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.addonsupport" exported="" />
+    <orderEntry type="module" module-name="Hybris.web-content-management-system.cms2" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.cds-integration.profileservices" exported="" />
+  </component>
+</module>

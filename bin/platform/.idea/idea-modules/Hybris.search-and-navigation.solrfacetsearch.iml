@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="description" value="solrfacetsearch extension" />
+        <option name="name" value="solrfacetsearch" />
+        <option name="packageRoot" value="de.hybris.platform.solrfacetsearch" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="solrfacetsearchspring" name="solrfacetsearchspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/resources/global-solrfacetsearch-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/resources/solrfacetsearch-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/resources/solrfacetsearch-converters.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="solrfacetsearch - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="solrfacetsearch - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/bin/solrfacetsearchserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="solrfacetsearch - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../modules/search-and-navigation/solrfacetsearch/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

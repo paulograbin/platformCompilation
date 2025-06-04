@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="processing" />
+        <option name="packageRoot" value="de.hybris.platform.processing" />
+        <option name="readonly" value="true" />
+        <option name="type" value="EXT" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/processing" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="processingspring" name="processingspring" removed="false">
+          <dependency>commonsspring==Platform.commons</dependency>
+          <dependency>scriptingspring==Platform.scripting</dependency>
+          <file>file://$MODULE_DIR$/../../ext/processing/project.properties</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/processing-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/cronjob-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/task-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/processengine-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/processing-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../ext/processing/resources/processing-distributed-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../ext/processing/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../ext/processing/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../ext/processing">
+      <sourceFolder url="file://$MODULE_DIR$/../../ext/processing/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ext/processing/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="processing - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/processing/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="processing - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ext/processing/bin/processingserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../ext/processing/gensrc" />
+          <root url="file://$MODULE_DIR$/../../ext/processing/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="processing - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../ext/processing/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../ext/processing/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.commons" exported="" />
+    <orderEntry type="module" module-name="Platform.scripting" exported="" />
+  </component>
+</module>

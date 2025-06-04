@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="moduleGenName" value="accelerator" />
+        <option name="name" value="yacceleratorcore" />
+        <option name="packageRoot" value="de.hybris.platform.yacceleratorcore" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="yacceleratorcorespring" name="yacceleratorcorespring" removed="false">
+          <dependency>acceleratorcmsspring==Hybris.core-accelerator.acceleratorcms</dependency>
+          <dependency>platformspring==Platform.platform</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/integration/hot-folder-store-electronics-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/integration/hot-folder-store-apparel-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/integration/hot-folder-common-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-buyer-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-salesrep-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-seller-approval-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-to-expire-soon-email-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-expired-email-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources/yacceleratorcore/processes/quote/quote-post-cancellation-process-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorcore - compiler output">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/src" />
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="yacceleratorcore - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/base-accelerator/yacceleratorcore/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorcms" exported="" />
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+  </component>
+</module>

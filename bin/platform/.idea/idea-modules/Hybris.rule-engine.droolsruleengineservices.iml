@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="droolsruleengineservices" />
+        <option name="packageRoot" value="de.hybris.platform.droolsruleengineservices" />
+        <option name="readonly" value="true" />
+        <option name="type" value="OOTB" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="droolsruleengineservicesspring" name="droolsruleengineservicesspring" removed="false">
+          <dependency>platformspring==Platform.platform</dependency>
+          <dependency>ruleengineservicesspring==Hybris.rule-engine.ruleengineservices</dependency>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/resources/droolsruleengineservices-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/resources/droolsruleengineservices-spring-compiler.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/eclipsebin" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices">
+      <sourceFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="droolsruleengineservices - resources">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="droolsruleengineservices - server">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/bin/droolsruleengineservicesserver.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../modules/rule-engine/droolsruleengineservices/testsrc" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Platform.platform" exported="" />
+    <orderEntry type="module" module-name="Hybris.rule-engine.ruleengineservices" exported="" />
+  </component>
+</module>
