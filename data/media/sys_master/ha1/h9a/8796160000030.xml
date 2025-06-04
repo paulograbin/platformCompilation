@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
 -->
-<advanced-search>
-
-	<group name="root" type="abstractcomment">
-		<label key="config.general.searchfor" />
-		<group name="general">
-			<label key="cockpit.config.label.General" />
-			<property qualifier="abstractcomment.subject" visible="true"/>
-			<property qualifier="abstractcomment.text" visible="true"/>
-			<property qualifier="abstractcomment.attachments" visible="true"/>
-			<property qualifier="abstractcomment.modifiedtime" visible="false"/>
-			<property qualifier="abstractcomment.creationtime" visible="false"/>
-		</group>
+<editor>	
+	<group qualifier="General" visible="true" initially-opened="true">
+		<label key="cockpit.config.label.General" />
+		<property qualifier="cmsitem.name"/>
+		<property qualifier="cmsitem.uid"/>
+		<property qualifier="cmsitem.catalogVersion" editor="shortListEditor"/>		
+		<property qualifier="AbstractCMSComponent.visible"/>
+		<property qualifier="AbstractCMSComponent.type"/>
+		<property qualifier="AbstractCMSComponent.typeCode"/>
+		<property qualifier="AbstractCMSComponent.container"/>
+		<property qualifier="AbstractCMSComponentContainer.currentCMSComponents"/>
 	</group>
 
-</advanced-search>
+	<group qualifier="admin" visible="true" initially-opened="false">
+		<label key="config.general.administration" />
+		<property qualifier="Item.pk" />
+		<property qualifier="Item.creationTime" />
+		<property qualifier="Item.modifiedtime" />
+	</group>
+	
+	<custom-group 
+		class="de.hybris.platform.cockpit.services.config.impl.UnassignedEditorSectionConfiguration" 
+		qualifier="unassigned"
+		initially-opened="false">
+		<label key="cockpit.config.label.Other" />
+	</custom-group>
+</editor>

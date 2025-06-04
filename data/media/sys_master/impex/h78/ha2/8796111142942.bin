@@ -9,31 +9,31 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=es
+$lang=it
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 ############################# CONDITIONS ##########################
 
 INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;General
+;general;Generale
 
 INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;Grupo;{operator};
-;y_container;Contenedor;{id};
-;y_rule_executed;Regla ejecutada;Regla con ejecución {rule} de código permitida {allowed};
+;y_group;Gruppo;{operator};
+;y_container;Contenitore;{id};
+;y_rule_executed;Regola eseguita;Esecuzione regola con codice {rule} ammessa {allowed};
 
 INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;Operador de grupo;Combine las condiciones en el grupo utilizando O/Y
-;y_container;id;ID de contenedor;Introduzca el ID del contenedor que se debe transferir en acciones
-;y_rule_executed;rule;Regla de acción;Introduzca una acción que permita o no ejecutar esta regla
-;y_rule_executed;allowed;Ejecución de regla de acción permitida;Ejecución de regla de acción permitida o no
+;y_group;operator;Operatore gruppo;Combina le condizioni nel gruppo utilizzando OR/AND
+;y_container;id;ID contenitore;Inserisci ID contenitore a cui fare riferimento nelle azioni
+;y_rule_executed;rule;Regola azione;Inserisci azione che consenta o non consenta di eseguire questa regola
+;y_rule_executed;allowed;Esecuzione regola azione ammessa;Esecuzione regola azione ammessa o non ammessa
 
 ############################# ACTIONS ##########################
 INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;General
+;general;Generale
 
 INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;Detener ejecución de regla;Detener la ejecución de cualquier de las siguientes reglas;
+;y_halt;Interrompi esecuzione regola;Interrompi esecuzione di una qualsiasi delle seguenti regole;
 
 #% endif:

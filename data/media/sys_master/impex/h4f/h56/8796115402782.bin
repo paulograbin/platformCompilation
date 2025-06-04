@@ -8,22 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-$lang=ru
+$lang=hi
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;abstractRuleDateDiffConstraint;"Дата окончания должна быть позже даты начала"
+;abstractRuleDateDiffConstraint;"समाप्ति दिनांक प्रारंभ दिनांक के बाद नहीं होनी चाहिए."
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleCode;Код не может быть нулевым или пустым
+;sourceRuleCode;कोड नल या रिक्त नहीं हो सकता है
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleTemplateCode;Код не может быть нулевым или пустым
+;sourceRuleTemplateCode;कोड नल या रिक्त नहीं हो सकता है
 
 insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
-;ruleCodeLengthMinValue;"Значение должно содержать минимум 2 символа";
-;ruleTemplateCodeLengthMinValue;"Значение должно содержать минимум 2 символа";
-;ruleEngineRuleCodeLengthMinValue;"Значение должно содержать минимум 2 символа";
+;ruleCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
+;ruleTemplateCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
+;ruleEngineRuleCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
 
 #% endif:

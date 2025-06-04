@@ -8,22 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-$lang=en
+$lang=es_CO
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;abstractRuleDateDiffConstraint;"End date must be after start date"
+;abstractRuleDateDiffConstraint;"La fecha de fin debe ser posterior a la fecha de inicio"
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleCode;Code cannot be null or empty
+;sourceRuleCode;El código no puede ser cero o estar vacío
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleTemplateCode;Code cannot be null or empty
+;sourceRuleTemplateCode;El código no puede ser cero o estar vacío
 
 insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
-;ruleCodeLengthMinValue;"Value should be at least 2 characters long";
-;ruleTemplateCodeLengthMinValue;"Value should be at least 2 characters long";
-;ruleEngineRuleCodeLengthMinValue;"Value should be at least 2 characters long";
+;ruleCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
+;ruleTemplateCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
+;ruleEngineRuleCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
 
 #% endif:

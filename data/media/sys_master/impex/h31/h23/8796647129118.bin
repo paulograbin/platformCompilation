@@ -1,7 +1,0 @@
-# -----------------------------------------------------------------------
-# Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
-# -----------------------------------------------------------------------
-$snIndexType=powertools-product
-
-INSERT_UPDATE SnField ; indexType(id)[unique=true] ; id[unique=true]                 ; name                    ; fieldType(code) ; valueProvider                                        ; valueProviderParameters[map-delimiter=|]    ; retrievable[default=false] ; searchable[default=false] ; localized[default=false] ; qualifierTypeId ; multiValued[default=true] ; useForSuggesting[default=false] ; useForSpellchecking[default=false] ; weight ; indexTypePOS
-                      ; $snIndexType               ; bundleTemplates                 ; Bundle templates        ; STRING          ; productAttributeSnIndexerValueProvider               ; expression->bundleTemplates.id              ; true                       ;                           ;                          ;                 ;                           ;                                 ;                                    ;  1     ; 40

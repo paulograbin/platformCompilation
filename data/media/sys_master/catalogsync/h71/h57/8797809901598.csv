@@ -1,8 +1,0 @@
-8796097643570;;;;8796224357436->8796224586812;true
-8796097643570;;;;8796224357436->8796224586812;true
-8796097643570;;;;8796097610802->8796097741874;true
-8796097643570;;;;;true
-8796097643570;;;;;false
-8796097610802;8796097741874;8798594302571;allDocuments,components,inverseRestrictions,assignedCockpitItemTemplates,comments;;true
-8796224357436;8796224586812;8798594269803;restrictions;;true
-8796224357436;8796224586812;8798594269803;actions,allDocuments,children,containers,parents,restrictions,assignedCockpitItemTemplates,comments,name,onlyOneRestrictionMustApply,page,styleClasses,synchronizationBlocked,title,uid,visible;;true

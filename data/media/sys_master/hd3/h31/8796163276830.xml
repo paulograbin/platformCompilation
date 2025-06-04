@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
 -->
-<wizard-config showPrefilledValues="false" selectMode="true" createMode="true" createWithinPopup="false">
-	<displayed-properties>
-		<property qualifier="CommentAttachment.item">
-			<parameter name="allowCreate" value="true" />
-			<parameter name="allowAutocompletion" value="true" />
-			<parameter name="autocompletionSearchType" value="Media" />
-			<parameter name="restrictToCreateTypes" value="Product+,Category+,Media,MediaContainer+,PriceRow+,Principal+,Voucher+,Promotion+" />
-		</property>
-	</displayed-properties>
-</wizard-config>
+<advanced-search>
+	
+	<group name="root" type="contentcatalog">
+		<label key="config.general.searchfor" />
+		<group name="general">
+			<label key="cockpit.config.label.General" />
+			<property qualifier="contentcatalog.id" sort-enabled="true"/>
+			<property qualifier="contentcatalog.name" sort-enabled="true"/>
+			<property qualifier="contentcatalog.defaultCatalog" sort-enabled="true" visible="false"/>
+		</group>
+	</group>
+	
+</advanced-search>

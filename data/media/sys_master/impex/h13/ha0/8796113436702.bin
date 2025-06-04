@@ -8,32 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-
-$lang=hu
+$lang=en
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
-############################# CONDITIONS ##########################
+insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
+;abstractRuleDateDiffConstraint;"End date must be after start date"
 
-INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Általános
+insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
+;sourceRuleCode;Code cannot be null or empty
 
-INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;Csoport;{operator};
-;y_container;Konténer;{id};
-;y_rule_executed;Szabály alkalmazva;A kóddal jelölt szabály {rule} alkalmazása engedélyezve {allowed};
+insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
+;sourceRuleTemplateCode;Code cannot be null or empty
 
-INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;Csoportoperátor;A csoportban szereplő feltételek kombinálása az OR/AND használatával
-;y_container;id;Konténer-azonosító;A konténer műveletekben hivatkozandó azonosítójának megadása
-;y_rule_executed;rule;Műveletszabály;A művelet megadása, mely engedélyezi vagy letiltja a szabály lefuttatását
-;y_rule_executed;allowed;Műveletszabály alkalmazása engedélyezve;Engedélyezett-e a műveletszabály alkalmazása vagy sem
-
-############################# ACTIONS ##########################
-INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Általános
-
-INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;Szabály alkalmazásának leállítása;Az itt megadott szabályok alkalmazásának leállítása;
+insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
+;ruleCodeLengthMinValue;"Value should be at least 2 characters long";
+;ruleTemplateCodeLengthMinValue;"Value should be at least 2 characters long";
+;ruleEngineRuleCodeLengthMinValue;"Value should be at least 2 characters long";
 
 #% endif:

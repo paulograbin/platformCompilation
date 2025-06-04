@@ -9,31 +9,16 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=pl
+insert_update DynamicConstraint;active[allownull=true];id[unique=true,allownull=true];language(code);expression;severity(code,itemtype(code));target;type(code);annotation
+;true;abstractRuleDateDiffConstraint;BEANSHELL;"return getEndDate() == null || getStartDate() == null || getEndDate().after(getStartDate());";ERROR:Severity;de.hybris.platform.ruleengineservices.model.AbstractRuleModel;AbstractRule;de.hybris.platform.validation.annotations.Dynamic
 
-#% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
+insert_update NotNullConstraint;active[allownull=true];descriptor(enclosingType(code),qualifier);id[unique=true,allownull=true];qualifier;severity(code,itemtype(code));target;type(code)
+;true;SourceRule:code;sourceRuleCode;code;ERROR:Severity;de.hybris.platform.ruleengineservices.model.SourceRuleModel;SourceRule
 
-############################# CONDITIONS ##########################
+insert_update NotNullConstraint;active[allownull=true];descriptor(enclosingType(code),qualifier);id[unique=true,allownull=true];qualifier;severity(code,itemtype(code));target;type(code)
+;true;SourceRuleTemplate:code;sourceRuleTemplateCode;code;ERROR:Severity;de.hybris.platform.ruleengineservices.model.SourceRuleTemplateModel;SourceRuleTemplate
 
-INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Ogólne
-
-INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;Grupa;{operator};
-;y_container;Kontener;{id};
-;y_rule_executed;Reguła wykonana;Dozwolona reguła z wykonaniem {reguły} kodu {dozwolona};
-
-INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;Operator grupy;Połącz warunki w grupie za pomocą LUB/I
-;y_container;id;ID kontenera;Wprowadź ID kontenera, do którego następuje odniesienie w czynnościach
-;y_rule_executed;rule;Reguła czynności;Wprowadź czynności, które zezwala lub nie zezwala na uruchomienie tej reguły
-;y_rule_executed;allowed;Dozwolone wykonanie reguły czynności;Dozwolone lub niedozwolone wykonanie reguły czynności
-
-############################# ACTIONS ##########################
-INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Ogólne
-
-INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;Wykonanie reguły zatrzymania;Wykonanie zatrzymania następujących reguł;
-
-#% endif:
+insert_update ObjectPatternConstraint;active[allownull=true];descriptor(enclosingType(code),qualifier);id[unique=true,allownull=true];qualifier;severity(code,itemtype(code));target;type(code);regexp;flags(code);
+;true;AbstractRule:code;ruleCodeLengthMinValue;code;ERROR:Severity;de.hybris.platform.ruleengineservices.model.AbstractRuleModel;AbstractRule;"(.*)([\S]{2,})(.*)";CASE_INSENSITIVE;
+;true;AbstractRuleTemplate:code;ruleTemplateCodeLengthMinValue;code;ERROR:Severity;de.hybris.platform.ruleengineservices.model.AbstractRuleTemplateModel;AbstractRuleTemplate;"(.*)([\S]{2,})(.*)";CASE_INSENSITIVE;
+;true;AbstractRuleEngineRule:code;ruleEngineRuleCodeLengthMinValue;code;ERROR:Severity;de.hybris.platform.ruleengine.model.AbstractRuleEngineRuleModel;AbstractRuleEngineRule;"(.*)([\S]{2,})(.*)";CASE_INSENSITIVE;

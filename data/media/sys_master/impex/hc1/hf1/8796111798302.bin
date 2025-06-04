@@ -9,31 +9,31 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=ja
+$lang=ru
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 ############################# CONDITIONS ##########################
 
 INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;一般
+;general;Общее
 
 INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;グループ;{operator};
-;y_container;コンテナ;{id};
-;y_rule_executed;ルールが実行されました;コード {rule} 実行が許可された {allowed} ルール;
+;y_group;Группа;{operator};
+;y_container;Контейнер;{id};
+;y_rule_executed;Правило выполнено;Выполнение правила с кодом {rule} разрешено {allowed};
 
 INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;グループ演算子;OR/AND を使用してグループ内の条件を結合します
-;y_container;id;コンテナ ID;アクションで参照されるコンテナ ID を入力します
-;y_rule_executed;rule;アクションルール;このルールの実行を許可または禁止するアクションを入力します
-;y_rule_executed;allowed;アクションルールの実行を許可;アクションルールの実行を禁止
+;y_group;operator;Оператор группы;Объединение условий в группе с помощью ИЛИ/И
+;y_container;id;Ид. контейнера;Ввод ид. контейнера для ссылки в действиях
+;y_rule_executed;rule;Правило действия;Введите действие, которое разрешает (не разрешает) выполнение этого правила
+;y_rule_executed;allowed;Выполнение правила действия разрешено;Указывает, разрешено ли выполнение правила действия
 
 ############################# ACTIONS ##########################
 INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;一般
+;general;Общее
 
 INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;ルール実行の停止;次の任意のルール実行の停止;
+;y_halt;Остановка выполнения правила;Остановка выполнения всех последующих правил;
 
 #% endif:

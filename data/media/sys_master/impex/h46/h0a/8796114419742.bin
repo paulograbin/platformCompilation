@@ -8,22 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-$lang=es_CO
+$lang=ja
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;abstractRuleDateDiffConstraint;"La fecha de fin debe ser posterior a la fecha de inicio"
+;abstractRuleDateDiffConstraint;"終了日付は開始日付より後にする必要があります"
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleCode;El código no puede ser cero o estar vacío
+;sourceRuleCode;コードは null または空にできません
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleTemplateCode;El código no puede ser cero o estar vacío
+;sourceRuleTemplateCode;コードは null または空にできません
 
 insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
-;ruleCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
-;ruleTemplateCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
-;ruleEngineRuleCodeLengthMinValue;"El valor debe tener como mínimo 2 caracteres";
+;ruleCodeLengthMinValue;"値の長さは 2 文字以上にしてください";
+;ruleTemplateCodeLengthMinValue;"値の長さは 2 文字以上にしてください";
+;ruleEngineRuleCodeLengthMinValue;"値の長さは 2 文字以上にしてください";
 
 #% endif:

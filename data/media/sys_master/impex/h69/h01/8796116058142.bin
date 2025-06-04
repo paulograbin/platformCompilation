@@ -8,22 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-$lang=id
+$lang=hu
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;abstractRuleDateDiffConstraint;"Tanggal berakhir harus setelah tanggal mulai"
+;abstractRuleDateDiffConstraint;"A záró dátum csak a kezdő dátum utáni lehet"
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleCode;Kode tidak boleh nol atau kosong
+;sourceRuleCode;A kód nem lehet null értékű vagy üres
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleTemplateCode;Kode tidak boleh nol atau kosong
+;sourceRuleTemplateCode;A kód nem lehet null értékű vagy üres
 
 insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
-;ruleCodeLengthMinValue;"Nilai harus berisi minimal 2 karakter";
-;ruleTemplateCodeLengthMinValue;"Nilai harus berisi minimal 2 karakter";
-;ruleEngineRuleCodeLengthMinValue;"Nilai harus berisi minimal 2 karakter";
+;ruleCodeLengthMinValue;"Az értéknek legalább 2 karakterből kell állnia";
+;ruleTemplateCodeLengthMinValue;"Az értéknek legalább 2 karakterből kell állnia";
+;ruleEngineRuleCodeLengthMinValue;"Az értéknek legalább 2 karakterből kell állnia";
 
 #% endif:

@@ -8,22 +8,22 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-$lang=hi
+$lang=pl
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 insert_update DynamicConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;abstractRuleDateDiffConstraint;"समाप्ति दिनांक प्रारंभ दिनांक के बाद नहीं होनी चाहिए."
+;abstractRuleDateDiffConstraint;"Data zakończenia musi przypadać po dacie rozpoczęcia"
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleCode;कोड नल या रिक्त नहीं हो सकता है
+;sourceRuleCode;Kod nie może mieć wartości null ani być pusty
 
 insert_update NotNullConstraint;id[unique=true,allownull=true];message[lang=$lang]
-;sourceRuleTemplateCode;कोड नल या रिक्त नहीं हो सकता है
+;sourceRuleTemplateCode;Kod nie może mieć wartości null ani być pusty
 
 insert_update ObjectPatternConstraint;id[unique=true,allownull=true];message[lang=$lang];
-;ruleCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
-;ruleTemplateCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
-;ruleEngineRuleCodeLengthMinValue;"मान कम से कम 2 दीर्घ वर्णों का होना चाहिए";
+;ruleCodeLengthMinValue;"Wartość powinna mieć długość co najmniej 2 znaków";
+;ruleTemplateCodeLengthMinValue;"Wartość powinna mieć długość co najmniej 2 znaków";
+;ruleEngineRuleCodeLengthMinValue;"Wartość powinna mieć długość co najmniej 2 znaków";
 
 #% endif:

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
 -->
-<advanced-search>
-
-	<group name="root" type="media">
-		<label key="config.general.searchfor" />
-		<property qualifier="media.code"/>
-		<property qualifier="media.mime"/>
-		<property qualifier="media.folder"/>
-		<group name="admin" visible="false">
-			<label key="config.general.administration" />
-			<property qualifier="item.pk" visible="false" sort-enabled="false"/>
-			<property qualifier="item.modifiedtime" visible="false" sort-enabled="false"/>
-		</group>
+<list-view unassigned-group-name="Other">
+	<group name="General">
+		<custom class="de.hybris.platform.cockpit.services.config.impl.CheckboxColumn" name=" " visible="true"/>
+		<property qualifier="catalog.id" visible="true"/>
+		<property qualifier="catalog.name" visible="true"/>
 	</group>
-
-</advanced-search>
+</list-view>

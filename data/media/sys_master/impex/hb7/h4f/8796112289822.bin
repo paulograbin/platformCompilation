@@ -9,31 +9,31 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=ru
+$lang=hi
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 ############################# CONDITIONS ##########################
 
 INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Общее
+;general;सामान्य
 
 INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;Группа;{operator};
-;y_container;Контейнер;{id};
-;y_rule_executed;Правило выполнено;Выполнение правила с кодом {rule} разрешено {allowed};
+;y_group;समूह;{ऑपरेटर};
+;y_container;कंटेनर;{id};
+;y_rule_executed;निष्पादित नियम;कोड {नियम} निष्पादन नियम अनुमत {अनुमत};
 
 INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;Оператор группы;Объединение условий в группе с помощью ИЛИ/И
-;y_container;id;Ид. контейнера;Ввод ид. контейнера для ссылки в действиях
-;y_rule_executed;rule;Правило действия;Введите действие, которое разрешает (не разрешает) выполнение этого правила
-;y_rule_executed;allowed;Выполнение правила действия разрешено;Указывает, разрешено ли выполнение правила действия
+;y_group;operator;समूह ऑपरेटर;या/और का उपयोग करके समूह में स्थितियां संयोजित करें
+;y_container;id;कंटेनर ID;कार्रवाई में संदर्भित करने हेतु कंटेनर की ID दर्ज करें
+;y_rule_executed;rule;कार्रवाई नियम;वह क्रिया या कार्रवाई दर्ज करें जो इस नियम को रन करना अनुमत करती या नहीं करती है
+;y_rule_executed;allowed;क्रिया नियम निष्पादन अनुमत;क्रिया नियम निष्पादन अनुमत या नहीं
 
 ############################# ACTIONS ##########################
 INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;Общее
+;general;सामान्य
 
 INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;Остановка выполнения правила;Остановка выполнения всех последующих правил;
+;y_halt;हाल्ट नियम निष्पादन;निम्नलिखित नियमों में से किसी एक का हाल्ट निष्पादन;
 
 #% endif:

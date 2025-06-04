@@ -9,120 +9,120 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=it
+$lang=pt
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 ############################# CONDITIONS ##########################
 
 INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;cart;Carrello acquisti
+;cart;Carrinho
 ;customer;Cliente
 
 INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang]
-;y_cart_total;Totale carrello acquisti;Totale carrello acquisti {operator} {value}
-;y_qualifying_products;Prodotti che danno diritto alla promozione;Carrello acquisti {products_operator} prodotti {products}
-;y_qualifying_categories;Categorie che danno diritto alla promozione;Carrello acquisti {categories_operator} categorie {categories}
-;y_target_customers;Clienti target;Gruppi clienti {customer_groups} o clienti {customers} target {customer_groups_operator}
-;y_product_price;Soglia prezzo prodotto;Prezzo prodotto {operator} {value}
-;y_customer_support;Servizio clienti;Sessione di servizio assistita attiva: {value}
-;y_qualifying_group_types;Tipi gruppi che danno diritto alla promozione;Gruppo voci carrello acquisti {operator} {groupTypes}
-;y_orders;Ordini o carrelli;Ordini o carrelli in {orders}
-;y_order_threshold_perfect_partner;Partner perfetto per soglia ordine;Prodotto partner perfetto {product} in carrello acquisti e carrello acquisti totale maggiore di {cart_threshold} incluso prezzo scontato {is_discounted_price_included}
+;y_cart_total;Total do carrinho de compras;Total do carrinho de compras {operator} {value}
+;y_qualifying_products;Produtos que se qualificam;Carrinho de compras {products_operator} produtos {products}
+;y_qualifying_categories;Categoria que se qualifica;Carrinho de compras {categories_operator} categorias {categories}
+;y_target_customers;Clientes alvo;Alvo {customer_groups_operator} grupo de clientes {customer_groups} ou clientes {customers}
+;y_product_price;Limite de preço do produto;Preço do produto {operator} {value}
+;y_customer_support;Suporte ao cliente;A sessão de serviço assistido está ativa: {value}
+;y_qualifying_group_types;Tipos de grupo que se qualificam;Grupo de entrada de carrinho {operator} {groupTypes}
+;y_orders;Pedidos ou carrinhos de compras;Pedidos ou carrinhos de compras {orders}
+;y_order_threshold_perfect_partner;Parceiro perfeito do limite do pedido;Produto do parceiro perfeito {product} em carrinho de compras e o total do carrinho de compras superior a {cart_threshold} incluindo o preço descontado {is_discounted_price_included}
 
 INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_cart_total;operator;Operatore;Operatore per confrontare il valore totale del carrello acquisti
-;y_cart_total;value;Totale carrello acquisti;Mappa della divisa e del valore del totale carrello acquisti da utilizzare
-;y_qualifying_products;operator;Operatore;Operatore per confrontare la quantità necessaria di prodotti che danno diritto alla promozione
-;y_qualifying_products;quantity;Quantità per acquisizione dell’ordine;Quantità necessaria di prodotti che danno diritto alla promozione (per voce ordine)
-;y_qualifying_products;products_operator;Operatore di selezione prodotto;Selezionare QUALSIASI prodotto o selezionare TUTTI i prodotti da una lista di prodotti che danno diritto alla promozione
-;y_qualifying_products;products;Prodotti;Lista di prodotti che danno diritto alla promozione
-;y_qualifying_products;catalog;Filtra selezione in base al catalogo;Il valore catalogo selezionato verrà utilizzato per filtrare i dati all’interno dei campi associati
-;y_qualifying_categories;operator;Operatore;Operatore per confrontare la quantità necessaria di prodotti nelle categorie che danno diritto alla promozione
-;y_qualifying_categories;quantity;Quantità per acquisizione dell’ordine;Quantità di prodotti nelle categorie che danno diritto alla promozione (per voce ordine)
-;y_qualifying_categories;categories_operator;Operatore di selezione categoria;Selezionare QUALSIASI categoria o selezionare TUTTE le categorie da una lista di categorie che danno diritto alla promozione
-;y_qualifying_categories;categories;Categorie;Lista di categorie che danno diritto alla promozione
-;y_qualifying_categories;excluded_categories;Categorie escluse;Lista di sottocategorie da escludere dalle categorie che danno diritto alla promozione
-;y_qualifying_categories;excluded_products;Prodotti esclusi;Lista di prodotti da escludere dalle categorie che danno diritto alla promozione
-;y_qualifying_categories;catalog;Filtra selezione in base al catalogo;Il valore catalogo selezionato verrà utilizzato per filtrare i dati all’interno dei campi associati
-;y_target_customers;customer_groups_operator;Operatore di selezione gruppo clienti;I clienti devono fare parte di un QUALSIASI gruppo di clienti o di TUTTI.
-;y_target_customers;customer_groups;Gruppi clienti;Lista di gruppi di clienti che hanno diritto alle promozioni
-;y_target_customers;customers;Clienti;Lista di clienti che hanno diritto alla promozione
-;y_target_customers;excluded_customer_groups;Gruppi clienti esclusi;Lista di sottogruppi che devono essere esclusi dai gruppi di clienti aventi diritto alla promozione
-;y_target_customers;excluded_customers;Clienti esclusi;Lista di clienti che devono essere esclusi dai gruppi di clienti aventi diritto alla promozione
-;y_product_price;operator;Operatore;Operatore per confrontare il valore del prodotto
-;y_product_price;value;Valore soglia prezzo;Mappa della divisa e del valore soglia per i prodotti per avere diritto a questa promozione
-;y_customer_support;value;Sessione di servizio assistita attiva;Abilitare “basato su promozione” se un agente del servizio clienti sta aiutando il cliente nello storefront
-;y_qualifying_group_types;operator;Operatore;Operatore di selezione tipo gruppo
-;y_qualifying_group_types;groupTypes;Tipi di gruppo;Lista dei tipi di gruppo che danno diritto alla promozione
-;y_order_threshold_perfect_partner;catalog;Filtra selezione in base al catalogo;Il valore catalogo selezionato verrà utilizzato per filtrare i dati all’interno dei campi associati
-;y_order_threshold_perfect_partner;product;Prodotto partner perfetto;Prodotto partner offerto scontato
-;y_order_threshold_perfect_partner;cart_threshold;Valore soglia totale carrello acquisti;Totale ordine da raggiungere per avere diritto alla promozione. Ogni valuta ha un valore diverso e tutte le valute che possono essere idonee per l'ordine devono avere un valore specifico.
-;y_order_threshold_perfect_partner;is_discounted_price_included;Inclusione del prezzo scontato nel calcolo del totale;Inclusione del prezzo scontato del prodotto partner nel totale dell’ordine in fase di confronto con il valore soglia.
+;y_cart_total;operator;Operador;Operador para comparar o valor total do carrinho de compras
+;y_cart_total;value;Valor total do carrinho de compras;Mapeamento da moeda e valor total do carrinho a ser utilizado
+;y_qualifying_products;operator;Operador;Operador para comparar a quantidade necessário para os produtos que se qualificam
+;y_qualifying_products;quantity;Quantidade por entrada do pedido;A quantidade de produtos que se qualificam necessária (por entrada do pedido)
+;y_qualifying_products;products_operator;Operador de seleção do produto;Selecionar QUALQUER produto ou TODOS os produtos da lista de produtos que se qualificam
+;y_qualifying_products;products;Produtos;Lista de produtos que se qualificam
+;y_qualifying_products;catalog;Seleção de filtro por catálogo;O valor de catálogo selecionado será utilizado para fins de filtragem nos campos associados.
+;y_qualifying_categories;operator;Operador;Operador para comparar a quantidade necessária para os produtos das categorias que se qualificam
+;y_qualifying_categories;quantity;Quantidade por entrada do pedido;A quantidade necessária de produtos das categorias que se qualificam (por entrada do pedido)
+;y_qualifying_categories;categories_operator;Operador de seleção de categoria;Selecionar QUALQUER categoria ou TODAS as categorias da lista de categorias que se qualificam
+;y_qualifying_categories;categories;Categorias;Lista de categorias que se qualificam
+;y_qualifying_categories;excluded_categories;Categorias excluídas;A lista de subcategorias a serem excluídas das categorias que se qualificam
+;y_qualifying_categories;excluded_products;Produtos excluídos;A lista de produtos das categorias que se qualificam a serem excluídos
+;y_qualifying_categories;catalog;Seleção de filtro por catálogo;O valor de catálogo selecionado será utilizado para fins de filtragem nos campos associados.
+;y_target_customers;customer_groups_operator;Operador de seleção de grupo de clientes;O cliente deve fazer parte de QUALQUER ou TODOS os grupos de clientes
+;y_target_customers;customer_groups;Grupos de clientes;Lista de grupos de clientes que se qualificam
+;y_target_customers;customers;Clientes;Lista de clientes que se qualificam
+;y_target_customers;excluded_customer_groups;Grupos de clientes excluídos;Lista de subgrupos que devem ser excluídos dos grupos de clientes que se qualificam
+;y_target_customers;excluded_customers;Clientes excluídos;Lista de clientes que devem ser excluídos dos grupos de clientes que se qualificam
+;y_product_price;operator;Operador;Operador para comparar o valor do produto
+;y_product_price;value;Limite de preço;Mapa da moeda e do valor limite dos produtos a ser usado para se qualificar para esta promoção
+;y_customer_support;value;Sessão de serviço assistido ativa;Ativa a promoção com base na presença ou não de um agente de atendimento ajudando o cliente na frente de loja
+;y_qualifying_group_types;operator;Operador;Operador de seleção do tipo de grupo
+;y_qualifying_group_types;groupTypes;Tipos de grupo;Lista de tipos de grupo que se qualificam
+;y_order_threshold_perfect_partner;catalog;Seleção de filtro por catálogo;O valor de catálogo selecionado será utilizado para fins de filtragem nos campos associados.
+;y_order_threshold_perfect_partner;product;Produto do parceiro perfeito;Produto do parceiro perfeito oferecido com um desconto
+;y_order_threshold_perfect_partner;cart_threshold;Valor limite total do carrinho de compras;O total do pedido que precisa ser alcançado para se qualificar para esta promoção. Cada moeda tem um valor diferente, e todas as moedas que poderiam se qualificar para este pedido precisam ter um valor especificado.
+;y_order_threshold_perfect_partner;is_discounted_price_included;Inclua o preço descontado ao calcular o total;Incluir o preço descontado do produto do parceiro no total do pedido ao comparar com o valor limite.
 
 ############################# ACTIONS ##########################
 
 INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;cart_discounts;Sconti ai carrelli acquisti
-;product_discounts;Sconti prodotto
-;partner_product_discounts;Sconti prodotto del partner
-;subset_discounts;Sottoinsieme di sconti ai carrelli acquisti
-;shipping;Spedizione
+;cart_discounts;Descontos do carrinho de compras
+;product_discounts;Descontos do produto
+;partner_product_discounts;Descontos do produto de parceiro
+;subset_discounts;Subconjunto de descontos do carrinho de compras
+;shipping;Expedição
 
 INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_order_percentage_discount;Sconto percentuale sul carrello acquisti;Applicare lo sconto del {value,number}% sul totale del carrello acquisti;
-;y_order_fixed_discount;Sconto fisso sul carrello acquisti;Applicare lo sconto del {value} sul totale del carrello acquisti;
-;y_order_entry_percentage_discount;Sconto percentuale sui prodotti;Applicare lo sconto del {value,number}% sui prodotti che danno diritto alla promozione;
-;y_order_entry_fixed_discount;Sconto fisso sui prodotti;Applicare lo sconto del {value} sui prodotti che danno diritto alla promozione;
-;y_order_entry_fixed_price;Prezzo fisso previsto sui prodotti;Applicare prezzo fisso previsto {value} sui prodotti che danno diritto alla promozione;
-;y_target_bundle_price;Prezzo pacchetto previsto;Applicare prezzo previsto {value} al pacchetto;
-;y_free_gift;Omaggio;Regalare {quantity} {product} prodotto/i;
-;y_partner_order_entry_percentage_discount;Sconto percentuale sui prodotti del partner;Applicare lo sconto del {value,number}% sui prodotti del partner;
-;y_partner_order_entry_fixed_discount;Sconto fisso sui prodotti del partner;Applicare lo sconto del {value} sui prodotti del partner;
-;y_partner_order_entry_fixed_price;Prezzo fisso previsto sui prodotti del partner;Applicare prezzo fisso previsto {value} sui prodotti del partner;
-;y_subset_order_entry_percentage_discount;Sconto percentuale sui prodotti del sottoinsieme;Applicare lo sconto del {value,number}% sui prodotti del sottoinsieme;
-;y_subset_order_entry_fixed_discount;Sconto fisso sui prodotti del sottoinsieme;Applicare lo sconto di {value}{select_currency} sui prodotti del sottoinsieme;
+;y_order_percentage_discount;Desconto percentual no carrinho de compras;Aplicar {value,number}% de desconto no total do carrinho de compras;
+;y_order_fixed_discount;Desconto fixo no carrinho de compras;Aplicar {value} de desconto no total do carrinho de compras;
+;y_order_entry_percentage_discount;Desconto percentual sobre os produtos;Aplicar {value,number}% de desconto sobre os produtos que se qualificam;
+;y_order_entry_fixed_discount;Desconto fixo sobre os produtos;Aplicar {value} de desconto sobre os produtos que se qualificam;
+;y_order_entry_fixed_price;Preço destino fixo nos produtos;Aplicar preço destino {value} nos produtos que se qualificam;
+;y_target_bundle_price;Preço conjunto destino;Aplicar preço destino {value} ao conjunto;
+;y_free_gift;Brinde;Dar {quantity} {product} produto(s) de brinde;
+;y_partner_order_entry_percentage_discount;Desconto percentual sobre os produtos de parceiro;Aplicar {value,number}% de desconto sobre os produtos de parceiro;
+;y_partner_order_entry_fixed_discount;Desconto fixo sobre os produtos de parceiro;Aplicar {value} de desconto sobre os produtos de parceiro;
+;y_partner_order_entry_fixed_price;Preço destino fixo nos produtos de parceiro;Aplicar preço destino {value} nos produtos de parceiro;
+;y_subset_order_entry_percentage_discount;Desconto percentual sobre os produtos de subconjunto;Aplicar {value,number}% de desconto sobre os produtos de subconjunto;
+;y_subset_order_entry_fixed_discount;Desconto fixo sobre os produtos de subconjunto;Aplicar {value}{select_currency} de desconto sobre os produtos de subconjunto;
 
-;y_change_delivery_mode;Modifica modalità di consegna;Modificare modalità di consegna in {delivery_mode};
-;y_trigger_message;Avviare messaggio regola;Visualizzare messaggio per la regola;
+;y_change_delivery_mode;Alterar modo de entrega;Alterar modo de entrega para {delivery_mode};
+;y_trigger_message;Acionar mensagem de regra;Exibir a mensagem para a regra;
 
 INSERT_UPDATE RuleActionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_order_percentage_discount;value;Valore sconto percentuale;Sconto percentuale che sarà applicato al totale del carrello acquisti
-;y_order_fixed_discount;value;Valore assoluto sconto;Mappa della divisa e del valore dello sconto assoluto che sarà applicato al totale del carrello acquisti
-;y_order_entry_percentage_discount;value;Valore sconto percentuale;Sconto percentuale che sarà applicato al totale dei prodotti che danno diritto alla promozione
-;y_order_entry_fixed_discount;value;Valore assoluto sconto;Mappa della divisa e del valore dello sconto assoluto che sarà applicato ai prodotti che danno diritto alla promozione
-;y_order_entry_fixed_price;value;Prezzo fisso previsto;Mappa della divisa e del valore del prezzo previsto che sarà applicato ai prodotti che danno diritto alla promozione
-;y_target_bundle_price;value;Prezzo pacchetto previsto;Mappa della divisa e del valore del prezzo previsto che sarà applicato al pacchetto
-;y_target_bundle_price;selection_strategy;Strategia di selezione;La strategia da utilizzare per selezionare i prodotti quando ci sono più articoli nel carrello acquisti che danno diritto alle promozioni per il pacchetto
-;y_target_bundle_price;qualifying_containers;Quantità prodotto pacchetto;Mappa degli ID contenitore e rispettive quantità che costituiscono il pacchetto necessario
-;y_free_gift;product;Omaggio;Il prodotto da aggiungere al carrello acquisti automaticamente e regalato
-;y_free_gift;quantity;Quantità;La quantità di articoli omaggio
-;y_free_gift;catalog;Filtra selezione in base al catalogo;Il valore catalogo selezionato verrà utilizzato per filtrare i dati all’interno dei campi associati
-;y_free_gift;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti che danno diritto alle promozioni
-;y_partner_order_entry_percentage_discount;value;Valore sconto percentuale;Sconto percentuale che sarà applicato ai prodotti del partner
-;y_partner_order_entry_percentage_discount;selection_strategy;Strategia di selezione;La strategia da utilizzare per selezionare i prodotti quando ci sono più articoli nel carrello acquisti che danno diritto alle promozioni per la promozione
-;y_partner_order_entry_percentage_discount;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti che danno diritto alle promozioni
-;y_partner_order_entry_percentage_discount;target_containers;Contenitori prodotti di destinazione;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti di destinazione del partner
-;y_partner_order_entry_fixed_discount;value;Valore assoluto sconto;Mappa della divisa e del valore del prezzo previsto che sarà applicato ai prodotti del partner.
-;y_partner_order_entry_fixed_discount;selection_strategy;Strategia di selezione;La strategia da utilizzare per selezionare i prodotti quando ci sono più articoli nel carrello acquisti che danno diritto alle promozioni per la promozione
-;y_partner_order_entry_fixed_discount;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti che danno diritto alle promozioni
-;y_partner_order_entry_fixed_discount;target_containers;Contenitori prodotti di destinazione;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti di destinazione del partner
-;y_partner_order_entry_fixed_price;value;Prezzo fisso previsto;Mappa della divisa e del valore del prezzo previsto che sarà applicato ai prodotti del partner.
-;y_partner_order_entry_fixed_price;selection_strategy;Strategia di selezione;La strategia da utilizzare per selezionare i prodotti quando ci sono più articoli nel carrello acquisti che danno diritto alle promozioni per la promozione
-;y_partner_order_entry_fixed_price;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti che danno diritto alle promozioni
-;y_partner_order_entry_fixed_price;target_containers;Contenitori prodotti di destinazione;Mappa degli ID contenitore e rispettive quantità che costituiscono i prodotti di destinazione del partner
-;y_subset_order_entry_percentage_discount;select_currency;Divisa;Divisa soglia del sottoinsieme
-;y_subset_order_entry_percentage_discount;value;Valore sconto percentuale;Sconto percentuale che sarà applicato ai prodotti del sottoinsieme
-;y_subset_order_entry_percentage_discount;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e soglie di prezzo che costituiscono i prodotti del sottoinsieme
-;y_subset_order_entry_percentage_discount;target_containers;Contenitori prodotti di destinazione;La lista di sconti ID contenitore sarà avviata il
+;y_order_percentage_discount;value;Valor do desconto percentual;Desconto percentual que será aplicado ao total do carrinho de compras
+;y_order_fixed_discount;value;Valor do desconto absoluto;Mapa da moeda e do valor do desconto absoluto que será aplicado sobre o total do carrinho de compras
+;y_order_entry_percentage_discount;value;Valor do desconto percentual;Desconto percentual que será aplicado aos produtos que se qualificam
+;y_order_entry_fixed_discount;value;Valor do desconto absoluto;Mapa da moeda e do valor do desconto absoluto que será aplicado sobre os produtos que se qualificam
+;y_order_entry_fixed_price;value;Preço fixo de destino;Mapa da moeda e do valor do preço destino que será aplicado sobre os produtos que se qualificam
+;y_target_bundle_price;value;Preço conjunto destino;Mapa da moeda e do valor do preço destino que será aplicado sobre o conjunto
+;y_target_bundle_price;selection_strategy;Estratégia de seleção;A estratégia a ser usada para a seleção de produtos quando vários itens do carrinho de compras se qualificarem para o conjunto
+;y_target_bundle_price;qualifying_containers;Quantidades de produto do conjunto;Mapa dos IDs de container e das respectivas quantidades que formam o conjunto necessário
+;y_free_gift;product;Produto gratuito;O produto que deve ser adicionado ao carrinho de compras automaticamente e dado
+;y_free_gift;quantity;Quantidade;A quantidade de itens a serem dados
+;y_free_gift;catalog;Seleção de filtro por catálogo;O valor de catálogo selecionado será utilizado para fins de filtragem nos campos associados.
+;y_free_gift;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e das respectivas quantidades que formam os produtos que se qualificam
+;y_partner_order_entry_percentage_discount;value;Valor do desconto percentual;Desconto percentual que será aplicado aos produtos de parceiro
+;y_partner_order_entry_percentage_discount;selection_strategy;Estratégia de seleção;A estratégia a ser usada para a seleção de produtos quando vários itens do carrinho de compras se qualificarem para a ação
+;y_partner_order_entry_percentage_discount;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e das respectivas quantidades que formam os produtos que se qualificam
+;y_partner_order_entry_percentage_discount;target_containers;Containers de produto alvo;Mapa dos IDs de container e das respectivas quantidades que formam os produtos de parceiro alvo
+;y_partner_order_entry_fixed_discount;value;Valor do desconto absoluto;Mapeamento da moeda e do valor do preço destino que será aplicado sobre os produtos de parceiro
+;y_partner_order_entry_fixed_discount;selection_strategy;Estratégia de seleção;A estratégia a ser usada para a seleção de produtos quando vários itens do carrinho de compras se qualificarem para a ação
+;y_partner_order_entry_fixed_discount;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e das respectivas quantidades que formam os produtos que se qualificam
+;y_partner_order_entry_fixed_discount;target_containers;Containers de produto alvo;Mapa dos IDs de container e das respectivas quantidades que formam os produtos de parceiro alvo
+;y_partner_order_entry_fixed_price;value;Preço fixo de destino;Mapa da moeda e do valor do preço destino que será aplicado sobre os produtos de parceiro
+;y_partner_order_entry_fixed_price;selection_strategy;Estratégia de seleção;A estratégia a ser usada para a seleção de produtos quando vários itens do carrinho de compras se qualificarem para a ação
+;y_partner_order_entry_fixed_price;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e das respectivas quantidades que formam os produtos que se qualificam
+;y_partner_order_entry_fixed_price;target_containers;Containers de produto alvo;Mapa dos IDs de container e das respectivas quantidades que formam os produtos de parceiro alvo
+;y_subset_order_entry_percentage_discount;select_currency;Moeda;Moeda limite de subconjunto
+;y_subset_order_entry_percentage_discount;value;Valor do desconto percentual;Desconto percentual que será aplicado aos produtos de subconjunto
+;y_subset_order_entry_percentage_discount;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e dos limites de preço que formam os produtos de subconjunto
+;y_subset_order_entry_percentage_discount;target_containers;Containers de produto alvo;Lista de desconto de IDs de container será acionada em
 
-;y_subset_order_entry_fixed_discount;select_currency;Divisa;Divisa soglia del sottoinsieme
-;y_subset_order_entry_fixed_discount;value;Valore assoluto sconto;Sconto assoluto che sarà applicato ai prodotti del sottoinsieme
-;y_subset_order_entry_fixed_discount;distribute_strategy;Strategia di allocazione sconti;Strategia da utilizzare per allocare lo sconto fisso sui prodotti del sottoinsieme
-;y_subset_order_entry_fixed_discount;qualifying_containers;Contenitori prodotti che danno diritto alle promozioni;Mappa degli ID contenitore e soglie di prezzo che costituiscono i prodotti del sottoinsieme
-;y_subset_order_entry_fixed_discount;target_containers;Contenitori prodotti di destinazione;La lista di sconti ID contenitore sarà avviata il
+;y_subset_order_entry_fixed_discount;select_currency;Moeda;Moeda limite de subconjunto
+;y_subset_order_entry_fixed_discount;value;Valor do desconto absoluto;Desconto absoluto que será aplicado aos produtos de subconjunto
+;y_subset_order_entry_fixed_discount;distribute_strategy;Estratégia de alocação de desconto;A estratégia a ser utilizada para alocar desconto fixo em produtos de subconjunto
+;y_subset_order_entry_fixed_discount;qualifying_containers;Containers de produto que se qualificam;Mapa dos IDs de container e dos limites de preço que formam os produtos de subconjunto
+;y_subset_order_entry_fixed_discount;target_containers;Containers de produto alvo;Lista de desconto de IDs de container será acionada em
 
 
-;y_change_delivery_mode;delivery_mode;Modalità di consegna;La modalità di consegna da applicare al carrello acquisti come risultato di una promozione
+;y_change_delivery_mode;delivery_mode;Modo de entrega;O modo de entrega a ser aplicado no carrinho de compras como resultado da ação
 
 #% endif:

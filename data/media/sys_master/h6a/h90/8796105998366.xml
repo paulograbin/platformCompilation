@@ -5,16 +5,14 @@
 <base>
 	<search>
 		<search-properties>
-			<property qualifier="Country.name"/>
-			<property qualifier="Country.isocode"/>
-			<property qualifier="Country.active"/>
+			<property qualifier="Currency.isocode"/>
+			<property qualifier="Currency.name"/>
 		</search-properties>
 		<sort-properties>
 		<property qualifier="Item.modifiedtime"/>
-			<property qualifier="Country.name"/>
-			<property qualifier="Country.isocode"/>
-			<property qualifier="Country.active"/>
+			<property qualifier="Currency.isocode"/>
+			<property qualifier="Currency.name"/>
 		</sort-properties>
 	</search>
-	<label spring-bean="countryLabelProvider"/>
+	<label spring-bean="currencyLabelProvider"/>
 </base>

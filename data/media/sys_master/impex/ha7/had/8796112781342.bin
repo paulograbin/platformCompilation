@@ -9,31 +9,31 @@
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
 
-$lang=hi
+$lang=pl
 
 #% if: de.hybris.platform.servicelayer.i18n.util.LanguageUtils.isLanguagePresent("$lang")
 
 ############################# CONDITIONS ##########################
 
 INSERT_UPDATE RuleConditionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;सामान्य
+;general;Ogólne
 
 INSERT_UPDATE RuleConditionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_group;समूह;{ऑपरेटर};
-;y_container;कंटेनर;{id};
-;y_rule_executed;निष्पादित नियम;कोड {नियम} निष्पादन नियम अनुमत {अनुमत};
+;y_group;Grupa;{operator};
+;y_container;Kontener;{id};
+;y_rule_executed;Reguła wykonana;Dozwolona reguła z wykonaniem {reguły} kodu {dozwolona};
 
 INSERT_UPDATE RuleConditionDefinitionParameter;definition(id)[unique=true];id[unique=true];name[lang=$lang];description[lang=$lang]
-;y_group;operator;समूह ऑपरेटर;या/और का उपयोग करके समूह में स्थितियां संयोजित करें
-;y_container;id;कंटेनर ID;कार्रवाई में संदर्भित करने हेतु कंटेनर की ID दर्ज करें
-;y_rule_executed;rule;कार्रवाई नियम;वह क्रिया या कार्रवाई दर्ज करें जो इस नियम को रन करना अनुमत करती या नहीं करती है
-;y_rule_executed;allowed;क्रिया नियम निष्पादन अनुमत;क्रिया नियम निष्पादन अनुमत या नहीं
+;y_group;operator;Operator grupy;Połącz warunki w grupie za pomocą LUB/I
+;y_container;id;ID kontenera;Wprowadź ID kontenera, do którego następuje odniesienie w czynnościach
+;y_rule_executed;rule;Reguła czynności;Wprowadź czynności, które zezwala lub nie zezwala na uruchomienie tej reguły
+;y_rule_executed;allowed;Dozwolone wykonanie reguły czynności;Dozwolone lub niedozwolone wykonanie reguły czynności
 
 ############################# ACTIONS ##########################
 INSERT_UPDATE RuleActionDefinitionCategory;id[unique=true];name[lang=$lang]
-;general;सामान्य
+;general;Ogólne
 
 INSERT_UPDATE RuleActionDefinition;id[unique=true];name[lang=$lang];breadcrumb[lang=$lang];
-;y_halt;हाल्ट नियम निष्पादन;निम्नलिखित नियमों में से किसी एक का हाल्ट निष्पादन;
+;y_halt;Wykonanie reguły zatrzymania;Wykonanie zatrzymania następujących reguł;
 
 #% endif:

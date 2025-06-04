@@ -1,21 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
 -->
-<editor>
+<content-elements>
+	<content-element type="CMSParagraphComponent" name="type.paragraphelement.name" description="type.paragraphelement.description"
+		image="cmscockpit/images/ContentElementParagraph.gif" refImage="cmscockpit/images/ContentElementParagraphReference.gif"
+		imageSmall="cmscockpit/images/ContentElementParagraphSmall.gif" />
 
-	<group qualifier="Address" visible="true" initially-opened="true">
-		<label key="admincockpit.editorArea.address" />
-		
-		<property qualifier="Address.owner" visible="true" />
-		<property qualifier="Address.country" visible="true" />
-		<property qualifier="Address.region" visible="true" />
-		<property qualifier="Address.district" visible="true" />
-		<property qualifier="Address.postalcode" visible="true" />
-		<property qualifier="Address.town" visible="true" />
-		<property qualifier="Address.streetname" visible="true" />
-		<property qualifier="Address.streetnumber" visible="true" />
-		<property qualifier="Address.company" visible="false" />
-	</group>
-	
-</editor>
+</content-elements>
