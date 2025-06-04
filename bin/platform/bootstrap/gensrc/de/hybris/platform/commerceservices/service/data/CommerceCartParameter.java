@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:43 AM
+ * --- Generated at Jun 4, 2025, 12:27:39 PM
  * ----------------------------------------------------------------
  *
  * [y] hybris Platform
@@ -113,10 +113,6 @@ public  class CommerceCartParameter  implements java.io.Serializable
             <br/><br/><i>Generated property</i> for <code>CommerceCartParameter.modificationStatus</code> property defined at extension <code>configurablebundleservices</code>. */
 
 	private String modificationStatus;
-
-	/** <i>Generated property</i> for <code>CommerceCartParameter.xmlProduct</code> property defined at extension <code>subscriptionservices</code>. */
-
-	private String xmlProduct;
 
 	/** The configuration ID that needs to be deleted.<br/><br/><i>Generated property</i> for <code>CommerceCartParameter.configToBeDeleted</code> property defined at extension <code>sapproductconfigservices</code>. */
 
@@ -399,20 +395,6 @@ public  class CommerceCartParameter  implements java.io.Serializable
 	public String getModificationStatus()
 	{
 		return modificationStatus;
-	}
-
-
-
-	public void setXmlProduct(final String xmlProduct)
-	{
-		this.xmlProduct = xmlProduct;
-	}
-
-
-
-	public String getXmlProduct()
-	{
-		return xmlProduct;
 	}
 
 

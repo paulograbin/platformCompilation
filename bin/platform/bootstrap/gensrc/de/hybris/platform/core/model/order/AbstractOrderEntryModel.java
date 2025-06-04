@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -15,7 +15,6 @@ import de.hybris.platform.catalog.enums.ProductInfoStatus;
 import de.hybris.platform.commerceservices.order.EntryArrivalSlot;
 import de.hybris.platform.core.model.ItemModel;
 import de.hybris.platform.core.model.order.AbstractOrderModel;
-import de.hybris.platform.core.model.order.OrderEntryModel;
 import de.hybris.platform.core.model.order.delivery.DeliveryModeModel;
 import de.hybris.platform.core.model.product.ProductModel;
 import de.hybris.platform.core.model.product.UnitModel;
@@ -51,9 +50,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	
 	/**<i>Generated relation code constant for relation <code>ConsignmentEntryOrderEntryRelation</code> defining source attribute <code>consignmentEntries</code> in extension <code>basecommerce</code>.</i>*/
 	public static final String _CONSIGNMENTENTRYORDERENTRYRELATION = "ConsignmentEntryOrderEntryRelation";
-	
-	/**<i>Generated relation code constant for relation <code>MasterAbstractOrderEntry2ChildAbstractOrderEntriesRelation</code> defining source attribute <code>masterEntry</code> in extension <code>subscriptionservices</code>.</i>*/
-	public static final String _MASTERABSTRACTORDERENTRY2CHILDABSTRACTORDERENTRIESRELATION = "MasterAbstractOrderEntry2ChildAbstractOrderEntriesRelation";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.basePrice</code> attribute defined at extension <code>core</code>. */
 	public static final String BASEPRICE = "basePrice";
@@ -141,21 +137,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.costCenter</code> attribute defined at extension <code>b2bcommerce</code>. */
 	public static final String COSTCENTER = "costCenter";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.xmlProduct</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String XMLPRODUCT = "xmlProduct";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.originalSubscriptionId</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String ORIGINALSUBSCRIPTIONID = "originalSubscriptionId";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.originalOrderEntry</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String ORIGINALORDERENTRY = "originalOrderEntry";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.masterEntry</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String MASTERENTRY = "masterEntry";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.childEntries</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String CHILDENTRIES = "childEntries";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrderEntry.cpqStatusSummaryMap</code> attribute defined at extension <code>sapproductconfigservices</code>. */
 	public static final String CPQSTATUSSUMMARYMAP = "cpqStatusSummaryMap";
@@ -262,17 +243,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	{
 		final Boolean value = getPersistenceContext().getPropertyValue(CALCULATED);
 		return value != null ? value : Boolean.valueOf(false);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.childEntries</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
-	 * @return the childEntries
-	 */
-	@Accessor(qualifier = "childEntries", type = Accessor.Type.GETTER)
-	public Collection<AbstractOrderEntryModel> getChildEntries()
-	{
-		return getPersistenceContext().getPropertyValue(CHILDENTRIES);
 	}
 	
 	/**
@@ -440,16 +410,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.masterEntry</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the masterEntry
-	 */
-	@Accessor(qualifier = "masterEntry", type = Accessor.Type.GETTER)
-	public AbstractOrderEntryModel getMasterEntry()
-	{
-		return getPersistenceContext().getPropertyValue(MASTERENTRY);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.namedDeliveryDate</code> attribute defined at extension <code>basecommerce</code>. 
 	 * @return the namedDeliveryDate
 	 */
@@ -467,26 +427,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	public AbstractOrderModel getOrder()
 	{
 		return getPersistenceContext().getPropertyValue(ORDER);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.originalOrderEntry</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the originalOrderEntry - YTODO to be added to the new entry configuration: Reference to the original entry of the subscription that is upgraded
-	 */
-	@Accessor(qualifier = "originalOrderEntry", type = Accessor.Type.GETTER)
-	public OrderEntryModel getOriginalOrderEntry()
-	{
-		return getPersistenceContext().getPropertyValue(ORIGINALORDERENTRY);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.originalSubscriptionId</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the originalSubscriptionId - YTODO to be added to the new entry configuration: Id of the original subscription that is upgraded
-	 */
-	@Accessor(qualifier = "originalSubscriptionId", type = Accessor.Type.GETTER)
-	public String getOriginalSubscriptionId()
-	{
-		return getPersistenceContext().getPropertyValue(ORIGINALSUBSCRIPTIONID);
 	}
 	
 	/**
@@ -603,16 +543,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrderEntry.xmlProduct</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the xmlProduct - xmlProduct
-	 */
-	@Accessor(qualifier = "xmlProduct", type = Accessor.Type.GETTER)
-	public String getXmlProduct()
-	{
-		return getPersistenceContext().getPropertyValue(XMLPRODUCT);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.addToCartTime</code> attribute defined at extension <code>selectivecartservices</code>. 
 	 *  
 	 * @param value the addToCartTime - The time when item is added to cart.
@@ -654,17 +584,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	public void setCalculated(final Boolean value)
 	{
 		getPersistenceContext().setPropertyValue(CALCULATED, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.childEntries</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the childEntries
-	 */
-	@Accessor(qualifier = "childEntries", type = Accessor.Type.SETTER)
-	public void setChildEntries(final Collection<AbstractOrderEntryModel> value)
-	{
-		getPersistenceContext().setPropertyValue(CHILDENTRIES, value);
 	}
 	
 	/**
@@ -844,17 +763,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.masterEntry</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the masterEntry
-	 */
-	@Accessor(qualifier = "masterEntry", type = Accessor.Type.SETTER)
-	public void setMasterEntry(final AbstractOrderEntryModel value)
-	{
-		getPersistenceContext().setPropertyValue(MASTERENTRY, value);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.namedDeliveryDate</code> attribute defined at extension <code>basecommerce</code>. 
 	 *  
 	 * @param value the namedDeliveryDate
@@ -874,28 +782,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	public void setOrder(final AbstractOrderModel value)
 	{
 		getPersistenceContext().setPropertyValue(ORDER, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.originalOrderEntry</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the originalOrderEntry - YTODO to be added to the new entry configuration: Reference to the original entry of the subscription that is upgraded
-	 */
-	@Accessor(qualifier = "originalOrderEntry", type = Accessor.Type.SETTER)
-	public void setOriginalOrderEntry(final OrderEntryModel value)
-	{
-		getPersistenceContext().setPropertyValue(ORIGINALORDERENTRY, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.originalSubscriptionId</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the originalSubscriptionId - YTODO to be added to the new entry configuration: Id of the original subscription that is upgraded
-	 */
-	@Accessor(qualifier = "originalSubscriptionId", type = Accessor.Type.SETTER)
-	public void setOriginalSubscriptionId(final String value)
-	{
-		getPersistenceContext().setPropertyValue(ORIGINALSUBSCRIPTIONID, value);
 	}
 	
 	/**
@@ -1017,17 +903,6 @@ public class AbstractOrderEntryModel extends ItemModel
 	public void setUnit(final UnitModel value)
 	{
 		getPersistenceContext().setPropertyValue(UNIT, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrderEntry.xmlProduct</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the xmlProduct - xmlProduct
-	 */
-	@Accessor(qualifier = "xmlProduct", type = Accessor.Type.SETTER)
-	public void setXmlProduct(final String value)
-	{
-		getPersistenceContext().setPropertyValue(XMLPRODUCT, value);
 	}
 	
 }

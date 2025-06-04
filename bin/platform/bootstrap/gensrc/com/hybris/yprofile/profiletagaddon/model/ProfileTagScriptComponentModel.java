@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  */
 package com.hybris.yprofile.profiletagaddon.model;

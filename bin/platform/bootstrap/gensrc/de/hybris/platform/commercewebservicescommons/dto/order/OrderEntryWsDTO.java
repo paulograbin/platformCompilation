@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:45 AM
+ * --- Generated at Jun 4, 2025, 12:27:39 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -9,7 +9,6 @@
 package de.hybris.platform.commercewebservicescommons.dto.order;
 
 import java.io.Serializable;
-import de.hybris.platform.commercewebservicescommons.dto.comments.CommentWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.ConfigurationInfoWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.DeliveryModeWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.EntryArrivalSlotWsDTO;
@@ -94,10 +93,6 @@ public  class OrderEntryWsDTO  implements Serializable
 	/** List of item arrival slot<br/><br/><i>Generated property</i> for <code>OrderEntryWsDTO.arrivalSlots</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="arrivalSlots", description="List of item arrival slot") 	
 	private List<EntryArrivalSlotWsDTO> arrivalSlots;
-
-	/** List of order entry comments.<br/><br/><i>Generated property</i> for <code>OrderEntryWsDTO.comments</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="comments", description="List of order entry comments.") 	
-	private List<CommentWsDTO> comments;
 
 	/** <i>Generated property</i> for <code>OrderEntryWsDTO.url</code> property defined at extension <code>ordermanagementwebservices</code>. */
 @Schema(name="url") 	
@@ -280,16 +275,6 @@ public  class OrderEntryWsDTO  implements Serializable
 	public List<EntryArrivalSlotWsDTO> getArrivalSlots() 
 	{
 		return arrivalSlots;
-	}
-	
-	public void setComments(final List<CommentWsDTO> comments)
-	{
-		this.comments = comments;
-	}
-
-	public List<CommentWsDTO> getComments() 
-	{
-		return comments;
 	}
 	
 	public void setUrl(final String url)

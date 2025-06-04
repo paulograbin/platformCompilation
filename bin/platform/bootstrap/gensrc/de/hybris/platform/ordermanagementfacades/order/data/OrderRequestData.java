@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:40 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -120,10 +120,6 @@ public  class OrderRequestData  implements Serializable
 	/** <i>Generated property</i> for <code>OrderRequestData.allPromotionResults</code> property defined at extension <code>ordermanagementfacades</code>. */
 	
 	private Set<PromotionResultData> allPromotionResults;
-
-	/** <i>Generated property</i> for <code>OrderRequestData.costCenterCode</code> property defined at extension <code>b2bordermanagementfacades</code>. */
-	
-	private String costCenterCode;
 	
 	public OrderRequestData()
 	{
@@ -358,16 +354,6 @@ public  class OrderRequestData  implements Serializable
 	public Set<PromotionResultData> getAllPromotionResults() 
 	{
 		return allPromotionResults;
-	}
-	
-	public void setCostCenterCode(final String costCenterCode)
-	{
-		this.costCenterCode = costCenterCode;
-	}
-
-	public String getCostCenterCode() 
-	{
-		return costCenterCode;
 	}
 	
 

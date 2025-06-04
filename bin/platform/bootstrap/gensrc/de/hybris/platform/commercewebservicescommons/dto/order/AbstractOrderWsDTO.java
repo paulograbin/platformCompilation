@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:42 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -9,9 +9,6 @@
 package de.hybris.platform.commercewebservicescommons.dto.order;
 
 import java.io.Serializable;
-import de.hybris.platform.chinesecommercewebservicescommons.dto.ChinesePaymentInfoWsDTO;
-import de.hybris.platform.chinesecommercewebservicescommons.dto.DeliveryTimeSlotWsDTO;
-import de.hybris.platform.chinesecommercewebservicescommons.dto.TaxInvoiceWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.DeliveryModeWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.DeliveryOrderEntryGroupWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.EntryGroupWsDTO;
@@ -163,22 +160,6 @@ public  class AbstractOrderWsDTO  implements Serializable
 	/** Email of customer.<br/><br/><i>Generated property</i> for <code>AbstractOrderWsDTO.sapCustomerEmail</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="sapCustomerEmail", description="Email of customer.", example="xxx.yy@zz.com") 	
 	private String sapCustomerEmail;
-
-	/** <i>Generated property</i> for <code>AbstractOrderWsDTO.deliveryTimeSlot</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="deliveryTimeSlot") 	
-	private DeliveryTimeSlotWsDTO deliveryTimeSlot;
-
-	/** Chinese payment info<br/><br/><i>Generated property</i> for <code>AbstractOrderWsDTO.chinesePaymentInfo</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="chinesePaymentInfo", description="Chinese payment info") 	
-	private ChinesePaymentInfoWsDTO chinesePaymentInfo;
-
-	/** Payment status<br/><br/><i>Generated property</i> for <code>AbstractOrderWsDTO.paymentStatus</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="paymentStatus", description="Payment status", example="PAID") 	
-	private String paymentStatus;
-
-	/** <i>Generated property</i> for <code>AbstractOrderWsDTO.taxInvoice</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="taxInvoice") 	
-	private TaxInvoiceWsDTO taxInvoice;
 	
 	public AbstractOrderWsDTO()
 	{
@@ -493,46 +474,6 @@ public  class AbstractOrderWsDTO  implements Serializable
 	public String getSapCustomerEmail() 
 	{
 		return sapCustomerEmail;
-	}
-	
-	public void setDeliveryTimeSlot(final DeliveryTimeSlotWsDTO deliveryTimeSlot)
-	{
-		this.deliveryTimeSlot = deliveryTimeSlot;
-	}
-
-	public DeliveryTimeSlotWsDTO getDeliveryTimeSlot() 
-	{
-		return deliveryTimeSlot;
-	}
-	
-	public void setChinesePaymentInfo(final ChinesePaymentInfoWsDTO chinesePaymentInfo)
-	{
-		this.chinesePaymentInfo = chinesePaymentInfo;
-	}
-
-	public ChinesePaymentInfoWsDTO getChinesePaymentInfo() 
-	{
-		return chinesePaymentInfo;
-	}
-	
-	public void setPaymentStatus(final String paymentStatus)
-	{
-		this.paymentStatus = paymentStatus;
-	}
-
-	public String getPaymentStatus() 
-	{
-		return paymentStatus;
-	}
-	
-	public void setTaxInvoice(final TaxInvoiceWsDTO taxInvoice)
-	{
-		this.taxInvoice = taxInvoice;
-	}
-
-	public TaxInvoiceWsDTO getTaxInvoice() 
-	{
-		return taxInvoice;
 	}
 	
 

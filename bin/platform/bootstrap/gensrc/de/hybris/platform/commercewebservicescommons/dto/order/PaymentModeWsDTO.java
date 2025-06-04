@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:43 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -36,10 +36,6 @@ public  class PaymentModeWsDTO  implements Serializable
 	/** Payment mode description<br/><br/><i>Generated property</i> for <code>PaymentModeWsDTO.description</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="description", description="Payment mode description") 	
 	private String description;
-
-	/** Logo url of payment mode<br/><br/><i>Generated property</i> for <code>PaymentModeWsDTO.pspLogoUrl</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="pspLogoUrl", description="Logo url of payment mode", example="/medias/wechatpay.png?context=CONTEXT") 	
-	private String pspLogoUrl;
 	
 	public PaymentModeWsDTO()
 	{
@@ -74,16 +70,6 @@ public  class PaymentModeWsDTO  implements Serializable
 	public String getDescription() 
 	{
 		return description;
-	}
-	
-	public void setPspLogoUrl(final String pspLogoUrl)
-	{
-		this.pspLogoUrl = pspLogoUrl;
-	}
-
-	public String getPspLogoUrl() 
-	{
-		return pspLogoUrl;
 	}
 	
 

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:42 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -26,7 +26,6 @@ import de.hybris.platform.commercefacades.product.data.VariantOptionData;
 import de.hybris.platform.commerceservices.product.data.SolrFirstVariantCategoryEntryData;
 import de.hybris.platform.configurablebundlefacades.data.BundleTemplateData;
 import de.hybris.platform.entitlementfacades.data.EntitlementData;
-import de.hybris.platform.subscriptionfacades.data.SubscriptionTermData;
 import de.hybris.platform.yacceleratorfacades.product.data.GenderData;
 import java.util.Collection;
 import java.util.List;
@@ -202,25 +201,9 @@ public  class ProductData  implements Serializable
 	
 	private List<EntitlementData> entitlements;
 
-	/** <i>Generated property</i> for <code>ProductData.itemType</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String itemType;
-
-	/** <i>Generated property</i> for <code>ProductData.subscriptionTerm</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private SubscriptionTermData subscriptionTerm;
-
 	/** <i>Generated property</i> for <code>ProductData.keywords</code> property defined at extension <code>acceleratorfacades</code>. */
 	
 	private Set<String> keywords;
-
-	/** <i>Generated property</i> for <code>ProductData.firstVariantCode</code> property defined at extension <code>b2bwebservicescommons</code>. */
-	
-	private String firstVariantCode;
-
-	/** <i>Generated property</i> for <code>ProductData.firstVariantImage</code> property defined at extension <code>b2bwebservicescommons</code>. */
-	
-	private String firstVariantImage;
 
 	/** <i>Generated property</i> for <code>ProductData.timedAccessPromotion</code> property defined at extension <code>timedaccesspromotionenginefacades</code>. */
 	
@@ -635,26 +618,6 @@ public  class ProductData  implements Serializable
 		return entitlements;
 	}
 	
-	public void setItemType(final String itemType)
-	{
-		this.itemType = itemType;
-	}
-
-	public String getItemType() 
-	{
-		return itemType;
-	}
-	
-	public void setSubscriptionTerm(final SubscriptionTermData subscriptionTerm)
-	{
-		this.subscriptionTerm = subscriptionTerm;
-	}
-
-	public SubscriptionTermData getSubscriptionTerm() 
-	{
-		return subscriptionTerm;
-	}
-	
 	public void setKeywords(final Set<String> keywords)
 	{
 		this.keywords = keywords;
@@ -663,26 +626,6 @@ public  class ProductData  implements Serializable
 	public Set<String> getKeywords() 
 	{
 		return keywords;
-	}
-	
-	public void setFirstVariantCode(final String firstVariantCode)
-	{
-		this.firstVariantCode = firstVariantCode;
-	}
-
-	public String getFirstVariantCode() 
-	{
-		return firstVariantCode;
-	}
-	
-	public void setFirstVariantImage(final String firstVariantImage)
-	{
-		this.firstVariantImage = firstVariantImage;
-	}
-
-	public String getFirstVariantImage() 
-	{
-		return firstVariantImage;
 	}
 	
 	public void setTimedAccessPromotion(final PromotionData timedAccessPromotion)

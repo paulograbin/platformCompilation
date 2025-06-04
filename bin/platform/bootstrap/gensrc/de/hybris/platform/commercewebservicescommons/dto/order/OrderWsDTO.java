@@ -1,21 +1,17 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package de.hybris.platform.commercewebservicescommons.dto.order;
 
-import de.hybris.platform.b2bwebservicescommons.dto.company.B2BCostCenterWsDTO;
-import de.hybris.platform.b2bwebservicescommons.dto.company.B2BPermissionResultWsDTO;
-import de.hybris.platform.b2bwebservicescommons.dto.company.B2BUnitWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.AbstractOrderWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.ConsignmentWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.OrderEntryWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.AddressWsDTO;
-import de.hybris.platform.commercewebservicescommons.dto.user.UserWsDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 import java.util.List;
@@ -72,30 +68,6 @@ public  class OrderWsDTO extends AbstractOrderWsDTO
 	/** Boolean flag showing if order is returnable<br/><br/><i>Generated property</i> for <code>OrderWsDTO.returnable</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="returnable", description="Boolean flag showing if order is returnable", example="true") 	
 	private Boolean returnable;
-
-	/** <i>Generated property</i> for <code>OrderWsDTO.totalUnitCount</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="totalUnitCount") 	
-	private Integer totalUnitCount;
-
-	/** Purchase order number<br/><br/><i>Generated property</i> for <code>OrderWsDTO.purchaseOrderNumber</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="purchaseOrderNumber", description="Purchase order number") 	
-	private String purchaseOrderNumber;
-
-	/** Customer who placed the order. This field is only filled in if the user is a member of an organization.<br/><br/><i>Generated property</i> for <code>OrderWsDTO.orgCustomer</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="orgCustomer", description="Customer who placed the order. This field is only filled in if the user is a member of an organization.") 	
-	private UserWsDTO orgCustomer;
-
-	/** Cost Center associated with the order<br/><br/><i>Generated property</i> for <code>OrderWsDTO.costCenter</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="costCenter", description="Cost Center associated with the order") 	
-	private B2BCostCenterWsDTO costCenter;
-
-	/** Results of permissions associated with the order<br/><br/><i>Generated property</i> for <code>OrderWsDTO.permissionResults</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="permissionResults", description="Results of permissions associated with the order") 	
-	private List<B2BPermissionResultWsDTO> permissionResults;
-
-	/** User's organization unit at order creation. This field is only filled in if the user is a member of an organization.<br/><br/><i>Generated property</i> for <code>OrderWsDTO.orgUnit</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="orgUnit", description="User's organization unit at order creation. This field is only filled in if the user is a member of an organization.") 	
-	private B2BUnitWsDTO orgUnit;
 
 	/** <i>Generated property</i> for <code>OrderWsDTO.paymentAddress</code> property defined at extension <code>ordermanagementwebservices</code>. */
 @Schema(name="paymentAddress") 	
@@ -204,66 +176,6 @@ public  class OrderWsDTO extends AbstractOrderWsDTO
 	public Boolean getReturnable() 
 	{
 		return returnable;
-	}
-	
-	public void setTotalUnitCount(final Integer totalUnitCount)
-	{
-		this.totalUnitCount = totalUnitCount;
-	}
-
-	public Integer getTotalUnitCount() 
-	{
-		return totalUnitCount;
-	}
-	
-	public void setPurchaseOrderNumber(final String purchaseOrderNumber)
-	{
-		this.purchaseOrderNumber = purchaseOrderNumber;
-	}
-
-	public String getPurchaseOrderNumber() 
-	{
-		return purchaseOrderNumber;
-	}
-	
-	public void setOrgCustomer(final UserWsDTO orgCustomer)
-	{
-		this.orgCustomer = orgCustomer;
-	}
-
-	public UserWsDTO getOrgCustomer() 
-	{
-		return orgCustomer;
-	}
-	
-	public void setCostCenter(final B2BCostCenterWsDTO costCenter)
-	{
-		this.costCenter = costCenter;
-	}
-
-	public B2BCostCenterWsDTO getCostCenter() 
-	{
-		return costCenter;
-	}
-	
-	public void setPermissionResults(final List<B2BPermissionResultWsDTO> permissionResults)
-	{
-		this.permissionResults = permissionResults;
-	}
-
-	public List<B2BPermissionResultWsDTO> getPermissionResults() 
-	{
-		return permissionResults;
-	}
-	
-	public void setOrgUnit(final B2BUnitWsDTO orgUnit)
-	{
-		this.orgUnit = orgUnit;
-	}
-
-	public B2BUnitWsDTO getOrgUnit() 
-	{
-		return orgUnit;
 	}
 	
 	public void setPaymentAddress(final AddressWsDTO paymentAddress)

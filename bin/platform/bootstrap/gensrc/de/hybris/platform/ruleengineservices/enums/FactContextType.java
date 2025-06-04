@@ -12,10 +12,6 @@ import de.hybris.platform.core.HybrisEnumValue;
 public enum FactContextType implements HybrisEnumValue
 {
 	/**
-	 * Generated enum value for FactContextType.PRODUCTCONFIG_DEFAULT_CONFIGURATION declared at extension sapproductconfigrules.
-	 */
-	PRODUCTCONFIG_DEFAULT_CONFIGURATION("PRODUCTCONFIG_DEFAULT_CONFIGURATION"),
-	/**
 	 * Generated enum value for FactContextType.PROMOTION_ORDER declared at extension promotionengineservices.
 	 */
 	PROMOTION_ORDER("PROMOTION_ORDER"),

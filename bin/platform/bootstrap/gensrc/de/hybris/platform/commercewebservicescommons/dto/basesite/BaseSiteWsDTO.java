@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -88,14 +88,6 @@ public  class BaseSiteWsDTO  implements Serializable
 	/** Captcha configuration<br/><br/><i>Generated property</i> for <code>BaseSiteWsDTO.captchaConfig</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="captchaConfig", description="Captcha configuration") 	
 	private CaptchaConfigWsDTO captchaConfig;
-
-	/** Indicates if the website supports registration<br/><br/><i>Generated property</i> for <code>BaseSiteWsDTO.registrationEnabled</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="registrationEnabled", description="Indicates if the website supports registration", example="true") 	
-	private Boolean registrationEnabled;
-
-	/** Indicates if the BaseSite requires authentication prior to use it<br/><br/><i>Generated property</i> for <code>BaseSiteWsDTO.requiresAuthentication</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="requiresAuthentication", description="Indicates if the BaseSite requires authentication prior to use it", example="true") 	
-	private Boolean requiresAuthentication;
 	
 	public BaseSiteWsDTO()
 	{
@@ -240,26 +232,6 @@ public  class BaseSiteWsDTO  implements Serializable
 	public CaptchaConfigWsDTO getCaptchaConfig() 
 	{
 		return captchaConfig;
-	}
-	
-	public void setRegistrationEnabled(final Boolean registrationEnabled)
-	{
-		this.registrationEnabled = registrationEnabled;
-	}
-
-	public Boolean getRegistrationEnabled() 
-	{
-		return registrationEnabled;
-	}
-	
-	public void setRequiresAuthentication(final Boolean requiresAuthentication)
-	{
-		this.requiresAuthentication = requiresAuthentication;
-	}
-
-	public Boolean getRequiresAuthentication() 
-	{
-		return requiresAuthentication;
 	}
 	
 

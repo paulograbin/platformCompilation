@@ -1,23 +1,19 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:43 AM
+ * --- Generated at Jun 4, 2025, 12:27:40 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package de.hybris.platform.commercewebservicescommons.dto.user;
 
-import de.hybris.platform.assistedservicewebservices.dto.image.UserAvatarWsDTO;
-import de.hybris.platform.b2bwebservicescommons.dto.company.B2BUnitWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.storesession.CurrencyWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.storesession.LanguageWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.AddressWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.PrincipalWsDTO;
-import de.hybris.platform.commercewebservicescommons.dto.user.UserWsDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
-import java.util.List;
 
 
 import java.util.Objects;
@@ -74,50 +70,6 @@ public  class UserWsDTO extends PrincipalWsDTO
 	/** Name of the default pick up location<br/><br/><i>Generated property</i> for <code>UserWsDTO.defaultPointOfServiceName</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="defaultPointOfServiceName", description="Name of the default pick up location", example="Misato") 	
 	private String defaultPointOfServiceName;
-
-	/** The latest cart operated by customer<br/><br/><i>Generated property</i> for <code>UserWsDTO.lastCartId</code> property defined at extension <code>assistedservicewebservices</code>. */
-@Schema(name="lastCartId", description="The latest cart operated by customer", example="000000001") 	
-	private String lastCartId;
-
-	/** Indicates whether customer has order. Default value is false.<br/><br/><i>Generated property</i> for <code>UserWsDTO.hasOrder</code> property defined at extension <code>assistedservicewebservices</code>. */
-@Schema(name="hasOrder", description="Indicates whether customer has order. Default value is false.", example="false") 	
-	private Boolean hasOrder;
-
-	/** <i>Generated property</i> for <code>UserWsDTO.userAvatar</code> property defined at extension <code>assistedservicewebservices</code>. */
-@Schema(name="userAvatar") 	
-	private UserAvatarWsDTO userAvatar;
-
-	/** The unit of the User<br/><br/><i>Generated property</i> for <code>UserWsDTO.orgUnit</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="orgUnit", description="The unit of the User") 	
-	private B2BUnitWsDTO orgUnit;
-
-	/** <i>Generated property</i> for <code>UserWsDTO.roles</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="roles") 	
-	private List<String> roles;
-
-	/** List of organizational approvers<br/><br/><i>Generated property</i> for <code>UserWsDTO.approvers</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="approvers", description="List of organizational approvers") 	
-	private List<UserWsDTO> approvers;
-
-	/** Boolean flag of whether the user is selected<br/><br/><i>Generated property</i> for <code>UserWsDTO.selected</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="selected", description="Boolean flag of whether the user is selected", example="true") 	
-	private Boolean selected;
-
-	/** Boolean flag of whether the user is active/enabled or not<br/><br/><i>Generated property</i> for <code>UserWsDTO.active</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="active", description="Boolean flag of whether the user is active/enabled or not", example="true") 	
-	private Boolean active;
-
-	/** Email of the user<br/><br/><i>Generated property</i> for <code>UserWsDTO.email</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="email", description="Email of the user", example="mark.rivers@rustic-hw.com") 	
-	private String email;
-
-	/** Mobile Number<br/><br/><i>Generated property</i> for <code>UserWsDTO.mobileNumber</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="mobileNumber", description="Mobile Number") 	
-	private String mobileNumber;
-
-	/** Email Language<br/><br/><i>Generated property</i> for <code>UserWsDTO.emailLanguage</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="emailLanguage", description="Email Language") 	
-	private String emailLanguage;
 	
 	public UserWsDTO()
 	{
@@ -232,116 +184,6 @@ public  class UserWsDTO extends PrincipalWsDTO
 	public String getDefaultPointOfServiceName() 
 	{
 		return defaultPointOfServiceName;
-	}
-	
-	public void setLastCartId(final String lastCartId)
-	{
-		this.lastCartId = lastCartId;
-	}
-
-	public String getLastCartId() 
-	{
-		return lastCartId;
-	}
-	
-	public void setHasOrder(final Boolean hasOrder)
-	{
-		this.hasOrder = hasOrder;
-	}
-
-	public Boolean getHasOrder() 
-	{
-		return hasOrder;
-	}
-	
-	public void setUserAvatar(final UserAvatarWsDTO userAvatar)
-	{
-		this.userAvatar = userAvatar;
-	}
-
-	public UserAvatarWsDTO getUserAvatar() 
-	{
-		return userAvatar;
-	}
-	
-	public void setOrgUnit(final B2BUnitWsDTO orgUnit)
-	{
-		this.orgUnit = orgUnit;
-	}
-
-	public B2BUnitWsDTO getOrgUnit() 
-	{
-		return orgUnit;
-	}
-	
-	public void setRoles(final List<String> roles)
-	{
-		this.roles = roles;
-	}
-
-	public List<String> getRoles() 
-	{
-		return roles;
-	}
-	
-	public void setApprovers(final List<UserWsDTO> approvers)
-	{
-		this.approvers = approvers;
-	}
-
-	public List<UserWsDTO> getApprovers() 
-	{
-		return approvers;
-	}
-	
-	public void setSelected(final Boolean selected)
-	{
-		this.selected = selected;
-	}
-
-	public Boolean getSelected() 
-	{
-		return selected;
-	}
-	
-	public void setActive(final Boolean active)
-	{
-		this.active = active;
-	}
-
-	public Boolean getActive() 
-	{
-		return active;
-	}
-	
-	public void setEmail(final String email)
-	{
-		this.email = email;
-	}
-
-	public String getEmail() 
-	{
-		return email;
-	}
-	
-	public void setMobileNumber(final String mobileNumber)
-	{
-		this.mobileNumber = mobileNumber;
-	}
-
-	public String getMobileNumber() 
-	{
-		return mobileNumber;
-	}
-	
-	public void setEmailLanguage(final String emailLanguage)
-	{
-		this.emailLanguage = emailLanguage;
-	}
-
-	public String getEmailLanguage() 
-	{
-		return emailLanguage;
 	}
 	
 

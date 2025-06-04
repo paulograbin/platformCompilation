@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:42 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -178,14 +178,6 @@ public  class ProductWsDTO  implements Serializable
 	/** Message shows why product can not be added to cart.<br/><br/><i>Generated property</i> for <code>ProductWsDTO.sapAddToCartDisabledMessage</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="sapAddToCartDisabledMessage", description="Message shows why product can not be added to cart.", example="'EF-S 60mm f/2.8 USM Macro' is not available with 'EOS450D + 18-55 IS Kit'") 	
 	private String sapAddToCartDisabledMessage;
-
-	/** <i>Generated property</i> for <code>ProductWsDTO.firstVariantCode</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="firstVariantCode") 	
-	private String firstVariantCode;
-
-	/** <i>Generated property</i> for <code>ProductWsDTO.firstVariantImage</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="firstVariantImage") 	
-	private String firstVariantImage;
 
 	/** Set of bundle templates that are identified as starter components and can initiate a bundle in the cart<br/><br/><i>Generated property</i> for <code>ProductWsDTO.bundleTemplates</code> property defined at extension <code>configurablebundleocc</code>. */
 @Schema(name="bundleTemplates", description="Set of bundle templates that are identified as starter components and can initiate a bundle in the cart") 	
@@ -538,26 +530,6 @@ public  class ProductWsDTO  implements Serializable
 	public String getSapAddToCartDisabledMessage() 
 	{
 		return sapAddToCartDisabledMessage;
-	}
-	
-	public void setFirstVariantCode(final String firstVariantCode)
-	{
-		this.firstVariantCode = firstVariantCode;
-	}
-
-	public String getFirstVariantCode() 
-	{
-		return firstVariantCode;
-	}
-	
-	public void setFirstVariantImage(final String firstVariantImage)
-	{
-		this.firstVariantImage = firstVariantImage;
-	}
-
-	public String getFirstVariantImage() 
-	{
-		return firstVariantImage;
 	}
 	
 	public void setBundleTemplates(final List<BundleTemplateWsDTO> bundleTemplates)

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -38,7 +38,6 @@ import de.hybris.platform.payment.model.PaymentTransactionModel;
 import de.hybris.platform.promotions.model.PromotionResultModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
 import de.hybris.platform.store.BaseStoreModel;
-import de.hybris.platform.subscriptionservices.model.BillingTimeModel;
 import de.hybris.platform.util.DiscountValue;
 import de.hybris.platform.util.TaxValue;
 import de.hybris.platform.workflow.model.WorkflowModel;
@@ -61,9 +60,6 @@ public class AbstractOrderModel extends ItemModel
 	
 	/**<i>Generated relation code constant for relation <code>B2BUnit2AbstractOrders</code> defining source attribute <code>Unit</code> in extension <code>b2bcommerce</code>.</i>*/
 	public static final String _B2BUNIT2ABSTRACTORDERS = "B2BUnit2AbstractOrders";
-	
-	/**<i>Generated relation code constant for relation <code>AbstractMasterOrder2AbstractChildOrderRelation</code> defining source attribute <code>parent</code> in extension <code>subscriptionservices</code>.</i>*/
-	public static final String _ABSTRACTMASTERORDER2ABSTRACTCHILDORDERRELATION = "AbstractMasterOrder2AbstractChildOrderRelation";
 	
 	/**<i>Generated relation code constant for relation <code>B2BDocument2AbstractOrder</code> defining source attribute <code>document</code> in extension <code>b2bacceleratorservices</code>.</i>*/
 	public static final String _B2BDOCUMENT2ABSTRACTORDER = "B2BDocument2AbstractOrder";
@@ -236,15 +232,6 @@ public class AbstractOrderModel extends ItemModel
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.cartIdReference</code> attribute defined at extension <code>profileservices</code>. */
 	public static final String CARTIDREFERENCE = "cartIdReference";
 	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.billingTime</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String BILLINGTIME = "billingTime";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.parent</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String PARENT = "parent";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.children</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String CHILDREN = "children";
-	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.purchaseOrderNumber</code> attribute defined at extension <code>b2bacceleratorservices</code>. */
 	public static final String PURCHASEORDERNUMBER = "purchaseOrderNumber";
 	
@@ -253,9 +240,6 @@ public class AbstractOrderModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.document</code> attribute defined at extension <code>b2bacceleratorservices</code>. */
 	public static final String DOCUMENT = "document";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.punchOutOrder</code> attribute defined at extension <code>b2bpunchout</code>. */
-	public static final String PUNCHOUTORDER = "punchOutOrder";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractOrder.appliedCouponCodes</code> attribute defined at extension <code>couponservices</code>. */
 	public static final String APPLIEDCOUPONCODES = "appliedCouponCodes";
@@ -347,16 +331,6 @@ public class AbstractOrderModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.billingTime</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the billingTime - Billing Time
-	 */
-	@Accessor(qualifier = "billingTime", type = Accessor.Type.GETTER)
-	public BillingTimeModel getBillingTime()
-	{
-		return getPersistenceContext().getPropertyValue(BILLINGTIME);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.calculated</code> attribute defined at extension <code>core</code>. 
 	 * @return the calculated
 	 */
@@ -375,17 +349,6 @@ public class AbstractOrderModel extends ItemModel
 	public String getCartIdReference()
 	{
 		return getPersistenceContext().getPropertyValue(CARTIDREFERENCE);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.children</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
-	 * @return the children
-	 */
-	@Accessor(qualifier = "children", type = Accessor.Type.GETTER)
-	public Collection<AbstractOrderModel> getChildren()
-	{
-		return getPersistenceContext().getPropertyValue(CHILDREN);
 	}
 	
 	/**
@@ -649,16 +612,6 @@ public class AbstractOrderModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.parent</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the parent
-	 */
-	@Accessor(qualifier = "parent", type = Accessor.Type.GETTER)
-	public AbstractOrderModel getParent()
-	{
-		return getPersistenceContext().getPropertyValue(PARENT);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.paymentAddress</code> attribute defined at extension <code>core</code>. 
 	 * @return the paymentAddress
 	 */
@@ -759,16 +712,6 @@ public class AbstractOrderModel extends ItemModel
 	public Collection<PromotionOrderRestrictionModel> getPromotionOrderRestrictions()
 	{
 		return getPersistenceContext().getPropertyValue(PROMOTIONORDERRESTRICTIONS);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractOrder.punchOutOrder</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 * @return the punchOutOrder - Signifies whether the order originates from a punch out process.
-	 */
-	@Accessor(qualifier = "punchOutOrder", type = Accessor.Type.GETTER)
-	public Boolean getPunchOutOrder()
-	{
-		return getPersistenceContext().getPropertyValue(PUNCHOUTORDER);
 	}
 	
 	/**
@@ -1002,17 +945,6 @@ public class AbstractOrderModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrder.billingTime</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the billingTime - Billing Time
-	 */
-	@Accessor(qualifier = "billingTime", type = Accessor.Type.SETTER)
-	public void setBillingTime(final BillingTimeModel value)
-	{
-		getPersistenceContext().setPropertyValue(BILLINGTIME, value);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Setter of <code>AbstractOrder.calculated</code> attribute defined at extension <code>core</code>. 
 	 *  
 	 * @param value the calculated
@@ -1032,17 +964,6 @@ public class AbstractOrderModel extends ItemModel
 	public void setCartIdReference(final String value)
 	{
 		getPersistenceContext().setPropertyValue(CARTIDREFERENCE, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrder.children</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the children
-	 */
-	@Accessor(qualifier = "children", type = Accessor.Type.SETTER)
-	public void setChildren(final Collection<AbstractOrderModel> value)
-	{
-		getPersistenceContext().setPropertyValue(CHILDREN, value);
 	}
 	
 	/**
@@ -1353,17 +1274,6 @@ public class AbstractOrderModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrder.parent</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the parent
-	 */
-	@Accessor(qualifier = "parent", type = Accessor.Type.SETTER)
-	public void setParent(final AbstractOrderModel value)
-	{
-		getPersistenceContext().setPropertyValue(PARENT, value);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Setter of <code>AbstractOrder.paymentAddress</code> attribute defined at extension <code>core</code>. 
 	 *  
 	 * @param value the paymentAddress
@@ -1471,17 +1381,6 @@ public class AbstractOrderModel extends ItemModel
 	public void setPromotionOrderRestrictions(final Collection<PromotionOrderRestrictionModel> value)
 	{
 		getPersistenceContext().setPropertyValue(PROMOTIONORDERRESTRICTIONS, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractOrder.punchOutOrder</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 *  
-	 * @param value the punchOutOrder - Signifies whether the order originates from a punch out process.
-	 */
-	@Accessor(qualifier = "punchOutOrder", type = Accessor.Type.SETTER)
-	public void setPunchOutOrder(final Boolean value)
-	{
-		getPersistenceContext().setPropertyValue(PUNCHOUTORDER, value);
 	}
 	
 	/**

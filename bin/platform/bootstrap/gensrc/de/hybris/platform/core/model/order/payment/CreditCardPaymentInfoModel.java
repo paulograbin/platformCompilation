@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -50,9 +50,6 @@ public class CreditCardPaymentInfoModel extends PaymentInfoModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>CreditCardPaymentInfo.issueNumber</code> attribute defined at extension <code>commerceservices</code>. */
 	public static final String ISSUENUMBER = "issueNumber";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>CreditCardPaymentInfo.subscriptionServiceId</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String SUBSCRIPTIONSERVICEID = "subscriptionServiceId";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>CreditCardPaymentInfo.subscriptionValidated</code> attribute defined at extension <code>acceleratorservices</code>. */
 	public static final String SUBSCRIPTIONVALIDATED = "subscriptionValidated";
@@ -169,16 +166,6 @@ public class CreditCardPaymentInfoModel extends PaymentInfoModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>CreditCardPaymentInfo.subscriptionServiceId</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the subscriptionServiceId - Subscription Service ID
-	 */
-	@Accessor(qualifier = "subscriptionServiceId", type = Accessor.Type.GETTER)
-	public String getSubscriptionServiceId()
-	{
-		return getPersistenceContext().getPropertyValue(SUBSCRIPTIONSERVICEID);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>CreditCardPaymentInfo.type</code> attribute defined at extension <code>core</code>. 
 	 * @return the type
 	 */
@@ -280,17 +267,6 @@ public class CreditCardPaymentInfoModel extends PaymentInfoModel
 	public void setSubscriptionId(final String value)
 	{
 		getPersistenceContext().setPropertyValue(SUBSCRIPTIONID, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>CreditCardPaymentInfo.subscriptionServiceId</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the subscriptionServiceId - Subscription Service ID
-	 */
-	@Accessor(qualifier = "subscriptionServiceId", type = Accessor.Type.SETTER)
-	public void setSubscriptionServiceId(final String value)
-	{
-		getPersistenceContext().setPropertyValue(SUBSCRIPTIONSERVICEID, value);
 	}
 	
 	/**

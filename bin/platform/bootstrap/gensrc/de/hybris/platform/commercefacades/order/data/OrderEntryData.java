@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:40 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -19,7 +19,6 @@ import de.hybris.platform.commercefacades.product.data.PriceData;
 import de.hybris.platform.commercefacades.product.data.ProductData;
 import de.hybris.platform.commercefacades.storelocator.data.PointOfServiceData;
 import de.hybris.platform.selectivecartservices.enums.CartSourceType;
-import de.hybris.platform.subscriptionfacades.data.OrderEntryPriceData;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -127,26 +126,6 @@ public  class OrderEntryData  implements Serializable
 	/** <i>Generated property</i> for <code>OrderEntryData.addable</code> property defined at extension <code>configurablebundlefacades</code>. */
 	
 	private boolean addable;
-
-	/** <i>Generated property</i> for <code>OrderEntryData.orderEntryPrices</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private List<OrderEntryPriceData> orderEntryPrices;
-
-	/** <i>Generated property</i> for <code>OrderEntryData.originalSubscriptionId</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String originalSubscriptionId;
-
-	/** <i>Generated property</i> for <code>OrderEntryData.originalOrderCode</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String originalOrderCode;
-
-	/** <i>Generated property</i> for <code>OrderEntryData.originalEntryNumber</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private int originalEntryNumber;
-
-	/** <i>Generated property</i> for <code>OrderEntryData.entryMessage</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String entryMessage;
 
 	/** <i>Generated property</i> for <code>OrderEntryData.supportedActions</code> property defined at extension <code>acceleratorfacades</code>. */
 	
@@ -433,56 +412,6 @@ public  class OrderEntryData  implements Serializable
 	public boolean isAddable() 
 	{
 		return addable;
-	}
-	
-	public void setOrderEntryPrices(final List<OrderEntryPriceData> orderEntryPrices)
-	{
-		this.orderEntryPrices = orderEntryPrices;
-	}
-
-	public List<OrderEntryPriceData> getOrderEntryPrices() 
-	{
-		return orderEntryPrices;
-	}
-	
-	public void setOriginalSubscriptionId(final String originalSubscriptionId)
-	{
-		this.originalSubscriptionId = originalSubscriptionId;
-	}
-
-	public String getOriginalSubscriptionId() 
-	{
-		return originalSubscriptionId;
-	}
-	
-	public void setOriginalOrderCode(final String originalOrderCode)
-	{
-		this.originalOrderCode = originalOrderCode;
-	}
-
-	public String getOriginalOrderCode() 
-	{
-		return originalOrderCode;
-	}
-	
-	public void setOriginalEntryNumber(final int originalEntryNumber)
-	{
-		this.originalEntryNumber = originalEntryNumber;
-	}
-
-	public int getOriginalEntryNumber() 
-	{
-		return originalEntryNumber;
-	}
-	
-	public void setEntryMessage(final String entryMessage)
-	{
-		this.entryMessage = entryMessage;
-	}
-
-	public String getEntryMessage() 
-	{
-		return entryMessage;
 	}
 	
 	public void setSupportedActions(final Set<String> supportedActions)

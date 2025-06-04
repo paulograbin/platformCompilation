@@ -359,24 +359,6 @@
 				</JarScanner>
 			</Context>
 
-			<!-- 'assistedservicewebservices' extension's context for tenant 'master' -->
-			<Context path="/assistedservicewebservices" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/assisted-services/assistedservicewebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'assistedservicewebservices' extension's context for tenant 'junit' -->
-			<Context path="/assistedservicewebservices_junit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/assisted-services/assistedservicewebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
 			<!-- 'commercewebservices' extension's context for tenant 'master' -->
 			<Context path="/occ" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/commerce-services/commercewebservices/web/webroot" >
 				<Manager pathname="" />
@@ -442,24 +424,6 @@
 
 			<!-- 'ordermanagementwebservices' extension's context for tenant 'junit' -->
 			<Context path="/ordermanagementwebservices_junit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/order-management/ordermanagementwebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'b2bordermanagementwebservices' extension's context for tenant 'master' -->
-			<Context path="/b2bordermanagementwebservices" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/order-management/b2bordermanagementwebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'b2bordermanagementwebservices' extension's context for tenant 'junit' -->
-			<Context path="/b2bordermanagementwebservices_junit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/order-management/b2bordermanagementwebservices/web/webroot" >
 				<Manager pathname="" />
 				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
@@ -640,15 +604,6 @@
 
 			<!-- 'yacceleratorstorefront' extension's context for tenant 'master' -->
 			<Context path="/yacceleratorstorefront" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/base-accelerator/deprecated/yacceleratorstorefront/web/webroot" useHttpOnly="true">
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'yb2bacceleratorstorefront' extension's context for tenant 'master' -->
-			<Context path="/yb2bacceleratorstorefront" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/custom/yb2bacceleratorstorefront/web/webroot" useHttpOnly="true">
 				<Manager pathname="" />
 				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >

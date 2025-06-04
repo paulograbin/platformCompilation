@@ -1,19 +1,16 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:42 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package de.hybris.platform.commercewebservicescommons.dto.order;
 
-import de.hybris.platform.b2bacceleratorfacades.order.data.B2BPaymentTypeData;
-import de.hybris.platform.b2bwebservicescommons.dto.company.B2BCostCenterWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.AbstractOrderWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.order.ApiMessageWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.product.PromotionResultWsDTO;
-import de.hybris.platform.commercewebservicescommons.dto.quote.QuoteWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.PrincipalWsDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
@@ -71,22 +68,6 @@ public  class CartWsDTO extends AbstractOrderWsDTO
 	/** Messages about supplementary info, warning messages related to the cart<br/><br/><i>Generated property</i> for <code>CartWsDTO._messages</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="_messages", description="Messages about supplementary info, warning messages related to the cart") 	
 	private List<ApiMessageWsDTO> _messages;
-
-	/** <i>Generated property</i> for <code>CartWsDTO.costCenter</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="costCenter") 	
-	private B2BCostCenterWsDTO costCenter;
-
-	/** <i>Generated property</i> for <code>CartWsDTO.paymentType</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="paymentType") 	
-	private B2BPaymentTypeData paymentType;
-
-	/** <i>Generated property</i> for <code>CartWsDTO.purchaseOrderNumber</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="purchaseOrderNumber") 	
-	private String purchaseOrderNumber;
-
-	/**  The Quote that this Cart is backed by.<br/><br/><i>Generated property</i> for <code>CartWsDTO.sapQuote</code> property defined at extension <code>b2bwebservicescommons</code>. */
-@Schema(name="sapQuote", description="The Quote that this Cart is backed by.") 	
-	private QuoteWsDTO sapQuote;
 	
 	public CartWsDTO()
 	{
@@ -191,46 +172,6 @@ public  class CartWsDTO extends AbstractOrderWsDTO
 	public List<ApiMessageWsDTO> get_messages() 
 	{
 		return _messages;
-	}
-	
-	public void setCostCenter(final B2BCostCenterWsDTO costCenter)
-	{
-		this.costCenter = costCenter;
-	}
-
-	public B2BCostCenterWsDTO getCostCenter() 
-	{
-		return costCenter;
-	}
-	
-	public void setPaymentType(final B2BPaymentTypeData paymentType)
-	{
-		this.paymentType = paymentType;
-	}
-
-	public B2BPaymentTypeData getPaymentType() 
-	{
-		return paymentType;
-	}
-	
-	public void setPurchaseOrderNumber(final String purchaseOrderNumber)
-	{
-		this.purchaseOrderNumber = purchaseOrderNumber;
-	}
-
-	public String getPurchaseOrderNumber() 
-	{
-		return purchaseOrderNumber;
-	}
-	
-	public void setSapQuote(final QuoteWsDTO sapQuote)
-	{
-		this.sapQuote = sapQuote;
-	}
-
-	public QuoteWsDTO getSapQuote() 
-	{
-		return sapQuote;
 	}
 	
 

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:42 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -21,7 +21,6 @@ import de.hybris.platform.commercefacades.product.data.PriceData;
 import de.hybris.platform.commercefacades.product.data.PromotionResultData;
 import de.hybris.platform.commercefacades.user.data.AddressData;
 import de.hybris.platform.commercefacades.user.data.PrincipalData;
-import de.hybris.platform.subscriptionfacades.data.OrderPriceData;
 import java.util.Date;
 import java.util.List;
 
@@ -206,14 +205,6 @@ public  class AbstractOrderData  implements Serializable
 	/** <i>Generated property</i> for <code>AbstractOrderData.sapCustomerEmail</code> property defined at extension <code>commercefacades</code>. */
 	
 	private String sapCustomerEmail;
-
-	/** <i>Generated property</i> for <code>AbstractOrderData.orderPrices</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private List<OrderPriceData> orderPrices;
-
-	/** <i>Generated property</i> for <code>AbstractOrderData.merchantCustomerId</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String merchantCustomerId;
 	
 	public AbstractOrderData()
 	{
@@ -656,26 +647,6 @@ public  class AbstractOrderData  implements Serializable
 	public String getSapCustomerEmail() 
 	{
 		return sapCustomerEmail;
-	}
-	
-	public void setOrderPrices(final List<OrderPriceData> orderPrices)
-	{
-		this.orderPrices = orderPrices;
-	}
-
-	public List<OrderPriceData> getOrderPrices() 
-	{
-		return orderPrices;
-	}
-	
-	public void setMerchantCustomerId(final String merchantCustomerId)
-	{
-		this.merchantCustomerId = merchantCustomerId;
-	}
-
-	public String getMerchantCustomerId() 
-	{
-		return merchantCustomerId;
 	}
 	
 

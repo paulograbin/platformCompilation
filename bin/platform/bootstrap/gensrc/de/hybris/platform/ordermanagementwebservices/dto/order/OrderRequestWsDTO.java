@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -119,10 +119,6 @@ public  class OrderRequestWsDTO  implements Serializable
 	/** <i>Generated property</i> for <code>OrderRequestWsDTO.allPromotionResults</code> property defined at extension <code>ordermanagementwebservices</code>. */
 	
 	private Set<PromotionResultWsDTO> allPromotionResults;
-
-	/** <i>Generated property</i> for <code>OrderRequestWsDTO.costCenterCode</code> property defined at extension <code>b2bordermanagementwebservices</code>. */
-	
-	private String costCenterCode;
 	
 	public OrderRequestWsDTO()
 	{
@@ -357,16 +353,6 @@ public  class OrderRequestWsDTO  implements Serializable
 	public Set<PromotionResultWsDTO> getAllPromotionResults() 
 	{
 		return allPromotionResults;
-	}
-	
-	public void setCostCenterCode(final String costCenterCode)
-	{
-		this.costCenterCode = costCenterCode;
-	}
-
-	public String getCostCenterCode() 
-	{
-		return costCenterCode;
 	}
 	
 

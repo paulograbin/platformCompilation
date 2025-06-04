@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -22,7 +22,6 @@ import de.hybris.platform.core.model.order.delivery.DeliveryModeModel;
 import de.hybris.platform.core.model.user.EmployeeModel;
 import de.hybris.platform.europe1.enums.UserTaxGroup;
 import de.hybris.platform.ordersplitting.model.WarehouseModel;
-import de.hybris.platform.sap.productconfig.rules.model.ProductConfigSourceRuleModel;
 import de.hybris.platform.searchservices.model.SnIndexTypeModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
 import de.hybris.platform.solrfacetsearch.model.config.SolrFacetSearchConfigModel;
@@ -175,9 +174,6 @@ public class BaseStoreModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>BaseStore.sourcingConfig</code> attribute defined at extension <code>warehousing</code>. */
 	public static final String SOURCINGCONFIG = "sourcingConfig";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>BaseStore.productConfigSourceRules</code> attribute defined at extension <code>sapproductconfigrules</code>. */
-	public static final String PRODUCTCONFIGSOURCERULES = "productConfigSourceRules";
 	
 	
 	/**
@@ -462,17 +458,6 @@ public class BaseStoreModel extends ItemModel
 	public List<PointOfServiceModel> getPointsOfService()
 	{
 		return getPersistenceContext().getPropertyValue(POINTSOFSERVICE);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>BaseStore.productConfigSourceRules</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
-	 * @return the productConfigSourceRules
-	 */
-	@Accessor(qualifier = "productConfigSourceRules", type = Accessor.Type.GETTER)
-	public Set<ProductConfigSourceRuleModel> getProductConfigSourceRules()
-	{
-		return getPersistenceContext().getPropertyValue(PRODUCTCONFIGSOURCERULES);
 	}
 	
 	/**
@@ -914,17 +899,6 @@ public class BaseStoreModel extends ItemModel
 	public void setPointsOfService(final List<PointOfServiceModel> value)
 	{
 		getPersistenceContext().setPropertyValue(POINTSOFSERVICE, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>BaseStore.productConfigSourceRules</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 *  
-	 * @param value the productConfigSourceRules
-	 */
-	@Accessor(qualifier = "productConfigSourceRules", type = Accessor.Type.SETTER)
-	public void setProductConfigSourceRules(final Set<ProductConfigSourceRuleModel> value)
-	{
-		getPersistenceContext().setPropertyValue(PRODUCTCONFIGSOURCERULES, value);
 	}
 	
 	/**

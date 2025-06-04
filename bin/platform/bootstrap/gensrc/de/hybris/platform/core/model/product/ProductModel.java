@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -51,7 +51,6 @@ import de.hybris.platform.ordersplitting.model.VendorModel;
 import de.hybris.platform.promotions.model.ProductPromotionModel;
 import de.hybris.platform.sap.productconfig.services.model.ProductConfigurationModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
-import de.hybris.platform.subscriptionservices.model.SubscriptionTermModel;
 import de.hybris.platform.variants.model.VariantProductModel;
 import de.hybris.platform.variants.model.VariantTypeModel;
 import de.hybris.platform.xyformsservices.model.YFormDefinitionModel;
@@ -100,9 +99,6 @@ public class ProductModel extends ItemModel
 	
 	/**<i>Generated relation code constant for relation <code>AbstractBundleRulesTargetProductsRelation</code> defining source attribute <code>targetBundleRules</code> in extension <code>configurablebundleservices</code>.</i>*/
 	public static final String _ABSTRACTBUNDLERULESTARGETPRODUCTSRELATION = "AbstractBundleRulesTargetProductsRelation";
-	
-	/**<i>Generated relation code constant for relation <code>SubscriptionTerm2SubscriptionProductRelation</code> defining source attribute <code>subscriptionTerm</code> in extension <code>subscriptionservices</code>.</i>*/
-	public static final String _SUBSCRIPTIONTERM2SUBSCRIPTIONPRODUCTRELATION = "SubscriptionTerm2SubscriptionProductRelation";
 	
 	/**<i>Generated relation code constant for relation <code>ProductFeatureComponents2ProductRel</code> defining source attribute <code>productFeatureComponents</code> in extension <code>acceleratorcms</code>.</i>*/
 	public static final String _PRODUCTFEATURECOMPONENTS2PRODUCTREL = "ProductFeatureComponents2ProductRel";
@@ -353,12 +349,6 @@ public class ProductModel extends ItemModel
 	/** <i>Generated constant</i> - Attribute key of <code>Product.productEntitlements</code> attribute defined at extension <code>entitlementservices</code>. */
 	public static final String PRODUCTENTITLEMENTS = "productEntitlements";
 	
-	/** <i>Generated constant</i> - Attribute key of <code>Product.priceRowsValid</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String PRICEROWSVALID = "priceRowsValid";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>Product.subscriptionTerm</code> attribute defined at extension <code>subscriptionservices</code>. */
-	public static final String SUBSCRIPTIONTERM = "subscriptionTerm";
-	
 	/** <i>Generated constant</i> - Attribute key of <code>Product.sequenceId</code> attribute defined at extension <code>acceleratorservices</code>. */
 	public static final String SEQUENCEID = "sequenceId";
 	
@@ -370,12 +360,6 @@ public class ProductModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Product.productFeatureComponents</code> attribute defined at extension <code>acceleratorcms</code>. */
 	public static final String PRODUCTFEATURECOMPONENTS = "productFeatureComponents";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>Product.unspcs</code> attribute defined at extension <code>b2bpunchout</code>. */
-	public static final String UNSPCS = "unspcs";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>Product.unitOfMeasure</code> attribute defined at extension <code>b2bpunchout</code>. */
-	public static final String UNITOFMEASURE = "unitOfMeasure";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Product.productInterests</code> attribute defined at extension <code>customerinterestsservices</code>. */
 	public static final String PRODUCTINTERESTS = "productInterests";
@@ -1032,16 +1016,6 @@ public class ProductModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>Product.priceRowsValid</code> dynamic attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the priceRowsValid - Price Rows Valid
-	 */
-	@Accessor(qualifier = "priceRowsValid", type = Accessor.Type.GETTER)
-	public Boolean getPriceRowsValid()
-	{
-		return getPersistenceContext().getDynamicValue(this,PRICEROWSVALID);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>Product.productCarouselComponents</code> attribute defined at extension <code>cms2lib</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the productCarouselComponents
@@ -1308,16 +1282,6 @@ public class ProductModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>Product.subscriptionTerm</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 * @return the subscriptionTerm
-	 */
-	@Accessor(qualifier = "subscriptionTerm", type = Accessor.Type.GETTER)
-	public SubscriptionTermModel getSubscriptionTerm()
-	{
-		return getPersistenceContext().getPropertyValue(SUBSCRIPTIONTERM);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>Product.summary</code> attribute defined at extension <code>commerceservices</code>. 
 	 * @return the summary - Additional text attribute that holds localized brief description.
 	 */
@@ -1399,32 +1363,6 @@ public class ProductModel extends ItemModel
 	public UnitModel getUnit()
 	{
 		return getPersistenceContext().getPropertyValue(UNIT);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Product.unitOfMeasure</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 * @return the unitOfMeasure - UnitOfMeasure describes how the product is packaged or shipped. It must conform to
-	 * 						UN/CEFACT Unit of Measure Common Codes. For a list of UN/CEFACT codes, see
-	 * 						www.unetrades.net.
-	 */
-	@Accessor(qualifier = "unitOfMeasure", type = Accessor.Type.GETTER)
-	public String getUnitOfMeasure()
-	{
-		return getPersistenceContext().getPropertyValue(UNITOFMEASURE);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Product.unspcs</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 * @return the unspcs - Classification specifies the commodity grouping of the line item to the buyer. All the
-	 * 						supplier's products and services must be mapped and standardized to the UNSPSC
-	 * 						schema. For PunchOut index catalogs, the Classification determines the location of
-	 * 						the PunchOut item within catalogs displayed to users. For a list of UNSPSC codes,
-	 * 						see www.unspsc.org.
-	 */
-	@Accessor(qualifier = "unspcs", type = Accessor.Type.GETTER)
-	public String getUnspcs()
-	{
-		return getPersistenceContext().getPropertyValue(UNSPCS);
 	}
 	
 	/**
@@ -2346,17 +2284,6 @@ public class ProductModel extends ItemModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>Product.subscriptionTerm</code> attribute defined at extension <code>subscriptionservices</code>. 
-	 *  
-	 * @param value the subscriptionTerm
-	 */
-	@Accessor(qualifier = "subscriptionTerm", type = Accessor.Type.SETTER)
-	public void setSubscriptionTerm(final SubscriptionTermModel value)
-	{
-		getPersistenceContext().setPropertyValue(SUBSCRIPTIONTERM, value);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Setter of <code>Product.summary</code> attribute defined at extension <code>commerceservices</code>. 
 	 *  
 	 * @param value the summary - Additional text attribute that holds localized brief description.
@@ -2443,34 +2370,6 @@ public class ProductModel extends ItemModel
 	public void setUnit(final UnitModel value)
 	{
 		getPersistenceContext().setPropertyValue(UNIT, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>Product.unitOfMeasure</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 *  
-	 * @param value the unitOfMeasure - UnitOfMeasure describes how the product is packaged or shipped. It must conform to
-	 * 						UN/CEFACT Unit of Measure Common Codes. For a list of UN/CEFACT codes, see
-	 * 						www.unetrades.net.
-	 */
-	@Accessor(qualifier = "unitOfMeasure", type = Accessor.Type.SETTER)
-	public void setUnitOfMeasure(final String value)
-	{
-		getPersistenceContext().setPropertyValue(UNITOFMEASURE, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>Product.unspcs</code> attribute defined at extension <code>b2bpunchout</code>. 
-	 *  
-	 * @param value the unspcs - Classification specifies the commodity grouping of the line item to the buyer. All the
-	 * 						supplier's products and services must be mapped and standardized to the UNSPSC
-	 * 						schema. For PunchOut index catalogs, the Classification determines the location of
-	 * 						the PunchOut item within catalogs displayed to users. For a list of UNSPSC codes,
-	 * 						see www.unspsc.org.
-	 */
-	@Accessor(qualifier = "unspcs", type = Accessor.Type.SETTER)
-	public void setUnspcs(final String value)
-	{
-		getPersistenceContext().setPropertyValue(UNSPCS, value);
 	}
 	
 	/**

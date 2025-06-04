@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -15,7 +15,6 @@ import de.hybris.platform.configurablebundleservices.model.BundleTemplateModel;
 import de.hybris.platform.core.model.ItemModel;
 import de.hybris.platform.core.model.c2l.CurrencyModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
-import de.hybris.platform.subscriptionservices.model.BillingEventModel;
 import java.math.BigDecimal;
 
 /**
@@ -30,9 +29,6 @@ public class ChangeProductPriceBundleRuleModel extends AbstractBundleRuleModel
 	/**<i>Generated relation code constant for relation <code>BundleTemplatePriceRulesRelation</code> defining source attribute <code>bundleTemplate</code> in extension <code>configurablebundleservices</code>.</i>*/
 	public static final String _BUNDLETEMPLATEPRICERULESRELATION = "BundleTemplatePriceRulesRelation";
 	
-	/**<i>Generated relation code constant for relation <code>BillingEvent2ChangeProductPriceBundleRule</code> defining source attribute <code>billingEvent</code> in extension <code>subscriptionbundleservices</code>.</i>*/
-	public static final String _BILLINGEVENT2CHANGEPRODUCTPRICEBUNDLERULE = "BillingEvent2ChangeProductPriceBundleRule";
-	
 	/** <i>Generated constant</i> - Attribute key of <code>ChangeProductPriceBundleRule.price</code> attribute defined at extension <code>configurablebundleservices</code>. */
 	public static final String PRICE = "price";
 	
@@ -41,9 +37,6 @@ public class ChangeProductPriceBundleRuleModel extends AbstractBundleRuleModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>ChangeProductPriceBundleRule.bundleTemplate</code> attribute defined at extension <code>configurablebundleservices</code>. */
 	public static final String BUNDLETEMPLATE = "bundleTemplate";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>ChangeProductPriceBundleRule.billingEvent</code> attribute defined at extension <code>subscriptionbundleservices</code>. */
-	public static final String BILLINGEVENT = "billingEvent";
 	
 	
 	/**
@@ -101,16 +94,6 @@ public class ChangeProductPriceBundleRuleModel extends AbstractBundleRuleModel
 	
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>ChangeProductPriceBundleRule.billingEvent</code> attribute defined at extension <code>subscriptionbundleservices</code>. 
-	 * @return the billingEvent
-	 */
-	@Accessor(qualifier = "billingEvent", type = Accessor.Type.GETTER)
-	public BillingEventModel getBillingEvent()
-	{
-		return getPersistenceContext().getPropertyValue(BILLINGEVENT);
-	}
-	
-	/**
 	 * <i>Generated method</i> - Getter of the <code>ChangeProductPriceBundleRule.bundleTemplate</code> attribute defined at extension <code>configurablebundleservices</code>. 
 	 * @return the bundleTemplate
 	 */
@@ -138,17 +121,6 @@ public class ChangeProductPriceBundleRuleModel extends AbstractBundleRuleModel
 	public BigDecimal getPrice()
 	{
 		return getPersistenceContext().getPropertyValue(PRICE);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>ChangeProductPriceBundleRule.billingEvent</code> attribute defined at extension <code>subscriptionbundleservices</code>. 
-	 *  
-	 * @param value the billingEvent
-	 */
-	@Accessor(qualifier = "billingEvent", type = Accessor.Type.SETTER)
-	public void setBillingEvent(final BillingEventModel value)
-	{
-		getPersistenceContext().setPropertyValue(BILLINGEVENT, value);
 	}
 	
 	/**

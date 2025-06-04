@@ -26,10 +26,6 @@ public enum DestinationChannel implements HybrisEnumValue
 	 */
 	DEFAULT("DEFAULT"),
 	/**
-	 * Generated enum value for DestinationChannel.KYMA declared at extension kymaintegrationservices.
-	 */
-	KYMA("KYMA"),
-	/**
 	 * Generated enum value for DestinationChannel.MERCH declared at extension merchandisingservices.
 	 */
 	MERCH("MERCH"),

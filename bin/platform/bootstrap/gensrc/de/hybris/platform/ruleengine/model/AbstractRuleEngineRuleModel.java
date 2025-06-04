@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 12, 2025, 10:11:41 AM                   ---
+ * --- Generated at Jun 4, 2025, 12:27:36 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -13,7 +13,6 @@ import de.hybris.platform.core.model.ItemModel;
 import de.hybris.platform.promotionengineservices.model.RuleBasedPromotionModel;
 import de.hybris.platform.ruleengine.enums.RuleType;
 import de.hybris.platform.ruleengineservices.model.AbstractRuleModel;
-import de.hybris.platform.sap.productconfig.rules.enums.ProductConfigRuleMessageSeverity;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
 import java.util.Locale;
 
@@ -72,12 +71,6 @@ public class AbstractRuleEngineRuleModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractRuleEngineRule.promotion</code> attribute defined at extension <code>promotionengineservices</code>. */
 	public static final String PROMOTION = "promotion";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractRuleEngineRule.messageSeverity</code> attribute defined at extension <code>sapproductconfigrules</code>. */
-	public static final String MESSAGESEVERITY = "messageSeverity";
-	
-	/** <i>Generated constant</i> - Attribute key of <code>AbstractRuleEngineRule.messageForCstic</code> attribute defined at extension <code>sapproductconfigrules</code>. */
-	public static final String MESSAGEFORCSTIC = "messageForCstic";
 	
 	
 	/**
@@ -205,26 +198,6 @@ public class AbstractRuleEngineRuleModel extends ItemModel
 	public String getMessageFired(final Locale loc)
 	{
 		return getPersistenceContext().getLocalizedValue(MESSAGEFIRED, loc);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractRuleEngineRule.messageForCstic</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 * @return the messageForCstic - Message for characteristic
-	 */
-	@Accessor(qualifier = "messageForCstic", type = Accessor.Type.GETTER)
-	public String getMessageForCstic()
-	{
-		return getPersistenceContext().getPropertyValue(MESSAGEFORCSTIC);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>AbstractRuleEngineRule.messageSeverity</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 * @return the messageSeverity - Severity of the rule related message.
-	 */
-	@Accessor(qualifier = "messageSeverity", type = Accessor.Type.GETTER)
-	public ProductConfigRuleMessageSeverity getMessageSeverity()
-	{
-		return getPersistenceContext().getPropertyValue(MESSAGESEVERITY);
 	}
 	
 	/**
@@ -383,28 +356,6 @@ public class AbstractRuleEngineRuleModel extends ItemModel
 	public void setMessageFired(final String value, final Locale loc)
 	{
 		getPersistenceContext().setLocalizedValue(MESSAGEFIRED, loc, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractRuleEngineRule.messageForCstic</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 *  
-	 * @param value the messageForCstic - Message for characteristic
-	 */
-	@Accessor(qualifier = "messageForCstic", type = Accessor.Type.SETTER)
-	public void setMessageForCstic(final String value)
-	{
-		getPersistenceContext().setPropertyValue(MESSAGEFORCSTIC, value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of <code>AbstractRuleEngineRule.messageSeverity</code> attribute defined at extension <code>sapproductconfigrules</code>. 
-	 *  
-	 * @param value the messageSeverity - Severity of the rule related message.
-	 */
-	@Accessor(qualifier = "messageSeverity", type = Accessor.Type.SETTER)
-	public void setMessageSeverity(final ProductConfigRuleMessageSeverity value)
-	{
-		getPersistenceContext().setPropertyValue(MESSAGESEVERITY, value);
 	}
 	
 	/**

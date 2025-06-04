@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:43 AM
+ * --- Generated at Jun 4, 2025, 12:27:40 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -9,8 +9,6 @@
 package de.hybris.platform.commercewebservicescommons.dto.user;
 
 import java.io.Serializable;
-import de.hybris.platform.chinesecommercewebservicescommons.dto.CityWsDTO;
-import de.hybris.platform.chinesecommercewebservicescommons.dto.DistrictWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.CountryWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.user.RegionWsDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -108,14 +106,6 @@ public  class AddressWsDTO  implements Serializable
 	/** Boolean flag if address is formatted<br/><br/><i>Generated property</i> for <code>AddressWsDTO.formattedAddress</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="formattedAddress", description="Boolean flag if address is formatted") 	
 	private String formattedAddress;
-
-	/** city<br/><br/><i>Generated property</i> for <code>AddressWsDTO.city</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="city", description="city") 	
-	private CityWsDTO city;
-
-	/** city district<br/><br/><i>Generated property</i> for <code>AddressWsDTO.cityDistrict</code> property defined at extension <code>chinesecommercewebservicescommons</code>. */
-@Schema(name="cityDistrict", description="city district") 	
-	private DistrictWsDTO cityDistrict;
 	
 	public AddressWsDTO()
 	{
@@ -320,26 +310,6 @@ public  class AddressWsDTO  implements Serializable
 	public String getFormattedAddress() 
 	{
 		return formattedAddress;
-	}
-	
-	public void setCity(final CityWsDTO city)
-	{
-		this.city = city;
-	}
-
-	public CityWsDTO getCity() 
-	{
-		return city;
-	}
-	
-	public void setCityDistrict(final DistrictWsDTO cityDistrict)
-	{
-		this.cityDistrict = cityDistrict;
-	}
-
-	public DistrictWsDTO getCityDistrict() 
-	{
-		return cityDistrict;
 	}
 	
 

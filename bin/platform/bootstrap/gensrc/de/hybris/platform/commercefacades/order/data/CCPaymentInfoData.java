@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at May 12, 2025, 10:11:44 AM
+ * --- Generated at Jun 4, 2025, 12:27:38 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -77,10 +77,6 @@ public  class CCPaymentInfoData  implements Serializable
 	/** <i>Generated property</i> for <code>CCPaymentInfoData.billingAddress</code> property defined at extension <code>commercefacades</code>. */
 	
 	private AddressData billingAddress;
-
-	/** <i>Generated property</i> for <code>CCPaymentInfoData.subscriptionServiceId</code> property defined at extension <code>subscriptionfacades</code>. */
-	
-	private String subscriptionServiceId;
 	
 	public CCPaymentInfoData()
 	{
@@ -225,16 +221,6 @@ public  class CCPaymentInfoData  implements Serializable
 	public AddressData getBillingAddress() 
 	{
 		return billingAddress;
-	}
-	
-	public void setSubscriptionServiceId(final String subscriptionServiceId)
-	{
-		this.subscriptionServiceId = subscriptionServiceId;
-	}
-
-	public String getSubscriptionServiceId() 
-	{
-		return subscriptionServiceId;
 	}
 	
 

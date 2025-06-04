@@ -25,11 +25,6 @@ public class RuleType implements HybrisEnumValue
 	public static final RuleType DEFAULT = valueOf("DEFAULT");
 	
 	/**
-	* Generated enum value for RuleType.PRODUCTCONFIG declared at extension sapproductconfigrules.
-	*/
-	public static final RuleType PRODUCTCONFIG = valueOf("PRODUCTCONFIG");
-	
-	/**
 	* Generated enum value for RuleType.PROMOTION declared at extension promotionengineservices.
 	*/
 	public static final RuleType PROMOTION = valueOf("PROMOTION");
