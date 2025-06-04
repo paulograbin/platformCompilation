@@ -1,7 +1,7 @@
 /*
 * ----------------------------------------------------------------
 * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
-* --- Generated at Jun 4, 2025, 12:27:40 PM
+* --- Generated at Jun 4, 2025, 12:41:25 PM
 * ----------------------------------------------------------------
 *
 * Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
@@ -10,10 +10,8 @@ package de.hybris.platform.ruleengineservices.rao;
 
 import java.io.Serializable;
 import java.util.Objects;
-import de.hybris.platform.personalizationpromotions.rao.CxPromotionActionResultRAO;
 import de.hybris.platform.ruleengineservices.rao.AbstractOrderRAO;
 import de.hybris.platform.ruleengineservices.rao.UserGroupRAO;
-import java.util.List;
 import java.util.Set;
 
 public  class UserRAO  implements Serializable 
@@ -28,8 +26,6 @@ public  class UserRAO  implements Serializable
 	private Set<AbstractOrderRAO> orders;
 /** <i>Generated property</i> for <code>UserRAO.groups</code> property defined at extension <code>ruleengineservices</code>. */
 	private Set<UserGroupRAO> groups;
-/** <i>Generated property</i> for <code>UserRAO.cxPromotionActionResults</code> property defined at extension <code>personalizationpromotions</code>. */
-	private List<CxPromotionActionResultRAO> cxPromotionActionResults;
 	
 	public UserRAO()
 	{
@@ -70,15 +66,6 @@ public  class UserRAO  implements Serializable
 	public Set<UserGroupRAO> getGroups() 
 	{
 		return groups;
-	}
-	
-	public void setCxPromotionActionResults(final List<CxPromotionActionResultRAO> cxPromotionActionResults)
-	{
-		this.cxPromotionActionResults = cxPromotionActionResults;
-	}
-	public List<CxPromotionActionResultRAO> getCxPromotionActionResults() 
-	{
-		return cxPromotionActionResults;
 	}
 	
 

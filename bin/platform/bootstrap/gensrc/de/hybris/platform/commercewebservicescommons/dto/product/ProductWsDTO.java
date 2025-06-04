@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at Jun 4, 2025, 12:27:38 PM
+ * --- Generated at Jun 4, 2025, 12:41:23 PM
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2025 SAP SE or an SAP affiliate company. All rights reserved.
@@ -23,7 +23,6 @@ import de.hybris.platform.commercewebservicescommons.dto.product.SAPUnitWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.product.StockWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.product.VariantMatrixElementWsDTO;
 import de.hybris.platform.commercewebservicescommons.dto.product.VariantOptionWsDTO;
-import de.hybris.platform.configurablebundleocc.data.BundleTemplateWsDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Collection;
 import java.util.List;
@@ -178,10 +177,6 @@ public  class ProductWsDTO  implements Serializable
 	/** Message shows why product can not be added to cart.<br/><br/><i>Generated property</i> for <code>ProductWsDTO.sapAddToCartDisabledMessage</code> property defined at extension <code>commercewebservicescommons</code>. */
 @Schema(name="sapAddToCartDisabledMessage", description="Message shows why product can not be added to cart.", example="'EF-S 60mm f/2.8 USM Macro' is not available with 'EOS450D + 18-55 IS Kit'") 	
 	private String sapAddToCartDisabledMessage;
-
-	/** Set of bundle templates that are identified as starter components and can initiate a bundle in the cart<br/><br/><i>Generated property</i> for <code>ProductWsDTO.bundleTemplates</code> property defined at extension <code>configurablebundleocc</code>. */
-@Schema(name="bundleTemplates", description="Set of bundle templates that are identified as starter components and can initiate a bundle in the cart") 	
-	private List<BundleTemplateWsDTO> bundleTemplates;
 
 	/** <i>Generated property</i> for <code>ProductWsDTO.timedAccessPromotion</code> property defined at extension <code>timedaccesspromotionenginefacades</code>. */
 @Schema(name="timedAccessPromotion") 	
@@ -530,16 +525,6 @@ public  class ProductWsDTO  implements Serializable
 	public String getSapAddToCartDisabledMessage() 
 	{
 		return sapAddToCartDisabledMessage;
-	}
-	
-	public void setBundleTemplates(final List<BundleTemplateWsDTO> bundleTemplates)
-	{
-		this.bundleTemplates = bundleTemplates;
-	}
-
-	public List<BundleTemplateWsDTO> getBundleTemplates() 
-	{
-		return bundleTemplates;
 	}
 	
 	public void setTimedAccessPromotion(final PromotionWsDTO timedAccessPromotion)
