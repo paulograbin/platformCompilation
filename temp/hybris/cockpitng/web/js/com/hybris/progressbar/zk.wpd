@@ -1,3 +1,0 @@
-<package name="com.hybris.progressbar" language="xul/html" depends="zul.inp">
-    <widget name="ProgressBar"/>
-</package>

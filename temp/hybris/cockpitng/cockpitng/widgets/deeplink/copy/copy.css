@@ -1,8 +1,0 @@
-/* Status */
-/* Button Color Scheme */
-.yw-deeplink-copy-toolbar {
-  margin-left: 8px; }
-  .yw-deeplink-copy-toolbar button {
-    font-family: var(--bo-content-icon-font-family); }
-    .yw-deeplink-copy-toolbar button:after {
-      content: "\e05a"; }
