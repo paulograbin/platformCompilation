@@ -1,0 +1,16 @@
+[data-base-theme^="sap_fiori_3"] {
+
+	.yw-borderlayout-opaque .opaquetrue .z-west {
+		box-shadow: var(--bo-content-shadow-small);
+		border-radius: 0;
+    }
+}
+
+[data-base-theme^="sap_horizon"] {
+
+	.yw-borderlayout-opaque.yw-borderlayout > .z-borderlayout > div > .z-west {
+        &-splitter {
+            background: transparent;
+        }
+    }
+}

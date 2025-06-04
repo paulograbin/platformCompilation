@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<widget-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd"
+                   id="de.hybris.platform.integrationbackoffice.widgets.IntegrationObjectClassEditorContainer"
+                   extends="de.hybris.platform.integrationbackoffice.widgets.AbstractIntegrationEditorContainer">
+    <name>Integration Object Editor Class Container</name>
+    <description>Container that displays integration objects' IntegrationObjectClass in a tree structure with associated attribute list for easy editing.</description>
+    <defaultTitle>Integration Object Class Editor Container</defaultTitle>
+    <author>Hybris</author>
+    <version>1.0</version>
+    <keywords>
+        <keyword>IntegrationObjectClassEditorContainer</keyword>
+    </keywords>
+    <controller
+            class="de.hybris.platform.integrationbackoffice.widgets.modeling.controllers.IntegrationObjectClassEditorContainerController"/>
+    <sockets>
+        <input id="createIntegrationObjectClassEvent"
+               type="de.hybris.platform.integrationbackoffice.widgets.modals.data.CreateIntegrationObjectClassModalData"/>
+        <input id="auditIOClassReportEvent" type="java.lang.String"/>
+        <input id="receiveIOClassDelete" type="java.lang.String"/>
+        <input id="receiveObjectComboBox" type="de.hybris.platform.integrationservices.model.IntegrationObjectModel"/>
+        <input id="saveIOClassEvent" type="java.lang.String"/>
+        <input id="receiveClone" type="java.lang.String"/>
+        <input id="cloneIntegrationObjectEvent"
+               type="de.hybris.platform.integrationbackoffice.widgets.modals.data.CreateIntegrationObjectClassModalData"/>
+        <output id="loadIO" type="java.lang.String"/>
+        <output id="createTree" type="de.hybris.platform.integrationbackoffice.widgets.modeling.data.CreateIOClassTreeData"/>
+        <output id="openCloneModal" type="de.hybris.platform.integrationservices.model.IntegrationObjectModel"/>
+        <output id="selectedIntegrationClass" type="de.hybris.platform.integrationbackoffice.widgets.modeling.data.dto.IntegrationClassMapKeyDTO"/>
+    </sockets>
+</widget-definition>

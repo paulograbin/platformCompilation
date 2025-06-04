@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<widget-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd"
+                   id="de.hybris.platform.integrationbackoffice.widgets.IntegrationObjectClassEditorTree">
+    <name>Integration Object Class Editor Tree</name>
+    <description>Tree to display the composed types</description>
+    <defaultTitle>Integration Object Class Editor Tree</defaultTitle>
+    <author>SAP</author>
+    <version>1.0</version>
+    <keywords>
+        <keyword>IntegrationObjectClassEditorTree</keyword>
+    </keywords>
+    <view src="IntegrationObjectClassEditorTree.zul"/>
+    <controller
+            class="de.hybris.platform.integrationbackoffice.widgets.modeling.controllers.IntegrationObjectClassEditorTreeController"/>
+    <sockets>
+        <input id="loadIO" type="java.lang.String"/>
+        <input id="createTree"
+               type="de.hybris.platform.integrationbackoffice.widgets.modeling.data.CreateIOClassTreeData"/>
+        <input id="clearTree" type="java.lang.Object"/>
+        <output id="selectedIntegrationClass"
+                type="de.hybris.platform.integrationbackoffice.widgets.modeling.data.dto.IntegrationClassMapKeyDTO"/>
+        <output id="clearListBox" type="java.lang.Object"/>
+    </sockets>
+</widget-definition>

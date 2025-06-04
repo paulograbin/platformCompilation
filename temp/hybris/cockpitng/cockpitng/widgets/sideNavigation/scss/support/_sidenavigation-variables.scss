@@ -1,0 +1,76 @@
+/*================================
+    Side Navigation (Variables)
+================================*/
+@import "cockpitng-globals.scss";
+
+// ========== //
+// Sizing
+// ========== //
+
+$sideNavigation__search_content--display: flex;
+$sideNavigation__search_content--justify-content: center;
+
+$sideNavigation__search-content--margin-top: $_container-spacing-default__core;
+$sideNavigation__search-button--height: 48px; 
+$sideNavigation__search-button--before-content: _getIconGlyphContentValue("search");
+$sideNavigation__search-button--before-font-size: $font-size__h4;
+$sideNavigation__search-button_hover--background-image: linear-gradient(to right, var(--bo-neutral-color) 0.25rem, var(--bo-list-hover-background) 0.25rem);
+
+$sideNavigation__treecell_content--height: 48px;
+$sideNavigation__treecontainer_height: calc(100% - $sideNavigation__treecell_content--height * 3 - 4 * $_container-spacing-default__core);
+$sideNavigation__treecell_content--border-radius: 8px;
+$sideNavigation__treecell_tree_icon--line-height: 48px;
+$sideNavigation__treecell-content--padding: 3px 0 3px 16px;
+$sideNavigation__treeCellInner--margin-left: -2px;
+$sideNavigation__treecell--background: var(--bo-container-background);
+
+$sideNavigation__treerow_expand_icon--right: 4px;
+$sideNavigation__treerow_expand_icon--content: $caretarrow__down--content;
+$sideNavigation__treerow_expand_icon--font-size: $font-size__small;
+$sideNavigation__treerow_expand_icon--font-family: $font-family__icon;;
+$sideNavigation__treerow_expand_icon--display: inline-block;
+$sideNavigation__treerow_expand_icon--position: absolute;
+$sideNavigation__treerow_expand_icon--bottom: 0px;
+$sideNavigation__treerow_expand_icon--transform: rotate(315deg);
+
+$sideNavigation__popup--width: 245px;
+$sideNavigation__popup--max-height: 600px;
+$sideNavigation__popup_treecell--padding: 14px 20px 13px 12px;
+$sideNavigation__popup_treecell--border-bottom: 1px solid var(--bo-list-border-color);
+$sideNavigation__popup_selected_treecell--border-bottom: 1px solid var(--bo-list-selected-border-color);;
+$sideNavigation__popup_treecell--word-break: break-word;
+$sideNavigation__popup_expand_icon--content: _getIconGlyphContentValue("navigation-right-arrow");
+$sideNavigation__popup_expand_icon--right: 12px;
+
+// ========== //
+// Coloring
+// ========== //
+
+$sideNavigation__search-button--color: var(--bo-content-icon-color);
+
+$sideNavigation__search-button--color: var(--bo-content-icon-color);
+$sideNavigation__search-button-hover--bg-color: var(--bo-sideNavigation__treerow_hover--bg-color);
+
+$sideNavigation__treerow_selected_tree-icon-color: var(--bo-content-icon-color);
+$sideNavigation__row-hover--bg-color: var(--bo-list-hover-background);
+$sideNavigation__row--color: var(--bo-text-color);
+$sideNavigation__row-hover--color: false;
+$sideNavigation__row-selected--bg-color: var(--bo-list-selected-background);
+$sideNavigation__row-selected-hover--bg-color: var(--bo-list-selected-hover-background);
+$sideNavigation__popup_expand_icon--color: var(--bo-content-icon-color);
+
+$sideNavigation__treecell_content_indicator--bg-color: var(--bo-selected-color);
+$sideNavigation__treecell_content_side_hover--bg-color: var(--bo-neutral-color);
+$sideNavigation__treecell_content_side_selected_hover--bg-color: $sideNavigation__treecell_content_indicator--bg-color;
+
+$sideNavigation__treecell_content_hover--bg-color: var(--bo-list-hover-background);
+$sideNavigation__treecell_content_selected--bg-color: var(--bo-list-selected-background);
+$sideNavigation__treecell_content_selected_hover--bg-color: var(--bo-list-selected-hover-background);
+
+$sideNavigation__treerow_hover--bg-color: transparent;
+$sideNavigation__treerow_selected--bg-color: transparent;
+$sideNavigation__treerow_selected_hover--bg-color: transparent;
+
+
+$sideNavigation__scroll-up-button--before-content: _getIconGlyphContentValue("slim-arrow-up");
+$sideNavigation__scroll-down-button--before-content: _getIconGlyphContentValue("slim-arrow-down");

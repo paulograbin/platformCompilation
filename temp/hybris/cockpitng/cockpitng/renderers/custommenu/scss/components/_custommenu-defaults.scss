@@ -1,0 +1,30 @@
+@import "../support/_custommenu-variables.scss";
+
+.yw-show-menu-action {
+  &.z-button {
+   @include _getIconGlyph("overflow");
+  }
+
+  &.yw-show-menu-action-active {
+    outline: var(--bo-content-focus-outline-width) var(--bo-content-focus-outline-style) var(--bo-content-focus-outline-color);
+    outline-offset: $content-focus-outline-offset;
+  }
+
+  &-disabled {
+    opacity: 0.4;
+  }
+
+  &-container {
+    vertical-align: middle;
+  }
+
+  &-content {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

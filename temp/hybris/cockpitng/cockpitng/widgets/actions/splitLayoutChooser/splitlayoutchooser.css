@@ -1,0 +1,58 @@
+/*================================
+    Split Layout Chooser Button
+================================*/
+/* Status */
+/* Button Color Scheme */
+.z-button.yw-split-layout-chooser-button {
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0;
+  display: block;
+  background: var(--bo-button-background);
+  color: var(--bo-button-icon-color);
+  border: none;
+  outline: none; }
+  .z-button.yw-split-layout-chooser-button:hover {
+    background: var(--bo-button-hover-background);
+    color: var(--bo-button-hover-color); }
+  .z-button.yw-split-layout-chooser-button:active {
+    background: var(--bo-button-active-background);
+    color: var(--bo-button-active-color); }
+  .z-button.yw-split-layout-chooser-button.yw-split-layout-chooser-button-with-label {
+    width: 100px;
+    font-size: 14px;
+    font-family: var(--bo-font-family);
+    text-align: left;
+    text-transform: none; }
+
+.ya-com_hybris_cockpitng_action_splitlayoutchooser.cng-action {
+  line-height: 1; }
+
+.yw-split-layout-chooser-popup {
+  margin: 36px 0 0 0;
+  padding: 2px 0;
+  min-width: 46px; }
+  .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button {
+    width: 100%;
+    text-align: center;
+    border-width: 0;
+    border-radius: 0;
+    background-color: var(--bo-list-background);
+    border-bottom: 1px solid var(--bo-list-border-color); }
+    .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button:last-child {
+      border-bottom: none; }
+    .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button.yw-split-layout-chooser-button-with-label {
+      text-align: left; }
+    .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button:hover {
+      background-color: var(--bo-list-hover-background);
+      color: var(--bo-list-text-color);
+      box-shadow: none; }
+    .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button:active {
+      background-color: var(--bo-list-active-background);
+      color: var(--bo-list-active-text-color); }
+  .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button-selected {
+    background-color: var(--bo-list-selected-background);
+    border-bottom: var(--bo-container-border-width) solid var(--bo-list-selected-border-color); }
+    .yw-split-layout-chooser-popup .z-button.yw-split-layout-chooser-button-selected:hover {
+      background-color: var(--bo-list-selected-hover-background); }

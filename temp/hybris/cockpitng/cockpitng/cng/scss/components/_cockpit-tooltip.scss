@@ -1,0 +1,21 @@
+/*================================
+    jquery tooltip
+================================*/
+// Defines Basic style for jquery ui tooltip (coloring, spacing)
+@charset "UTF-8";
+@import "../support/_cockpit-variables.scss";
+
+.ui-tooltip {
+  font-family: $font-family__text;
+  font-size: $tooltip-container--font-size;
+  position: absolute;
+  z-index: 99999;
+  max-width: $tooltip-container--max-width;
+  border-radius: $tooltip-container--border-radius;
+  box-shadow: none;
+
+  .ui-tooltip-content {
+    padding: $tooltip-content--padding;
+    background-color: $tooltip-content--background-color;
+  }
+}

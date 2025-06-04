@@ -1,0 +1,97 @@
+//    DefaultReferenceEditor Tree-Components
+// ================================
+
+.z-bandpopup.ye-create-only,
+.ye-default-reference-editor-listbox .ye-create-new-reference .z-listcell-content {
+    .ye-create-type-selector-container {
+        .z-tree-body {
+            td.z-treecell {
+                @if $default-reference-editor__list-tree-cell--border-color {
+                    border: $default-reference-editor__box--border-width solid $default-reference-editor__list-tree-cell--border-color;
+                    border-width: $default-reference-editor__box--border-width 0 0;
+                }
+                @if $default-reference-editor__treecell--bg-color {
+                    background: $default-reference-editor__treecell--bg-color;
+                }
+            }
+            .z-treerow:first-child > td.z-treecell {
+                border-top-width: 0;
+            }
+        }
+    }
+}
+
+@if $default-reference-editor__treecell-hover--bg-color {
+    .z-bandpopup.ye-create-only .ye-create-type-selector-container .z-tree-body td.z-treecell:hover,
+    .ye-default-reference-editor-listbox .ye-create-new-reference .z-listcell-content .ye-create-type-selector-container .z-tree-body td.z-treecell:hover,
+    .ye-default-reference-editor-listbox .ye-create-new-reference .z-listcell-content .ye-create-type-selector-container .z-tree-body .ye-create-type-selector-lvl-0 td.z-treecell:hover {
+        background: $default-reference-editor__treecell-hover--bg-color;
+    }
+}
+
+/*
+.ye-default-reference-editor-listbox .ye-create-new-reference .z-listcell-content .ye-create-type-selector-container .z-tree-body td.z-treecell .z-treecell-content{
+    color: #043263;
+}
+*/
+.ye-create-type-selector-container {
+    padding: $_container-spacing-default__tiny;
+    .ye-create-type-selector-container-tree.z-tree 
+    {
+        .ye-create-type-selector-abstracttype {
+            .z-treecell-text{
+                font-style: italic;
+            }
+            .z-treecell {
+                .z-treecell-content {
+                    cursor: not-allowed;
+                }
+            }
+        }
+        .z-treerow {
+            &:active,
+            &:hover {
+                background: inherit;
+            }
+            &.ye-create-type-selector-abstracttype {
+                .z-treecell-text{
+                    font-style: italic;
+                }
+                .z-treecell {
+                    .z-treecell-content {
+                        cursor: not-allowed;
+                    }
+                }
+            }
+            .z-treecell {
+                &:hover {
+                    background: inherit;
+                }
+                .z-treecell-content {
+                    @include _add-button-styles("-transparent");
+                    margin: $_container-spacing-default__core;
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: calc(100% - 24px);
+                    .z-tree-icon {
+                        height: 100%;
+                        font-size: $font-size__large;
+                    }
+                    .z-tree-line.z-tree-spacer,
+                    .z-tree-icon {
+                        display: inline-block;
+                        .z-tree-open,
+                        .z-tree-close {
+                            color: var(--bo-content-icon-color);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+

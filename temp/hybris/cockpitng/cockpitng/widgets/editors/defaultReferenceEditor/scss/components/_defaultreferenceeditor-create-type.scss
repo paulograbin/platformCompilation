@@ -1,0 +1,174 @@
+//    DefaultReferenceEditor Create-Type
+// ================================
+
+@import "../support/_defaultreferenceeditor-variables.scss";
+
+.ye-create-type-selector {
+    &-container {
+        max-width: $default-reference-editor__type-selector-popup--max-width;
+        max-height: $default-reference-editor__type-selector-popup--max-height;
+        overflow: auto;
+    }
+    &-button{
+        &.z-button-os {
+            background-color: transparent;
+            // background-image: url("images/icon_func_toggle_sprite.png");
+            // background-position: 4px -17px;
+            // background-repeat: no-repeat;
+            padding: 0 10px;
+        }
+
+        &.z-button {
+            font-family: $_default-reference-editor__button-icon--font-family;
+            font-size: var(--bo-content-icon-font-size);
+        }
+        &:before {
+            content: $_default-reference-editor__type-selector-button-icon--content;
+        }
+    }
+}
+
+//create-only
+
+.z-bandbox-button.ye-create-only {
+    text-decoration: none;
+    float: right;
+
+    &:hover, &:active {
+        @if $default-reference-editor__bandbox-button-icon-hover--bg-color {
+            background-color: $default-reference-editor__bandbox-button-icon-hover--bg-color;
+        }
+        @if $default-reference-editor__bandbox-button-icon-hover--color {
+            color: $default-reference-editor__bandbox-button-icon-hover--color;
+        }
+    }
+}
+
+.ye-default-reference-editor-bandbox.ye-create-only .z-bandbox-input .z-bandbox-icon.z-icon-search {
+    display: none;
+}
+
+.ye-create-new-reference {
+    div.z-listcell-content {
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+
+        > .z-label {
+            @include _add-button-styles("-transparent");
+            margin: $_container-spacing-default__core 0;
+            position: relative;
+            display: inline;
+            width: $_default-reference-editor__list-item-add-button-label--width;
+            padding-left: 28px;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+            &:before{
+                position: absolute;
+                left: $_container-spacing-default__tiny;
+                font-family: $_default-reference-editor__create-only-add-icon--font-family;
+                content: $_default-reference-editor__create-only-add-icon--content;
+                font-size: var(--bo-content-icon-font-size);
+                text-align: center;
+            }
+        }
+    }
+    > td.z-listcell {
+        border-top: $default-reference-editor__box--border-width solid $editor-area__box--border-color !important;
+    }
+}
+
+
+//reason for having this distict in -editor-listbox?
+.ye-default-reference-editor-listbox {
+    .ye-create-new-reference {
+        div.z-listcell-content {
+            padding: 0;
+        }
+        > td.z-listcell {
+            padding-left: 0;
+
+            button.ye-create-type-selector-button {
+                margin: $_container-spacing-default__core;
+                position: relative;
+                float: right;
+                &.ye-button-active {
+                    background: $default-reference-editor__create-new-button-active--bg-color;
+                    @if $default-reference-editor__create-new-button-active--color {
+                        color: $default-reference-editor__create-new-button-active--color;
+                    }
+
+                    &:before{
+                        @if ($_default-reference-editor__type-selector-uncollapsed-button-icon--content) {
+                            content: $_default-reference-editor__type-selector-uncollapsed-button-icon--content;
+                        }
+
+                    }
+                }
+            }
+        }
+        .ye-default-reference-editor-bandpopup & {
+            &:first-child > td.z-listcell {
+                border-top-width: 0 !important;
+            }
+        }
+        .z-listcell-content .ye-create-type-selector-container {
+            margin: 0;
+            margin-left: $default-reference-editor__create-type-selector-container--margin-left;
+            border-top: $default-reference-editor__box--border-width solid $editor-area__box--border-color;
+            max-width: inherit;
+            display: block;
+            padding: $_container-spacing-default__tiny;
+
+            .ye-create-type-selector-container-tree.z-tree {
+                border: none;
+                .z-treerow {
+                   &:hover {
+                    background-color: inherit;
+                    > .z-treecell {
+                        background-color: inherit;
+                        border-color: inherit;
+                    }
+                   }
+                   &:active {
+                    background-color: inherit;
+                   }
+                }
+            }
+            .z-treecell-content {
+                @include _add-button-styles("-transparent");
+                padding: $default-reference-editor__treecell--padding;
+                display: inline-table;
+                width: calc(100% - #{$_container-spacing-default__tiny} * 2);
+                margin: $_container-spacing-default__core $_container-spacing-default__tiny;
+                .z-treecell-text{
+                    padding-left: $default-reference-editor__treecell-text--padding-left;
+                    color: inherit;
+                }
+                .z-tree-icon {
+                    color: var(--bo-content-icon-color);
+                    .z-tree-open,
+                    .z-tree-close {
+                        color: inherit
+                    }
+                }
+            }
+        }
+        &.z-listitem > .z-listcell > div.z-listcell-content:hover{
+            padding-right: 0;
+        }
+    }
+}
+
+
+.ye-create-only.z-bandpopup .ye-create-type-selector-container{
+    width: 100%;
+    max-width: none;
+}

@@ -1,0 +1,25 @@
+/* Status */
+/* Button Color Scheme */
+.yw-deeplink-copy-clipboard-window .content {
+  padding: 20px;
+  border-bottom: 1px solid var(--bo-list-border-color); }
+  .yw-deeplink-copy-clipboard-window .content .z-label {
+    color: var(--bo-content-label-color); }
+  .yw-deeplink-copy-clipboard-window .content button {
+    font-family: var(--bo-content-icon-font-family);
+    margin-left: 8px; }
+    .yw-deeplink-copy-clipboard-window .content button:after {
+      content: "\e245"; }
+  .yw-deeplink-copy-clipboard-window .content input, .yw-deeplink-copy-clipboard-window .content textarea {
+    width: 450px;
+    border: 1px solid var(--bo-list-border-color) !important; }
+  .yw-deeplink-copy-clipboard-window .content .link-and-copy-line {
+    display: flex;
+    margin: 8px 0; }
+  .yw-deeplink-copy-clipboard-window .content .item-link-info {
+    height: 80px; }
+.yw-deeplink-copy-clipboard-window .foot {
+  text-align: end;
+  padding: 8px; }
+  .yw-deeplink-copy-clipboard-window .foot .z-button:first-child {
+    margin-right: 8px; }

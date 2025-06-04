@@ -1,0 +1,202 @@
+/*================================
+    Create Container
+================================*/
+// Styling of the Create Container visible on different Widgets
+
+
+@import "../support/_create-variables.scss";
+
+.ya-create-container {
+    border: $create__create-new-button--border;
+    background-color: $create__create-new-button--bg-color;
+    display: table;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: $toolbar__button-default--size;
+
+    &.ya-create-container-disabled {
+        background: transparent;
+
+        .ya-com_hybris_cockpitng_action_create.cng-action-disabled {
+            border-right: none;
+        }
+    }
+    
+    .cng-action-enabled {
+        &:hover {
+            background-color: $_action__icon-button--bg-color;
+            border-color: $_action__icon-button--border-color;
+            box-shadow: none;
+        }
+    }
+
+    .cng-font-icon {
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+        margin: 0px !important;
+        &:hover,
+        &:focus,
+        &:active
+        {
+            color: $create__create-type-action-text--color;
+            background-color: $_action__icon-button--bg-color;
+            border-color: $_action__icon-button--border-color;
+            box-shadow: none;
+            outline: none;
+        }
+        &[disabled] {
+            border-right: none;
+        }
+    }
+
+    .cng-action-text {
+        color: $create__create-type-action-text--color;
+        display: inline-block;
+        vertical-align: middle;
+
+        .z-label {
+            margin-right: $create__create-new-button-action-text-label--margin-right;
+        }
+    }
+
+    //todo: check if parent (&) is needed here!?
+    &.cng-action-disabled .cng-action-text {
+        font-style: italic;
+    }
+
+    .ya-create-type-selector-button {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .y-toolbar &,
+    .ye-toolbar &,
+    .yw-explorerTree-toolbar & {
+        color: $_create__toolbar-action-container--color;
+        border-radius: $toolbar__button-default--border-radius;
+        border-width: 0;
+        border-color: $_create__toolbar-action-container--border-color;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        .cng-action,
+        .ya-create-type-selector-button {
+            border-radius: 0;
+            margin-left: $create__toolbar-action-split-group-items-overlap--margin;
+
+            &:first-child {
+                border-top-left-radius: $_create__toolbar-action-button--border-radius;
+                border-bottom-left-radius: $_create__toolbar-action-button--border-radius;
+                margin: 0;
+            }
+            &:last-child {
+                border-top-right-radius: $_create__toolbar-action-button--border-radius;
+                border-bottom-right-radius: $_create__toolbar-action-button--border-radius;
+            }
+        }
+
+
+        .z-hbox-sep {
+            display: none;
+        }
+        .cng-action-text {
+            display: none;
+        }
+        .ya-create-type-selector-button {
+            box-sizing: border-box;
+            background-color: $_create__toolbar-action-container--bg-color;
+            color: $_create__toolbar-action-container--color;
+            border: $_create__toolbar-action-button--border;
+            border-left: none;
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: block;
+            // margin: 1px 1px 1px -3px;
+            &:before {
+                content: "";
+                border-left: 1px solid $_create__toolbar-action-container--color;
+                display: inline-block;
+                height: $_create__toolbar-action-split--height;
+                position: absolute;
+                left: 0;
+                top: $_create__toolbar-action-split--top;
+            }
+            &-opened::before,
+            &:hover::before,
+            &:active::before,
+            &:focus::before {
+                border: none;
+            }
+
+            &:active {
+                border-left: var(--bo-button-border-width) solid;
+                color: $_create__toolbar-action-button-selected--color;
+                background-color: $_create__toolbar-action-button-selected--bg-color;
+                border-color: $_create__toolbar-action-button-selected--border-color;
+                border-radius: $toolbar__button-default--border-radius;
+                box-shadow: none;
+            }
+            &:not(.ya-create-type-selector-button-opened):hover {
+                border-left: var(--bo-button-border-width) solid;
+                color: $_create__toolbar-action-button-hover--color;
+                border-color: $_create__toolbar-action-button-hover--border-color;
+                background-color: $_create__toolbar-action-button-hover--bg-color;
+                border-radius: $toolbar__button-default--border-radius;
+                box-shadow: var(--bo-button-hover-shadow);
+            }
+
+            &-opened,
+            &:focus {
+                border-radius: $toolbar__button-default--border-radius;
+                outline: var(--bo-content-focus-outline-width) var(--bo-content-focus-outline-style) var(--bo-content-focus-outline-color);
+                outline-offset: $content-focus-outline-offset;
+            }
+
+            &-opened {
+                background-color: $_create__toolbar-action-button-selected--bg-color;
+                color: $_create__toolbar-action-button-selected--color;
+                &:hover {
+                    box-shadow: $_create__toolbar-action-button-hover--box-shadow;
+                    background-color: $_create__toolbar-action-button-selected-hover--bg-color;
+                    color: $_create__toolbar-action-button-selected-hover--color;
+                }
+            }
+            &[disabled] {
+                margin-left: 0px;
+                opacity: $_create__toolbar-action-disabled--opacity;
+
+                &:before {
+                    opacity: $_create__toolbar-action-disabled--opacity;
+                    border-left: 1px solid $_create__toolbar-action-container--color;
+                }
+                &:hover,
+                &:focus {
+                    border-color: $_create__toolbar-action-container--border-color;
+                    color: $_create__toolbar-action-container--color;
+                    background-color: $_create__toolbar-action-container--bg-color;
+                    outline: none;
+                    box-shadow: none;
+                    border-left: none;
+                    border-bottom-left-radius: unset;
+                    border-top-left-radius: unset;
+                    cursor: not-allowed !important;
+                }
+            }      
+        }
+        > .ya-create-type-selector-button:last-child {
+            .z-toolbarbutton-content {
+                margin-left: $create__create-type-selector-button--margin-left;
+            }
+        }
+    }
+}

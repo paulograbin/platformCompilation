@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<widget-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd"
+                   id="de.hybris.platform.integrationbackoffice.widgets.CloneIntegrationObjectClassModal">
+    <name>Clone Integration Object Class Modal</name>
+    <description>Window for the fields to define when cloning an integration object</description>
+    <defaultTitle>Clone Integration Object Class Modal</defaultTitle>
+    <author>Hybris</author>
+    <version>1.0</version>
+    <view src="CloneIntegrationObjectClassModal.zul"/>
+    <keywords>
+        <keyword>CloneIntegrationObjectClassModal</keyword>
+    </keywords>
+    <controller
+            class="de.hybris.platform.integrationbackoffice.widgets.modals.controllers.CloneIntegrationObjectClassModalController"/>
+    <sockets>
+        <input id="showModal" type="de.hybris.platform.integrationservices.model.IntegrationObjectModel"/>
+        <output id="confirmButtonClick"
+                type="de.hybris.platform.integrationbackoffice.widgets.modals.data.CreateIntegrationObjectClassModalData"/>
+    </sockets>
+</widget-definition>

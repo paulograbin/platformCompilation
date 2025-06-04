@@ -1,0 +1,132 @@
+/*================================
+    Checkbox, Radiobox
+================================*/
+// Default styling of Checkbox & Radiobox in Cockpitng
+@charset "UTF-8";
+@import "../support/_cockpit-variables.scss";
+
+.z-checkbox,
+.z-radio {
+    position: relative !important;
+    padding-left: $editor-defaults__inputbox-container--padding-left;
+    line-height: $editor-defaults__inputbox--size;
+    margin-bottom: $editor-defaults__inputbox-container--margin-bottom;
+    min-height: $editor-defaults__inputbox--size;
+    display: inline-block;
+
+    label {
+        display: inline-block;
+        padding-left: 0;
+        padding-right: $editor-defaults__inputbox-container--padding-right;
+        width: auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -(ceil($editor-defaults__inputbox--size/2));
+            display: inline-block;
+            width: $editor-defaults__inputbox--size;
+            height: $editor-defaults__inputbox--size;
+            background: var(--bo-button-background);
+            border: $editor-defaults__inputbox--border-width solid $editor-defaults__inputbox--border-color;
+        }
+    }
+
+    input {
+        //display: none;  // this will cause item cannot be focus.
+        opacity: .0001;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: absolute !important;
+    }
+
+    &:hover input:not([disabled]) ~ &-content{
+        &:before {
+            border-color: $editor-defaults__inputbox-hover--border-color;
+            background: $editor-defaults__inputbox-hover--bg-color;
+            box-shadow: $editor-defaults__inputbox-hover--box-shadow;
+        }
+        &:after {
+            color: $editor-defaults__inputbox-hover--color;
+        }
+    }
+}
+
+input {
+    &,
+    &:hover {
+        &:disabled, &[disabled] {
+            .z-checkbox & ~ label.z-checkbox-content,
+            .z-radio & ~ label.z-radio-content {
+                opacity: $editor-defaults__button-text-disabled--opacity;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+.z-checkbox {
+    label {
+        &:before {
+            overflow: hidden;
+            border-radius: $editor-defaults__input-field--border-radius;
+        }
+    }
+
+    input {
+       
+        &:checked ~ label.z-checkbox-content:before {
+            content: $_editor-defaults__box-check-icon--content;
+            font-family: $editor-defaults__box-button-icon--font-family;
+            font-size: $_editor-defaults__checkbox-checked-icon--font-size;
+            line-height: $editor-defaults__checkbox-checked-icon--line-height;
+            text-align: center;
+            color: $editor-defaults__checkbox-checked--color;
+        }
+        
+        &[type=checkbox] {
+            margin-left: 0;
+            position: relative;
+            width: 10%;
+        }
+    }
+}
+
+.z-radio {
+    label {
+        &:before {
+            border-radius: ceil($editor-defaults__inputbox--size/2);
+        }
+
+        &:after {
+            position: absolute;
+            left: $editor-defaults__radiobox-selected-icon--left;
+            top: 50%;
+            display: block;
+            width: $editor-defaults__radiobox-selected-icon--size;
+            height: $editor-defaults__radiobox-selected-icon--size;
+            border-radius: ceil($editor-defaults__radiobox-selected-icon--size/2);
+            transform: translate3d(-50%,-50%,0);
+        }
+    }
+
+    input {
+        &:checked + label{
+            &:before {
+                color: $editor-defaults__radiobox-selected--color;
+            }
+            &:after {
+                content: "";
+                background: $editor-defaults__radiobox-selected--color;
+
+                .yw-advancedsearch-sortorder-div & {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "./scss/support/collapse-variables.scss";
+
+.yw-collapse-widget {
+    line-height: $collapse_line-height;
+    margin-left: $collapse_margin-left-l;
+    @media (max-width: $systembar__default--bp-m) {
+        margin-left: $collapse_margin-left-m;
+    }
+    @media (max-width: $systembar__default--bp-ms) {
+        margin-left: 0;
+    }
+    .collapse-button {
+        background-color: $collapse_button_background-color;
+        border: none;
+        margin-right: $collapse_button_margin-right;
+        &:before {
+            content: $collapse_button_content;
+            color: $collapse_button_color;
+            font-size: $font-size__large;
+            font-family: $font-family__icon;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: $collapse_button_background-color-hover;
+        }
+    }
+}

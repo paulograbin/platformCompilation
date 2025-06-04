@@ -1,0 +1,19 @@
+/*================================
+    Default File Upload
+================================*/
+// Defined Variables for Default File Upload
+@import "cockpitng-globals.scss";
+
+$ye-com_hybris_cockpitng_editor_defaultfileupload__reset_button--margin-left: $_container-spacing-default__small;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_image--max-height: 250px;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_image--max-width: 100%;
+
+$ye-com_hybris_cockpitng_editor_defaultfileupload_label--padding: $_container-spacing-default__tiny;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_filename_label--margin: 0;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_filename_label--border-top: $boxes--border__thin solid $form-defaults__box--border-color;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_filename_label--font-size: $font-size__small;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_filename_label--color: $_default__content--color;
+
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_container--border: $boxes--border__thin solid $form-defaults__box--border-color;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_container__box--border-radius: $editor-defaults__input-box--border-radius;
+$ye-com_hybris_cockpitng_editor_defaultfileupload__preview_container--margin-top: $_container-spacing-default__small;

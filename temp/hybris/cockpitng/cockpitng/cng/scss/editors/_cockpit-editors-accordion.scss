@@ -1,0 +1,152 @@
+/*================================
+    Editor-Area: Accordion
+================================*/
+// Defines labels, tabs, handling-styles of the Tabbox Accorion
+
+@charset "UTF-8";
+@import "../support/_cockpit-mixins.scss";
+/*
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab .z-caption,
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab-selected .z-caption {
+    background: url('images/icon_func_colapse_single_sprite.png') no-repeat 0 -63px !important;
+    padding-left: 20px;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab-selected .z-caption {
+
+    background: url('images/icon_func_colapse_single_sprite.png') no-repeat 0 13px !important;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab,
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab-selected {
+    background: transparent;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel:hover .z-tab .z-caption {
+    background: url('images/icon_func_colapse_single_sprite.png') no-repeat 0 -101px !important;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel:hover .z-tab-selected .z-caption {
+    background: url('images/icon_func_colapse_single_sprite.png') no-repeat 0 -25px !important;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab .z-tab-text {
+    color: $editor-defaults__box--text-color;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab-selected .z-tab-text {
+    color: $editorarea__tab-text-selected--font-color;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel .z-tab-selected .z-tab-text .z-label {
+    font-weight: bold;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox {
+    overflow: auto;
+}
+
+.yw-editorarea-tabbox-accordion.z-tabbox .z-tabpanel > .z-tabpanel-content {
+    height: auto !important;
+}
+
+
+.z-dragged,
+tr.z-drag-over,
+tr.z-drag-over:hover {
+    @include _no-user-select();
+    background-color: $editor-defaults__drag-element--bg-color;
+}
+*/
+
+.yw-editorarea-tabbox-accordion.z-tabbox.z-tabbox-accordion {
+    .z-tabpanels .z-tabpanel {
+        margin: $_container-spacing-default__tiny $_container-spacing-default__small;
+        border-radius: var(--bo-border-radius);
+        box-shadow: var(--bo-content-shadow-small);
+
+        // Tab
+        .z-tab {
+            background: var(--bo-page-header-background);
+            padding: 0 $_container-spacing-default__small;
+            // border-bottom: $boxes--border__thin solid var(--bo-page-header-border-color);
+            height: $toolbar__default--height;
+            border-radius: var(--bo-border-radius);
+            color: var(--bo-text-color);
+            display: flex;
+
+            &:before {
+                content: $editorarea__tabbox-accordion-tab-closed--content;
+                font-family: $editorarea__tab-caret--font-family;
+                font-size: $editorarea__tab-caret--font-size;
+                line-height: $toolbar__default--height;
+            }
+
+            &:hover {
+                &,
+                &:before {
+                    color: $editorarea__tab-text-hover--font-color;
+                }
+            }
+
+
+            .z-tab-content {
+                height: 100%;
+                margin-left: $_container-spacing-default__tiny;
+
+                .z-tab-text {
+                    color: inherit;
+                    height: 100%;
+                    padding: 0;
+
+                    .z-caption {
+                        height: 100%;
+
+                        .z-caption-content {
+                            height: 100%;
+
+                            .yw-editorarea-tablabel.z-label {
+                                cursor: pointer;
+                                font-weight: normal;
+                                font-family: var(--bo-font-family);
+                                font-size: var(--bo-font-size-h4);
+                                color: inherit;
+                                margin: 0;
+                                line-height: $toolbar__default--height;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+            &.z-tab-selected {
+                border-bottom: $boxes--border__thin solid  var(--bo-page-header-border-color);
+                border-radius: var(--bo-border-radius) var(--bo-border-radius) 0 0;
+
+                &:before {
+                    content: $editorarea__tabbox-accordion-tab-opened--content;
+                    color: var(--bo-highlight-color);
+                }
+
+                .z-caption-content {
+                    color: var(--bo-highlight-color);
+                }
+            }
+        }
+
+        // Content
+        .z-tabpanel-content {
+            background: var(--bo-base-background);
+            overflow: auto;
+            border: none;
+            padding: 0;
+            border-radius: 0 0 var(--bo-border-radius) var(--bo-border-radius);
+            height: auto !important;
+        }
+    }
+}

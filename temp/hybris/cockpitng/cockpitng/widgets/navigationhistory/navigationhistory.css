@@ -1,0 +1,197 @@
+/* Status */
+/* Button Color Scheme */
+.yw-navigationhistory {
+  padding-left: 32px;
+  vertical-align: middle;
+  height: 100%;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .yw-navigationhistory-back.ye-toolbarbutton {
+    font-family: var(--bo-font-family);
+    font-size: 14px;
+    border: var(--bo-button-border-width) solid;
+    border-radius: var(--bo-button-border-radius);
+    color: var(--bo-button-text-color);
+    background-color: var(--bo-button-background);
+    border-color: var(--bo-button-border-color);
+    box-shadow: none;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 calc(.625rem - var(--bo-button-border-width));
+    transition: background-color .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    text-decoration: none;
+    line-height: 30px;
+    border-right: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .yw-navigationhistory-back.ye-toolbarbutton:hover {
+      color: var(--bo-button-hover-text-color);
+      background-color: var(--bo-button-hover-background);
+      border-color: var(--bo-button-hover-border-color);
+      box-shadow: var(--bo-button-hover-shadow); }
+    .yw-navigationhistory-back.ye-toolbarbutton:focus {
+      outline: var(--bo-content-focus-outline-width) var(--bo-content-focus-outline-style) var(--bo-content-focus-outline-color);
+      outline-offset: -0.1875rem;
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-back.ye-toolbarbutton:active {
+      color: var(--bo-button-active-text-color);
+      background-color: var(--bo-button-active-background);
+      border-color: var(--bo-button-active-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-back.ye-toolbarbutton[disabled], .yw-navigationhistory-back.ye-toolbarbutton[disabled]:hover, .yw-navigationhistory-back.ye-toolbarbutton[disabled]:active {
+      opacity: var(--bo-content-disabled-opacity);
+      cursor: not-allowed;
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-back.ye-toolbarbutton:hover, .yw-navigationhistory-back.ye-toolbarbutton:focus, .yw-navigationhistory-back.ye-toolbarbutton:active {
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none;
+      outline: none; }
+    .yw-navigationhistory-back.ye-toolbarbutton:before {
+      content: "\e067";
+      font-family: var(--bo-content-icon-font-family);
+      margin-right: 8px;
+      font-size: 16px;
+      top: 2px;
+      position: relative;
+      display: inline-block; }
+    .yw-navigationhistory-back.ye-toolbarbutton-disabled, .yw-navigationhistory-back.ye-toolbarbutton-disabled:hover {
+      opacity: 0.4; }
+    @media all and (max-width: 640px) {
+      .yw-navigationhistory-back.ye-toolbarbutton span {
+        display: none; }
+      .yw-navigationhistory-back.ye-toolbarbutton:before {
+        margin-right: 0; } }
+    .yw-navigationhistory-back.ye-toolbarbutton span {
+      line-height: 22px;
+      font-size: 14px;
+      padding: 0; }
+  .yw-navigationhistory-stack.ye-toolbarbutton {
+    font-family: var(--bo-font-family);
+    font-size: 14px;
+    border: var(--bo-button-border-width) solid;
+    border-radius: var(--bo-button-border-radius);
+    color: var(--bo-button-text-color);
+    background-color: var(--bo-button-background);
+    border-color: var(--bo-button-border-color);
+    box-shadow: none;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 calc(.625rem - var(--bo-button-border-width));
+    transition: background-color .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    text-decoration: none;
+    border-left: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:hover {
+      color: var(--bo-button-hover-text-color);
+      background-color: var(--bo-button-hover-background);
+      border-color: var(--bo-button-hover-border-color);
+      box-shadow: var(--bo-button-hover-shadow); }
+    .yw-navigationhistory-stack.ye-toolbarbutton:focus {
+      outline: var(--bo-content-focus-outline-width) var(--bo-content-focus-outline-style) var(--bo-content-focus-outline-color);
+      outline-offset: -0.1875rem;
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:active {
+      color: var(--bo-button-active-text-color);
+      background-color: var(--bo-button-active-background);
+      border-color: var(--bo-button-active-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton[disabled], .yw-navigationhistory-stack.ye-toolbarbutton[disabled]:hover, .yw-navigationhistory-stack.ye-toolbarbutton[disabled]:active {
+      opacity: var(--bo-content-disabled-opacity);
+      cursor: not-allowed;
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:before {
+      content: "";
+      border-left: var(--bo-button-border-width) solid var(--bo-button-text-color);
+      display: inline-block;
+      height: 16px;
+      position: relative;
+      right: 10px;
+      top: 2px; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:hover::before, .yw-navigationhistory-stack.ye-toolbarbutton:active::before, .yw-navigationhistory-stack.ye-toolbarbutton:focus::before {
+      border: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:active {
+      border: var(--bo-button-border-width) solid; }
+    .yw-navigationhistory-stack.ye-toolbarbutton:after {
+      font-family: var(--bo-content-icon-font-family);
+      content: "\e1f2";
+      font-size: 16px; }
+    .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled, .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:hover, .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:active, .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:focus {
+      opacity: 0.4;
+      color: var(--bo-button-text-color);
+      background-color: var(--bo-button-background);
+      border-color: var(--bo-button-border-color);
+      box-shadow: none;
+      outline: none; }
+    .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:hover::before, .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:active::before, .yw-navigationhistory-stack.ye-toolbarbutton.yw-navigationhistory-stack-disabled:focus::before {
+      border-left: var(--bo-button-border-width) solid var(--bo-button-text-color); }
+  .yw-navigationhistory-nostack .yw-navigationhistory-stack.ye-toolbarbutton {
+    display: none; }
+  .yw-navigationhistory-nostack .yw-navigationhistory-back.ye-toolbarbutton {
+    border-bottom-right-radius: var(--bo-button-border-radius);
+    border-top-right-radius: var(--bo-button-border-radius); }
+  .yw-navigationhistory-title {
+    color: var(--bo-page-header-text-color);
+    padding-left: 16px;
+    height: 36px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    padding-bottom: 0;
+    padding-top: 0;
+    line-height: 36px; }
+    .yw-navigationhistory-title .z-label {
+      display: inline-block;
+      font-size: 1.5rem;
+      height: 36px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .yw-navigationhistory-history {
+    min-width: 34px;
+    min-height: 8px;
+    margin-left: -7px; }
+    .yw-navigationhistory-history:before, .yw-navigationhistory-history:after {
+      left: 14px; }
+    .yw-navigationhistory-history .z-menuitem-text {
+      font-size: 14px; }

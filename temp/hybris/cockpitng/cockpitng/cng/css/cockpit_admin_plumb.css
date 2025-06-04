@@ -1,0 +1,65 @@
+/* Status */
+/* Button Color Scheme */
+.cngConnectionEndpoint {
+  z-index: 5; }
+  .cngConnectionEndpoint svg rect {
+    fill: var(--bo-field-border-color); }
+
+svg.cngConnection {
+  z-index: 5; }
+  svg.cngConnection path {
+    stroke: var(--bo-field-border-color);
+    stroke-width: 3; }
+    svg.cngConnection path.jtk-overlay {
+      fill: var(--bo-field-border-color);
+      stroke-width: inherit; }
+  svg.cngConnection.jtk-hover {
+    z-index: 6; }
+    svg.cngConnection.jtk-hover path {
+      stroke: var(--bo-highlight-color);
+      stroke-width: 5; }
+      svg.cngConnection.jtk-hover path.jtk-overlay {
+        fill: var(--bo-highlight-color);
+        stroke-width: inherit; }
+
+.cngConnectionLabel {
+  z-index: 1000;
+  opacity: 0.8;
+  font-family: var(--bo-font-family);
+  font-size: var(--bo-font-size);
+  border-radius: 8px;
+  background: var(--bo-button-token-background);
+  border: 1px dashed var(--bo-button-token-border-color);
+  padding: 4px;
+  color: var(--bo-text-color); }
+
+.cngConnectionLabelEmpty {
+  display: none; }
+
+div.widget_toolbar {
+  z-index: 2; }
+
+.widgetPlaceholder div.barDiv {
+  z-index: 2; }
+
+svg.cngSelection {
+  z-index: 3 !important; }
+  svg.cngSelection path {
+    stroke: var(--bo-highlight-color);
+    stroke-width: 3; }
+
+.cngTarget,
+.cngConnectionLabel,
+.cng-targetConnectionsVisible .cngConnectionLabel.cngTarget,
+.cng-connectionLabelsVisible .cngConnectionLabel.cngTarget {
+  visibility: hidden; }
+
+.cng-connectionLabelsVisible .cngConnectionLabel,
+.cng-targetConnectionsVisible .cngTarget,
+.cng-targetConnectionsVisible.cng-connectionLabelsVisible .cngConnectionLabel.cngTarget {
+  visibility: visible; }
+
+.cng-connectionsVisible .cng-widget-clipboard {
+  visibility: hidden; }
+.cng-connectionsVisible .mainToolbar .cng-widget-clipboard {
+  display: none; }

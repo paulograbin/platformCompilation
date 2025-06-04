@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<widget-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd"
+				   id="com.hybris.backoffice.widgets.deeplink.copy">
+	<name>Copy Deep Link</name>
+	<description>Copy different types of deep link</description>
+	<defaultTitle>Copy Deep Link</defaultTitle>
+	<author>hybris</author>
+	<version>1.0</version>
+	<controller class="com.hybris.cockpitng.widgets.deeplink.CopyDeepLinkController"/>
+	<view src="view.zul"/>
+	<settings>
+		<setting key="perspective-id" type="java.lang.String" />
+		<setting key="tree-node-id" type="java.lang.String" />
+		<setting key="disablePageLink" type="java.lang.Boolean" default-value="false" />
+	</settings>
+	<sockets>
+		<input id="nodeSelected" type="java.lang.Object"/>
+		<output id="CopyDeepLink" type="java.lang.Object"/>
+	</sockets>
+	<keywords>
+		<keyword>Copy</keyword>
+		<keyword>Deep Link</keyword>
+	</keywords>
+</widget-definition>

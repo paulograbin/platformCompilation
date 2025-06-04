@@ -1,0 +1,420 @@
+/*================================
+    Explorer Tree (Variables)
+================================*/
+/* Status */
+/* Button Color Scheme */
+/*================================
+    Explorer Tree
+================================*/
+/*================================
+    Explorer Tree (Mixins)
+================================*/
+/*================================
+    Explorer Tree (Variables)
+================================*/
+/* Status */
+/* Button Color Scheme */
+.yw-explorerTree-widget {
+  border: none; }
+.yw-explorerTree-filterDiv {
+  background: none;
+  padding: 16px; }
+  .yw-explorerTree-filterDiv .z-bandbox-input {
+    border-right-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .yw-explorerTree-filterDiv .z-bandbox-button {
+    display: none;
+    border-left: none !important; }
+    .yw-explorerTree-filterDiv .z-bandbox-button .z-bandbox-icon:before {
+      content: "\e0a6"; }
+  .yw-explorerTree-filterDiv .z-bandbox-open .z-bandbox-input, .yw-explorerTree-filterDiv .z-bandbox:focus .z-bandbox-input, .yw-explorerTree-filterDiv .z-bandbox:focus-within .z-bandbox-input, .yw-explorerTree-filterDiv .z-bandbox:hover .z-bandbox-input {
+    border-right: none; }
+  .yw-explorerTree-filterDiv .z-bandbox-open .z-bandbox-button, .yw-explorerTree-filterDiv .z-bandbox:focus .z-bandbox-button, .yw-explorerTree-filterDiv .z-bandbox:focus-within .z-bandbox-button, .yw-explorerTree-filterDiv .z-bandbox:hover .z-bandbox-button {
+    display: flex; }
+.yw-explorerTree-filterTextbox.z-bandbox-popup {
+  overflow: visible;
+  transform: translateY(4px);
+  background: var(--bo-container-background);
+  border: none;
+  color: var(--bo-text-color);
+  box-shadow: var(--bo-content-shadow-large); }
+.yw-explorerTree-filterTextbox-options {
+  position: relative; }
+  .yw-explorerTree-filterTextbox-options .z-vlayout {
+    padding: 4px 8px; }
+  .yw-explorerTree-filterTextbox-options:after, .yw-explorerTree-filterTextbox-options:before {
+    position: absolute;
+    right: 8px;
+    bottom: 100%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    z-index: -1;
+    color: var(--bo-container-background); }
+  .yw-explorerTree-filterTextbox-options:before {
+    margin-left: -1px;
+    margin-right: -1px;
+    transform: translateY(-1px);
+    border-width: 8px 10px;
+    border-bottom-color: var(--bo-field-border-color); }
+  .yw-explorerTree-filterTextbox-options:after {
+    border-width: 7px 9px;
+    border-bottom-color: var(--bo-container-background); }
+.yw-explorerTree-hideTextBoxDiv {
+  float: right; }
+.yw-explorerTree-inlineActions {
+  display: table-cell;
+  float: right; }
+
+.yw-no-permission-label {
+  opacity: 0.3;
+  cursor: not-allowed !important; }
+  .yw-no-permission-label > td {
+    cursor: not-allowed; }
+
+.yw-navigationNode-cannot-access {
+  opacity: 0.5;
+  font-style: italic; }
+
+/*================================
+		Explorer Tree Menu-Contents
+================================*/
+/*================================
+    Explorer Tree (Mixins)
+================================*/
+/*================================
+    Explorer Tree (Variables)
+================================*/
+/* Status */
+/* Button Color Scheme */
+.yw-explorerTree {
+  height: 100%;
+  overflow-y: auto; }
+  .yw-explorerTree.z-vfiletree {
+    overflow: auto; }
+    .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner {
+      margin-left: -16px; }
+      .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner > .y-tree-icon {
+        left: 0; }
+      .ie10 .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner, .ie11 .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner {
+        padding-left: 0;
+        margin-left: 0; }
+        .ie10 .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner > .y-tree-icon, .ie11 .yw-explorerTree.z-vfiletree .z-treecell:not(.y-navigable-node) .z-vfiletree-spacer + .yw-treeCellInner > .y-tree-icon {
+          left: -16px; }
+    .yw-explorerTree.z-vfiletree .z-treecell {
+      padding: 5px 8px 6px 16px; }
+      .yw-explorerTree.z-vfiletree .z-treecell-content {
+        padding: 0;
+        min-height: 36px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        width: 100%;
+        overflow: unset; }
+        .yw-explorerTree.z-vfiletree .z-treecell-content > * {
+          flex: auto; }
+        .ie10 .yw-explorerTree.z-vfiletree .z-treecell-content, .ie11 .yw-explorerTree.z-vfiletree .z-treecell-content {
+          display: table; }
+          .ie10 .yw-explorerTree.z-vfiletree .z-treecell-content > *, .ie11 .yw-explorerTree.z-vfiletree .z-treecell-content > * {
+            vertical-align: top; }
+        .yw-explorerTree.z-vfiletree .z-treecell-content .z-vfiletree-icon i,
+        .yw-explorerTree.z-vfiletree .z-treecell-content .z-label,
+        .yw-explorerTree.z-vfiletree .z-treecell-content .yw-treeCellInner .z-label {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+  .yw-explorerTree .yw-treeCellInner .z-label {
+    display: block;
+    vertical-align: middle;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden; }
+  .yw-explorerTree .yw-treeCellInner .ya-three-dots-group-cnt {
+    max-width: 100%; }
+  .ie10 .yw-explorerTree .yw-treeCellInner, .ie11 .yw-explorerTree .yw-treeCellInner {
+    overflow: visible; }
+  .yw-explorerTree .z-treerow {
+    border-color: var(--bo-list-border-color); }
+    .yw-explorerTree .z-treerow .z-label {
+      font-weight: 400; }
+  .yw-explorerTree .y-tree-icon {
+    float: left;
+    height: 16px;
+    left: -16px;
+    margin-right: 12px;
+    margin-top: 11px;
+    min-height: 16px;
+    width: 16px;
+    position: absolute; }
+  .yw-explorerTree .z-treerow:hover .y-tree-icon {
+    background-position: 0 -16px; }
+  .yw-explorerTree .yw-selected .y-tree-icon,
+  .yw-explorerTree .yw-selected:hover .y-tree-icon {
+    background-position: 0 -32px; }
+  .yw-explorerTree .z-treerow-focus .y-tree-icon,
+  .yw-explorerTree .z-treerow-focus:hover .y-tree-icon {
+    background-position: 0 -48px; }
+  .yw-explorerTree .yw-treeCellInner {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%; }
+    .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions {
+      display: block;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+      flex: 0 1; }
+    .ie10 .yw-explorerTree .yw-treeCellInner, .ie11 .yw-explorerTree .yw-treeCellInner {
+      display: table-cell;
+      vertical-align: top;
+      height: auto; }
+      .ie10 .yw-explorerTree .yw-treeCellInner > .z-div,
+      .ie10 .yw-explorerTree .yw-treeCellInner > .z-label,
+      .ie10 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions, .ie11 .yw-explorerTree .yw-treeCellInner > .z-div,
+      .ie11 .yw-explorerTree .yw-treeCellInner > .z-label,
+      .ie11 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions {
+        display: table-cell; }
+      .ie10 .yw-explorerTree .yw-treeCellInner > .z-label, .ie11 .yw-explorerTree .yw-treeCellInner > .z-label {
+        word-break: break-all;
+        width: 100%; }
+      .ie10 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions, .ie11 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions {
+        float: none; }
+        .ie10 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions > table, .ie11 .yw-explorerTree .yw-treeCellInner > .yw-explorerTree-inlineActions > table {
+          float: right; }
+
+/*================================
+    Explorer Tree - toolbar
+================================*/
+/*================================
+    Explorer Tree (Variables)
+================================*/
+/* Status */
+/* Button Color Scheme */
+.yw-explorerTree-toolbar {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px solid var(--fd-colors-border); }
+.yw-explorerTree-widget .yw-explorerTree-toolbar {
+  border-bottom-color: var(--fd-colors-border); }
+.yw-explorerTree-right-holder {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+.yw-explorerTree-actions {
+  padding: 8px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+  .yw-explorerTree-actions .cng-action {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .yw-explorerTree-actions .ya-create-container {
+    margin-top: 1px; }
+.yw-explorerTree-widget-slot {
+  height: auto; }
+.yw-explorerTree .yw-catalog-selector {
+  width: 100%; }
+
+/*================================
+    Explorer Tree Mold - Dark (default)
+================================*/
+/*================================
+    Explorer Tree (Mixins)
+================================*/
+/*================================
+    Explorer Tree (Variables)
+================================*/
+/* Status */
+/* Button Color Scheme */
+.yw-explorerTree-widget,
+.yw-explorerTree-widget .cng-adminmode {
+  background: var(--bo-container-background); }
+.yw-explorerTree .z-treerow > .z-treecell .z-treecell-content {
+  color: var(--bo-text-color); }
+.yw-explorerTree .z-treerow:hover {
+  background-color: var(--bo-list-hover-background); }
+.yw-explorerTree .z-treerow.yw-selected {
+  background-color: var(--bo-list-selected-background); }
+.yw-explorerTree .z-treerow.yw-selected:hover {
+  background-color: var(--bo-list-selected-hover-background); }
+.yw-explorerTree .yw-caption-label {
+  color: var(--bo-content-label-color); }
+.yw-explorerTree .z-treerow.yw-selected > .z-treecell {
+  box-shadow: none; }
+.yw-explorerTree .z-treerow.yw-navigationnode-first, .yw-explorerTree .z-treerow.yw-navigationnode-last + .z-treerow {
+  border-color: var(--bo-list-border-color); }
+.yw-explorerTree-filterDiv .z-bandbox-input {
+  color: var(--bo-text-color);
+  border-color: var(--bo-input-border-color);
+  background-color: transparent; }
+  .yw-explorerTree-filterDiv .z-bandbox-input:focus {
+    color: var(--bo-text-color);
+    border-color: var(--bo-input-focus-border-color);
+    background-color: var(--bo-input-focus-background); }
+    .yw-explorerTree-filterDiv .z-bandbox-input:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .yw-explorerTree-filterDiv .z-bandbox-input:focus::-moz-placeholder {
+      /* Firefox 19+ */
+      color: transparent; }
+    .yw-explorerTree-filterDiv .z-bandbox-input:focus:-ms-input-placeholder {
+      color: transparent; }
+  .yw-explorerTree-filterDiv .z-bandbox-input::-webkit-input-placeholder {
+    color: var(--bo-placeholder-text-color); }
+  .yw-explorerTree-filterDiv .z-bandbox-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--bo-placeholder-text-color); }
+  .yw-explorerTree-filterDiv .z-bandbox-input:-ms-input-placeholder {
+    color: var(--bo-placeholder-text-color); }
+
+.yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-catalog-selector:before, .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-catalog-selector:after {
+  background: var(--bo-container-background); }
+
+.yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree {
+  border-color: var(--bo-list-border-color);
+  border-top-width: 1px; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treebody,
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-vfiletree-body,
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treechildren {
+    border-color: inherit; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .yw-navigationNode-level2 {
+    background: inherit; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .yw-navigationNode-level3 {
+    background: inherit; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .yw-opened {
+    background-color: inherit; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treecell {
+    box-shadow: none; }
+  .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow {
+    background: transparent;
+    border-top-color: inherit; }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow:hover > .z-treecell .z-treecell-content {
+      color: var(--bo-text-color); }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow:hover, .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow:active {
+      background-color: var(--bo-list-hover-background); }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow-selected {
+      background-color: var(--bo-list-selected-background); }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.yw-selected {
+      background-color: var(--bo-list-selected-background); }
+      .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.yw-selected:hover, .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.yw-selected:active {
+        background-color: var(--bo-list-selected-hover-background); }
+        .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.yw-selected:hover.z-dragged, .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.yw-selected:active.z-dragged {
+          background: var(--bo-list-selected-background);
+          color: var(--bo-selected-color); }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow-focus {
+      background-color: var(--bo-list-active-background); }
+      .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow-focus:hover {
+        background-color: var(--bo-list-selected-hover-background); }
+      .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow-focus.yw-selected {
+        background-color: var(--bo-list-selected-hover-background); }
+        .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow-focus.yw-selected:hover {
+          background-color: var(--bo-list-selected-hover-background); }
+    .yw-extendedsplitlayout-content-box .yw-explorerTree-widget .yw-explorerTree .z-treerow.z-dragged {
+      background: var(--bo-list-selected-background);
+      color: var(--bo-selected-color); }
+
+[data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation {
+  padding: 0; }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree-filterDiv {
+    padding-top: 16px; }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treecell .z-treecell-content:hover {
+    background-color: transparent !important; }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treecell .z-treecell-content:before {
+    display: none !important; }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow:hover {
+    background-color: var(--bo-list-hover-background) !important; }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow .z-treecell {
+    border-bottom: 1px solid var(--bo-list-border-color); }
+  [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow.yw-selected {
+    background-color: var(--bo-list-selected-background) !important; }
+    [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow.yw-selected:hover {
+      background-color: var(--bo-list-selected-hover-background) !important; }
+      [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow.yw-selected:hover .z-treecell .z-treecell-content {
+        background-color: transparent !important; }
+    [data-base-theme^="sap_fiori_3"] .yw-explorerTree-sideNavigation .yw-explorerTree .z-treerow.yw-selected .z-treecell {
+      border-bottom-color: var(--bo-list-selected-border-color); }
+
+/**
+ * Leverage explorerTree to display as sideNavigation, you should add "yw-explorerTree-sideNavigation" for field
+ * "widgetStyleClass" in your explorerTree widget settings.
+ */
+.yw-explorerTree-sideNavigation {
+  padding: 4px 0; }
+  .yw-explorerTree-sideNavigation .z-vfiletree-icon {
+    position: absolute;
+    right: 8px; }
+  .yw-explorerTree-sideNavigation .yw-explorerTree-filterDiv {
+    padding-top: 12px; }
+  .yw-explorerTree-sideNavigation .z-treerow > .z-treecell {
+    border: none; }
+    .yw-explorerTree-sideNavigation .z-treerow > .z-treecell .z-treecell-content {
+      height: 48px;
+      border-radius: 8px;
+      margin: 0 4px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: auto; }
+      .yw-explorerTree-sideNavigation .z-treerow > .z-treecell .z-treecell-content .z-vfiletree-icon + .yw-treeCellInner.z-div {
+        margin-right: 32px; }
+      .yw-explorerTree-sideNavigation .z-treerow > .z-treecell .z-treecell-content:before {
+        left: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 0.25rem;
+        position: absolute;
+        background: none; }
+  .yw-explorerTree-sideNavigation .z-treerow:hover {
+    background-color: transparent; }
+    .yw-explorerTree-sideNavigation .z-treerow:hover > .z-treecell .z-treecell-content {
+      background-color: var(--bo-list-hover-background); }
+      .yw-explorerTree-sideNavigation .z-treerow:hover > .z-treecell .z-treecell-content:before {
+        background-color: var(--bo-neutral-color); }
+  .yw-explorerTree-sideNavigation .z-treerow.yw-selected {
+    background-color: transparent; }
+    .yw-explorerTree-sideNavigation .z-treerow.yw-selected > .z-treecell .z-treecell-content {
+      background-color: var(--bo-list-selected-background); }
+      .yw-explorerTree-sideNavigation .z-treerow.yw-selected > .z-treecell .z-treecell-content:before {
+        background-color: var(--bo-selected-color); }
+  .yw-explorerTree-sideNavigation .z-treerow.yw-selected:hover {
+    background-color: transparent; }
+    .yw-explorerTree-sideNavigation .z-treerow.yw-selected:hover > .z-treecell .z-treecell-content {
+      background-color: var(--bo-list-selected-hover-background); }
+      .yw-explorerTree-sideNavigation .z-treerow.yw-selected:hover > .z-treecell .z-treecell-content:before {
+        background-color: var(--bo-selected-color); }
+  .yw-explorerTree-sideNavigation .yw-explorerTree .yw-treeCellInner .y-tree-icon {
+    position: relative;
+    margin-right: 10px;
+    left: 0;
+    font-size: 20px; }
+  .yw-explorerTree-sideNavigation .yw-explorerTree .yw-treeCellInner .z-label {
+    margin-right: 16px; }
+  .yw-explorerTree-sideNavigation .z-treerow:not(.yw-navigationNode-level1) .y-tree-icon {
+    display: none; }
+  .yw-explorerTree-sideNavigation .z-treerow:not(.yw-navigationNode-level1) .z-vfiletree-icon + .yw-treeCellInner .z-label {
+    padding-left: 12px !important; }
+  .yw-explorerTree-sideNavigation .z-vfiletree-spacer + .z-vfiletree-icon + .yw-treeCellInner {
+    padding-left: 10px; }
+  .yw-explorerTree-sideNavigation .z-treerow.yw-navigationNode-level1 .z-vfiletree-spacer {
+    width: 0;
+    min-width: 0; }
+  .yw-explorerTree-sideNavigation .z-treerow.yw-navigationNode-level1 .yw-treeCellInner .z-label {
+    margin-left: 6px; }
+  .yw-explorerTree-sideNavigation .z-vfiletree .yw-treeCellInner {
+    margin-left: 14px !important; }
+  .yw-explorerTree-sideNavigation .yw-explorerTree.z-vfiletree .z-treecell {
+    padding: 0; }

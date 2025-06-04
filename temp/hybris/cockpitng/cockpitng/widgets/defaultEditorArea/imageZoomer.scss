@@ -1,0 +1,10 @@
+@import "cockpitng-globals.scss";
+
+/* ImageZoomer */
+.iz-zoom {
+	border: $form-defaults__box--border-color 1px solid;
+	position: absolute;
+	-moz-box-shadow: inset $window__popup--box-shadow;
+	-webkit-box-shadow: inset $window__popup--box-shadow;
+	box-shadow: inset $window__popup--box-shadow;
+}

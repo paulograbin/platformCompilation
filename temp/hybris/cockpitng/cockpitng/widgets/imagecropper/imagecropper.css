@@ -1,0 +1,91 @@
+/* Status */
+/* Button Color Scheme */
+.z-window-content .image-cropper {
+  height: 100%;
+  width: 100%; }
+  .z-window-content .image-cropper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; }
+  .z-window-content .image-cropper-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 8px 8px 52px 8px;
+    overflow: auto; }
+  .z-window-content .image-cropper-image {
+    max-height: 300px;
+    max-width: 600px; }
+  .z-window-content .image-cropper-warning {
+    position: absolute;
+    top: 50%;
+    font-style: italic; }
+  .z-window-content .image-cropper-actions {
+    position: absolute;
+    bottom: 16px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    height: 36px;
+    width: 100%;
+    border-top: 1px solid var(--bo-page-footer-border-color); }
+    .z-window-content .image-cropper-actions button {
+      margin-right: 8px;
+      min-width: 64px;
+      min-height: 32px; }
+
+/* Z-Cropper */
+.z-cropper .z-cropper-holder {
+  background-color: var(--bo-block-layer-background); }
+  .z-cropper .z-cropper-holder .jcrop-dragbar {
+    border: 0.5px dashed var(--bo-input-border-color);
+    background: transparent; }
+    .z-cropper .z-cropper-holder .jcrop-dragbar.ord-n, .z-cropper .z-cropper-holder .jcrop-dragbar.ord-s {
+      height: 0px; }
+    .z-cropper .z-cropper-holder .jcrop-dragbar.ord-w, .z-cropper .z-cropper-holder .jcrop-dragbar.ord-e {
+      width: 0px; }
+  .z-cropper .z-cropper-holder .z-cropper-handle {
+    display: block;
+    border: 0.5px solid var(--bo-button-border-color);
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    background: var(--bo-button-background); }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-nw {
+      top: -3px;
+      left: -3px;
+      cursor: nwse-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-w {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -3px;
+      cursor: ew-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-sw {
+      bottom: -3px;
+      left: -3px;
+      cursor: nesw-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-ne {
+      top: -3px;
+      right: -3px;
+      cursor: nesw-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-e {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -3px;
+      cursor: ew-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-se {
+      bottom: -3px;
+      right: -3px;
+      cursor: nwse-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-n {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -3px;
+      cursor: ns-resize; }
+    .z-cropper .z-cropper-holder .z-cropper-handle .ord-s {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -3px;
+      cursor: ns-resize; }

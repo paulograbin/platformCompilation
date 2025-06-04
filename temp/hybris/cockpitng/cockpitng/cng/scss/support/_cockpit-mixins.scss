@@ -1,0 +1,427 @@
+//    Mixins
+//================================
+@charset "UTF-8";
+@import "_cockpit-variables.scss";
+
+@mixin _defaultContentFocusOutlineStyles() {
+    outline: var(--bo-content-focus-outline-width) var(--bo-content-focus-outline-style) var(--bo-content-focus-outline-color);
+    outline-offset: var(--bo-content-focus-outline-offset);
+}
+
+@mixin _colored-background-border ($color, $bg-color, $border-color-only: false) {
+    background: $bg-color;
+
+    @if $border-color-only {
+        border-color: $color;
+    }
+
+    @else {
+        border: $editor-defaults__input-field--border-width solid $color;
+    }
+}
+
+@mixin _text-selection-part ($selected-bg-color, $selected-color) {
+    @if $selected-bg-color {
+        background-color: $selected-bg-color;
+    }
+
+    @if $selected-color  !="default" {
+        color: $selected-color;
+    }
+}
+
+@mixin _text-selection ($bg-color: "default", $color: "default") {
+    &::selection {
+        @include _text-selection-part($bg-color, $color);
+    }
+
+    &::-moz-selection {
+        @include _text-selection-part($bg-color, $color);
+    }
+}
+
+@mixin _opacity ($opacity) {
+    $opacity-ie: $opacity * 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie})";
+    filter: alpha(opacity=$opacity-ie);
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin _bg-shadow-coloring ($bg-color, $percentage: 10%, $shadow: false) {
+    background-color: $bg-color;
+
+    @if $shadow {
+        box-shadow: $shadow;
+    }
+
+    @else {
+        box-shadow: 0 2px 0 darken($bg-color, $percentage);
+    }
+}
+
+@mixin _no-user-select () {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin _add-error-notification-box-side-directional-pointers ($direction: left,
+    $color-inner: $notification-box-defaults__box--bg-color,
+    $color-outer: $notification-box-defaults__box--border-color,
+    $pointer-size: $notification-box-defaults__side-pointer--size,
+    $pointer-border-width: $notification-box-defaults__box--border-width) {
+    $border-direction: right;
+    $translateX: -100%;
+
+    @if $direction  !=left {
+        $border-direction: left;
+        $direction: right;
+        $translateX: 0;
+    }
+
+    &-#{$direction} {
+        #{$direction}: $notification-box-defaults__box--border-width  !important;
+
+        &:before {
+            border-#{$border-direction}-color: $color-inner;
+            transform: translateX($translateX);
+            //#{$direction}: -$pointer-size;
+        }
+
+        &:after {
+            border-#{$border-direction}-color: $color-outer;
+            transform: translateX($translateX);
+            //#{$direction}: -($pointer-size + 2 * $pointer-border-width);
+        }
+    }
+}
+
+
+
+@mixin _validation-icon ($margin: 0, $content: $_editor-defaults__validation-icon--content) {
+    content: $content;
+    width: $_editor-defaults__validation-icon--size;
+    height: $_editor-defaults__validation-icon--size;
+
+    @if $margin {
+        margin: $margin;
+    }
+
+    font-size: $_editor-defaults__validation-icon--font-size;
+    font-family: $_editor-defaults__validation-icon--font-family;
+    //background: url("images/icon_validation_sprite.png") no-repeat;
+    @content;
+}
+
+@mixin _pointingPopupDefaults ($z-index: false) {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: $navigation-popup__pointer-menu-pointer-default--border-size solid transparent;
+
+    @if $z-index {
+        z-index: $z-index;
+    }
+
+    @content;
+}
+
+@mixin _add-modified-button-bg-position($bg-position-value, $modifier) {
+    &#{$modifier} {
+
+        &,
+        &:hover,
+        &:focus,
+        &[disabled],
+        &[disabled]:hover {
+            background-position: $bg-position-value;
+        }
+    }
+}
+
+@mixin _popupDefaults() {
+    color: $window__popup-content--color;
+    background-color: $window__popup--bg-color;
+    border-radius: $window__popup--border-radius;
+    border-color: transparent;
+    box-shadow: $window__popup--box-shadow;
+    font-family: $font-family__text;
+}
+
+@mixin _actionToolDefaults($border-radius: $toolbar__button-default--border-radius, $size: $toolbar__button-default--size) {
+    width: $size;
+    height: $size;
+    background-color: $_button__action-tool--bg-color;
+    color: $_button__action-tool--color;
+    border: $boxes--border__thin solid $_button__action-tool--border-color;
+    border-radius: $border-radius;
+    font-size: $font-size__small;
+    padding: 0;
+    line-height: $size; //ceil($size * 0.85);
+    text-align: center;
+    box-shadow: 0 1px 0 0 $_button__action-tool--shadow-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $_button__action-tool-hover-active-focus--color;
+        background-color: $_button__action-tool-hover-active-focus--bg-color;
+        border-color: $_button__action-tool-hover-active-focus--bg-color;
+    }
+
+    &:disabled {
+        opacity: $_button__action-tool-disabled--opacity;
+    }
+}
+
+@mixin _combineInputAndButtonBox($type) {
+    .#{$type} {
+        & &-button:hover>i {
+            color: $editor-defaults__box--text-color;
+        }
+
+        &-input+&-button,
+        &-input:focus+&-button {
+            border-left: none;
+        }
+
+        &-button,
+        &-button:hover {
+            border-left: none;
+        }
+
+        &-input {
+            border-right: none;
+        }
+    }
+}
+
+@mixin _setAngleIcons($selector, $stateSelector: ':before') {
+    .#{$selector} {
+        &-down {
+            &#{$stateSelector} {
+                font-family: $window__icon-button--font-family;
+                content: $window__icon-button-down--content;
+            }
+        }
+
+        &-up {
+            &#{$stateSelector} {
+                font-family: $window__icon-button--font-family;
+                content: $window__icon-button-up--content;
+            }
+        }
+
+        &-left {
+            &#{$stateSelector} {
+                font-family: $window__icon-button--font-family;
+                content: $window__icon-button-left--content;
+                color: $window__icon-button--color;
+            }
+        }
+
+        &-right {
+            &#{$stateSelector} {
+                font-family: $window__icon-button--font-family;
+                content: $window__icon-button-right--content;
+                color: $window__icon-button--color;
+            }
+        }
+    }
+}
+
+@mixin _defaultInputRestStyles {
+    color: var(--bo-input-text-color);
+    background: var(--bo-input-background);
+    border-style: var(--bo-input-border-style);
+    border-color: var(--bo-input-border-color);
+    border-width: var(--bo-input-border-width);
+    border-radius: var(--bo-input-border-radius);
+    box-shadow: var(--bo-input-box-shadow);
+}
+
+@mixin _input_base_status_styles($status) {
+    @if $status =="" {
+        @include _defaultInputRestStyles();
+    }
+
+    @else {
+        // color: var(--bo-input-#{$status}-text-color);
+        background: var(--bo-input-#{$status}-background);
+        border-style: var(--bo-input-#{$status}-border-style);
+        border-color: var(--bo-input-#{$status}-border-color);
+        box-shadow: var(--bo-input-#{$status}-box-shadow);
+    }
+}
+
+@mixin _defaultInputStyles() {
+    cursor: text;
+    height: $editor-defaults__inline-box--height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family__text;
+    font-size: $font-size__base;
+
+    @include _defaultInputRestStyles();
+
+    &:hover {
+        @include _input_base_status_styles("hover");
+    }
+
+    // &:focus-within,
+    &:focus {
+        @include _input_base_status_styles("focus");
+        @include _defaultContentFocusOutlineStyles();
+    }
+
+    &-disabled,
+    &[disabled] {
+        color: var(--bo-input-disabled-text-color) !important; // overwrite zk styles
+        background: var(--bo-input-background) !important; // overwrite zk styles
+        opacity: var(--bo-content-disabled-opacity) !important;
+        outline: none !important;
+        box-shadow: none !important;
+        cursor: default;
+    }
+
+    &[readonly] {
+        @include _input_base_status_styles("readonly");
+        outline: none;
+        box-shadow: none;
+        cursor: default;
+    }
+}
+
+@mixin _defaultBandboxStyles($iconName: "", $hideButtonByDefault: false) {
+    @include _defaultInputStyles();
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+    &-input,
+    &-button {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bo-input-background) var(--bo-input-background-style);
+    }
+
+    &-input {
+        color: var(--bo-input-text-color);
+        flex: 1;
+        width: 100%;
+        border: hidden;
+        border-radius: var(--bo-input-border-radius) 0 0 var(--bo-input-border-radius);
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:read-only,
+        &[read-only],
+        &[readonly] {
+            // over-write zk styles
+            background: var(--bo-input-readonly-background) var(--bo-input-readonly-background-style);
+            border-color: var(--bo-input-readonly-border-color);
+        }
+    }
+
+    &-button {
+        @if $hideButtonByDefault {
+            display: none !important;
+        }
+
+        min-width: $toolbar__button-default--size; // 36px
+        border: none;
+        border-left: var(--bo-input-border-width) var(--bo-input-border-style) var(--bo-input-border-color);
+        border-radius: 0 var(--bo-input-border-radius) var(--bo-input-border-radius) 0;
+
+        &:hover {
+            box-shadow: var(--bo-button-hover-shadow);
+            background: var(--bo-button-hover-background) var(--bo-input-hover-background-style);
+            border-color: var(--bo-button-hover-border-color);
+
+            i {
+                color: var(--bo-button-hover-color);
+            }
+        }
+
+        &:active {
+            background: var(--bo-button-active-background) var(--bo-input-background-style);
+
+            i {
+                color: var(--bo-button-active-color);
+            }
+        }
+
+        i {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border-style: hidden !important;
+            color: var(--bo-content-icon-color);
+            font-family: $font-family__icon;
+            font-size: $font-size__base;
+            background: transparent;
+
+            @if $iconName != "" {
+                &:before {
+                    content: _getIconGlyphContentValue($iconName);
+                }
+            }
+        }
+    }
+
+    &:focus,
+    &:focus-within {
+        @include _input_base_status_styles("focus");
+        @include _defaultContentFocusOutlineStyles();
+
+        input {
+            background: transparent;
+        }
+    }
+
+    &-disabled,
+    &[disabled] {
+
+        opacity: var(--bo-content-disabled-opacity);
+
+        input,
+        a {
+            &,
+            &:hover,
+            &:active
+            &:focus,
+            &:focus-within {
+                background: transparent !important;
+                color: var(--bo-input-text-color) !important;
+                box-shadow: none !important;
+                cursor: default !important;
+                outline: none !important;
+            }
+        }
+
+        a > i {
+            color: var(--bo-input-text-color) !important;
+        }
+    }
+
+    &-open &-button {
+        background: var(--bo-button-active-background) var(--bo-input-background-style);
+        i {
+            color: var(--bo-button-active-color);
+        }
+    }
+}

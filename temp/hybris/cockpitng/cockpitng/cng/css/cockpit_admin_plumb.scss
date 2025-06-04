@@ -1,0 +1,84 @@
+@import "cockpitng-globals.scss";
+
+@mixin _add-connection-line-styles ($zIndex: 5, $strokeWidth: 3, $strokeColor: var(--bo-field-border-color)) { 
+	z-index: $zIndex;
+	path {
+		stroke: $strokeColor;
+		stroke-width: $strokeWidth;
+		&.jtk-overlay {
+			fill: $strokeColor;
+			stroke-width: inherit;
+		}
+	}
+}
+
+.cngConnectionEndpoint {
+	z-index: 5;
+	svg rect {
+		fill: var(--bo-field-border-color);
+	}
+  }
+
+svg.cngConnection {
+	@include _add-connection-line-styles();
+	
+	&.jtk-hover {
+		@include _add-connection-line-styles(6, 5, var(--bo-highlight-color));
+	}
+}
+
+.cngConnectionLabel {
+	z-index: 1000;
+	opacity: 0.8;
+	font-family: var(--bo-font-family);
+	font-size: var(--bo-font-size);
+	border-radius: 8px;
+	background: var(--bo-button-token-background);
+	border: 1px dashed var(--bo-button-token-border-color);
+	padding: 4px;
+	color: var(--bo-text-color);
+}
+
+.cngConnectionLabelEmpty {
+	display: none;
+}
+
+div.widget_toolbar {
+	z-index: 2;
+}
+
+.widgetPlaceholder div.barDiv {
+	z-index: 2;
+}
+
+svg.cngSelection {
+	z-index: 3 !important;
+	path {
+		stroke: var(--bo-highlight-color);
+		stroke-width: 3;
+	}
+}
+
+.cngTarget,
+.cngConnectionLabel,
+.cng-targetConnectionsVisible .cngConnectionLabel.cngTarget,
+.cng-connectionLabelsVisible .cngConnectionLabel.cngTarget {
+	visibility: hidden;
+}
+
+.cng-connectionLabelsVisible .cngConnectionLabel,
+.cng-targetConnectionsVisible .cngTarget,
+.cng-targetConnectionsVisible.cng-connectionLabelsVisible .cngConnectionLabel.cngTarget {
+	visibility: visible;
+}
+
+
+.cng-connectionsVisible {
+	.cng-widget-clipboard {
+		visibility: hidden;
+	}
+	.mainToolbar .cng-widget-clipboard {
+		display: none;
+	}
+}
+

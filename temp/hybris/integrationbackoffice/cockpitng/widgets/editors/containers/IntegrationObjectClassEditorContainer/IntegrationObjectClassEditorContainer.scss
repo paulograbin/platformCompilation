@@ -1,0 +1,6 @@
+@import "../../../../cng/css/integrationbackoffice_common.scss";
+@import "../AbstractIntegrationEditorContainer/AbstractIntegrationEditorContainer.scss";
+
+.yw-de_hybris_platform_integrationbackoffice_widgets_IntegrationObjectClassEditorContainer .integrationbackoffice-abstractEditorContainer {
+  height: $editorContainerHeight; // same as Type Modeling
+}

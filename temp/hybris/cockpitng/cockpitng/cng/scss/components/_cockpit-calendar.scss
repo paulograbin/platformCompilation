@@ -1,0 +1,115 @@
+/*================================
+    z-Calendar
+================================*/
+// Defines Basic Calendar Component (coloring, spacing)
+@charset "UTF-8";
+.z-datebox-popup {
+    background: $_calendar__wrapper--bg-color;
+}
+.z-calendar {
+        border: none;
+        background: $_calendar__wrapper--bg-color;
+        &-header {
+            background: inherit;
+            color: $editor-defaults__box--text-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: $_calendar__header--height;
+            padding: $_calendar__header--padding;
+
+            & > a {
+                line-height: $_calendar__header--line-height;
+                flex: 0 0 auto;
+            }
+            &:hover {
+                background: none;
+            }
+
+            .z-calendar-icon {
+                @include _add-button-styles("-transparent");
+                position: relative;
+                font-size: $font-size__large;
+                .z-icon-angle-right {
+                    &:before {
+                        content: $_calendar__button-icon-right--content;
+                        font-family: $_calendar__button-icon--font-family;
+                    }
+                }
+                .z-icon-angle-left {
+                    &:before {
+                        content: $_calendar__button-icon-left--content;
+                        font-family: $_calendar__button-icon--font-family;
+                    }
+                }
+            }
+            .z-calendar-title .z-calendar-text {
+                @include _add-button-styles("-transparent");
+                display: inline-block;
+            }
+        }
+        .z-calendar-body {
+            font-family: $font-family__text;
+            padding: $_calendar__body--padding;
+            font-size: $_calendar__body--font-size;
+            background: $_calendar__wrapper--bg-color;
+            .z-calendar-cell,
+            th {
+                font-family: $font-family__text;
+                font-weight: $_calendar__calendar-cell--font-weight;
+                width: $_calendar__calendar-cell--size;
+                height: $_calendar__calendar-cell--size;
+                border-radius: $_calendar__calendar-cell--border-radius;
+            }
+
+            th {
+                background: none;
+                text-transform: uppercase;
+                color: $_calendar__calendar-cell-day--color;
+                font-size: 0;  //hide full day
+
+                &:first-letter {
+                    font-size: $_calendar__calendar-cell-day-first-letter--font-size; // show only first letter of day
+                }
+            }
+        }
+
+        .z-calendar-cell {
+            border: 1px solid $_calendar__wrapper--bg-color;
+            color: $_calendar__calendar-cell-text--color;
+            background: $_calendar__calendar-cell-working--bg-color;
+            &:hover {
+                background: $_calendar__calendar-cell-hover--bg-color;
+            }
+            &.z-calendar-weekend {
+                background: $_calendar__calendar-cell-nonworking--bg-color;
+            }
+            &.z-calendar-weekday {
+                background: $_calendar__calendar-cell-working--bg-color;
+            }
+            &.z-calendar-outside {
+                background: $_calendar__wrapper--bg-color;
+            }
+            &.z-calendar-weekend,
+            &.z-calendar-weekday,
+            &.z-calendar-outside {
+                &:hover {
+                    background: $_calendar__calendar-cell-hover--bg-color;
+                }
+            }
+            &.z-calendar-selected {
+                color: $_calendar__calendar-cell-selected--color;
+                background: $_calendar__calendar-cell-selected--bg-color;
+                &:hover {
+                    background: $_calendar__calendar-cell-selected-hover--bg-color;
+                }
+            }
+        }
+        &-left[disabled],
+        &-right[disabled],
+        &-disabled {
+            background-color: transparent !important;
+        }
+    }
+
+

@@ -1,0 +1,19 @@
+@import "cockpitng-globals.scss";
+
+// ========== //
+// Sizing
+// ========== //
+
+$collapse_line-height: 36px;
+$collapse_margin-left-l: -24px;
+$collapse_margin-left-m: -8px;
+$collapse_button_margin-right: 8px;
+$collapse_button_content: _getIconGlyphContentValue("menu2");
+
+// ========== //
+// Coloring
+// ========== //
+
+$collapse_button_background-color: var(--bo-shell-background);
+$collapse_button_background-color-hover: var(--bo-shell-hover-background) !important;
+$collapse_button_color: var(--bo-shell-interactive-color);

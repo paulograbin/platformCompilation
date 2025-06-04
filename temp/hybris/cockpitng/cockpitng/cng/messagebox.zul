@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="ZK Test" language="xul/html" contentType="text/html;charset=UTF-8"?>
+<window title="${arg.title}" border="normal" minwidth="350" width="450px" closable="${empty arg.closable ? 'true' : arg.closable}"
+		use="org.zkoss.zul.impl.MessageboxDlg" sclass="z-messagebox-window ${arg.sclass}" xmlns:w="http://www.zkoss.org/2005/zk/client">
+	<div sclass="z-messagebox z-messagebox-content">
+		<label value="${arg.message}" multiline="true">
+			<attribute w:name="onBind">
+				var win = this.$o();
+				win.onSize();
+			</attribute>
+		</label>
+	</div>
+	<div id="buttons" sclass="z-messagebox-window-footer">
+			<custom-attributes button.sclass="${arg.buttonsSclass !=null ? arg.buttonsSclass:'z-messagebox-button'}"/><!-- CSS class for buttons -->
+	</div>
+</window>

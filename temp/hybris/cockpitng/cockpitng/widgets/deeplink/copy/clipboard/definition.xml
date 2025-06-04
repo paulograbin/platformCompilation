@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
+  -->
+<widget-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd"
+				   id="com.hybris.backoffice.widgets.deeplink.copy.clipboard">
+	<name>Copy Deep Link to clipboard</name>
+	<description>Copy Deep link to clipboard</description>
+	<defaultTitle>Copy Deep Link</defaultTitle>
+	<author>hybris</author>
+	<version>1.0</version>
+	<controller class="com.hybris.cockpitng.widgets.deeplink.CopyToClipboardController"/>
+	<view src="view.zul"/>
+	<sockets>
+		<input id="perspectiveSelected" type="java.lang.Object"/>
+		<input id="CopyDeepLink" type="java.lang.Object"/>
+		<input id="CopyItemDeepLink" type="java.lang.Object"/>
+	</sockets>
+	<keywords>
+		<keyword>Copy</keyword>
+		<keyword>Deep Link</keyword>
+		<keyword>Clipboard</keyword>
+	</keywords>
+</widget-definition>

@@ -1,0 +1,102 @@
+@import "scss/support/_splitLayoutChooser-variables";
+
+.z-button.yw-split-layout-chooser-button {
+    height: $actionSplitLayoutChooser__btn--height;
+    min-width: $actionSplitLayoutChooser__btn--width;
+    min-height: $actionSplitLayoutChooser__btn--height;
+    padding: $actionSplitLayoutChooser__btn--padding;
+    display: block;
+
+    @if $actionSplitLayoutChooser__btn-before--bg-color {
+        position: relative;
+
+        &:before {
+            content:'';
+            width: $actionSplitLayoutChooser__btn-before-hover--width;
+            position: absolute;
+            top: 0;
+            display: none;
+            left: $actionSplitLayoutChooser__btn-before--left;
+            bottom: 0;
+            transition: $actionSplitLayoutChooser__btn-before--transition;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                display: block;
+            }
+        }
+    }
+
+    background: $actionSplitLayoutChooser__btn--bg;
+    color: $actionSplitLayoutChooser__btn--color;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background: $actionSplitLayoutChooser__btn--hover-bg;
+        color: $actionSplitLayoutChooser__btn--hover-color;
+    }
+
+    &:active {
+        background: $actionSplitLayoutChooser__btn--active-bg ;
+        color: $actionSplitLayoutChooser__btn--active-color;
+    }
+
+    &.yw-split-layout-chooser-button-with-label {
+        width: $actionSplitLayoutChooser__btn-label--width;
+        font-size: $actionSplitLayoutChooser__btn-label--font-size;
+        font-family: $actionSplitLayoutChooser__btn-label--font-family;
+        text-align: $actionSplitLayoutChooser__btn-label--text-align;
+        text-transform: none;
+    }
+}
+
+.ya-com_hybris_cockpitng_action_splitlayoutchooser.cng-action {
+    line-height: 1;
+}
+
+.yw-split-layout-chooser-popup {
+    margin: $actionSplitLayoutChooser__popup-container--margin;
+    padding: $actionSplitLayoutChooser__popup-container--padding;
+    min-width: $_actionSplitLayoutChooser__popup-container--min-width;
+    
+    .z-button.yw-split-layout-chooser-button {
+        width: 100%;
+        text-align: center;
+        border-width: 0;
+
+        border-radius: 0;
+        background-color: var(--bo-list-background);
+
+        border-bottom: 1px solid var(--bo-list-border-color);
+
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &.yw-split-layout-chooser-button-with-label {
+            text-align: $actionSplitLayoutChooser__btn-label--text-align;
+        }
+
+        &:hover {
+        	background-color: var(--bo-list-hover-background);
+        	color: var(--bo-list-text-color);
+        	box-shadow: none;
+        }
+        &:active {
+        	background-color: var(--bo-list-active-background);
+            color: var(--bo-list-active-text-color);
+        }
+    }
+
+    .z-button.yw-split-layout-chooser-button-selected {
+        background-color: $actionSplitLayoutChooser__btn-selected--bg-color;
+        border-bottom: var(--bo-container-border-width) solid var(--bo-list-selected-border-color);
+
+        &:hover {
+            background-color: var(--bo-list-selected-hover-background);
+        }
+    }
+}

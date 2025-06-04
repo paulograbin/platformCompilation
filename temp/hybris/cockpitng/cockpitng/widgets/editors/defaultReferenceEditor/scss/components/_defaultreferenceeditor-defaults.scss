@@ -1,0 +1,146 @@
+//    DefaultReferenceEditor Defaults
+// ================================
+
+@import "../support/_defaultreferenceeditor-variables.scss";
+
+.ye-default-reference-editor {
+    &-bandpopup {
+        /* DO NOT REMOVE  - FIX FOR 100% WIDTH BUG */
+        overflow: hidden;
+        display: inline;
+    }
+    .z-bandbox-button {
+        &.ye-create-only {
+            height: $default-reference-editor__create-only-button--size;
+
+            &[disabled] {
+                background-position: center center;
+                border-radius: $default-reference-editor__box-inner--border-radius $default-reference-editor__box--border-radius $default-reference-editor__box--border-radius $default-reference-editor__box-inner--border-radius;
+            }
+            .z-bandbox-icon {
+                color: $default-reference-editor__create-only-button--color;
+                &:active {
+                    color: $_button__icon-active--color;
+                }
+            }
+        }
+        .y-icon-reference-editor {
+            font-style: normal;
+        }
+
+        .z-bandbox-icon {
+            &:before {
+                font-family: $default-reference-editor__bandbox-ellipsis-icon--font-family;
+                content: $default-reference-editor__bandbox-ellipsis-icon--content;
+                @if ($default-reference-editor__bandbox-ellipsis-icon--font-size){
+                    font-size: $default-reference-editor__bandbox-ellipsis-icon--font-size;
+                }
+            }
+        }
+    }
+
+    &-bandbox {
+        &.ye-create-only {
+            position: relative;
+
+            .z-bandbox-input {
+                margin-left: $default-reference-editor__bandbox-input--margin-left;
+            }
+
+            &:only-child {
+                .z-bandbox-button {
+                    position: relative;
+                    display: table-cell;
+
+                    .z-bandbox-icon {
+                        opacity: 1;
+                    }
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-autocorrection-value {
+            padding-left: 5px;
+        }
+        .z-bandbox-input {
+            margin-bottom: 0;
+            width: 100%;
+            border-right-width: 0;
+            border-radius: $default-reference-editor__box--border-radius $default-reference-editor__box-inner--border-radius $default-reference-editor__box-inner--border-radius $default-reference-editor__box--border-radius;
+
+            &:focus {
+                @if ($default-reference-editor__bandbox-input-focus--bg-color){
+                    background-color: $default-reference-editor__bandbox-input-focus--bg-color;
+                }
+                @if ($_default-reference-editor__bandbox-input-focus--border-color){
+                    border-color: $_default-reference-editor__bandbox-input-focus--border-color;
+                }
+            }
+        }
+    }
+}
+
+div.ye-default-reference-container {
+    position: relative;
+}
+
+div.ye-default-reference-container .ye-delete-btn,
+div.ye-default-reference-editor-remove-button {
+    @include _add-button-styles("-transparent");
+    width: $default-reference-editor__list-item-remove-button--size;
+    height: $default-reference-editor__list-item-remove-button--size;
+    min-width: $default-reference-editor__list-item-remove-button--size;
+    display: none;
+}
+
+.ye-create-type-selector-container .z-treecell > .z-treecell-content > .z-treecell-text {
+    display: inline;
+    color: inherit;
+}
+
+.ye-default-reference-editor-selected-listbox .z-listitem div.ye-default-reference-editor-selected-item-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.z-listcell {
+    &-content {
+        .ye-default-reference-editor {
+            &-item-container,
+            &-selected-item-container {
+                &.ye-remove-enabled:hover {
+                    background-color: $_default-list__item-hover--bg-color;
+                }
+            }
+        }
+    }
+}
+
+.referenceEditorPaging.z-paging {
+    height: $default-reference-editor__paging--height;
+    text-align: center;
+    background-color: $default-reference-editor__paging--bg-color;
+    padding: $default-reference-editor__paging--padding;
+    border-width: $default-reference-editor__paging--border-width;
+    border-color: $editor-area__box--border-color;
+    line-height: 0;
+    border-bottom-right-radius: var(--bo-border-radius);
+    border-bottom-left-radius: var(--bo-border-radius);
+    .z-paging-input {
+        padding: 3px 3px 5px 3px;
+    }
+
+    ul {
+        line-height: $_default-reference-editor__paging--line-height;
+    }
+}
+
+.ye-bandpopup-with-pagging {
+    .ye-default-reference-editor-listbox {
+        border-radius: var(--bo-popover-border-radius) var(--bo-popover-border-radius) 0 0;
+    }
+}

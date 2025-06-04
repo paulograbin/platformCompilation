@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*================================
+    Advanced Search - Mandatory Fields
+================================*/
+// Styling of Fields contained in the Advanced-Search Contents (Size, Bahaviour, Validation)
+
+@import "../support/_advancedsearch-variables.scss";
+
+//mandatory-field styling in advances-search
+.yw-advancedsearch .z-grid .z-cell.yw-advancedsearch-mandatory-field {
+  input {
+    .z-radio .z-radio-content {
+      color: var(--bo-input-error-color);
+    }
+    &:not([value=""]) {
+      background: $advancedsearch__attribute-mandatory-filled--bg-color;
+      border-color: $advancedsearch__attribute-mandatory-filled--border-color;
+      color: $advancedsearch__attribute-mandatory-filled--color;
+
+      + .z-bandbox-button,
+      + .z-combobox-button {
+        border-color: $advancedsearch__attribute-mandatory-filled--border-color;
+        color: $advancedsearch__attribute-mandatory-filled--color;
+        background: $advancedsearch__attribute-mandatory-filled--bg-color;
+      }
+    }
+  }
+  > .z-label:not(.ye-map-add-label) {
+    @include _addDefaultMandatoryFlag();
+  }
+
+  .z-textbox,
+  .z-decimalbox,
+  .z-intbox,
+  .z-longbox,
+  .z-doublebox,
+  .z-timebox,
+  .z-spinner,
+  .z-datebox,
+  .z-combobox:not(.ye-as-lang-selector),
+  .z-bandbox {
+    background: $advancedsearch__attribute-mandatory--bg-color;
+    border-color: $advancedsearch__attribute-mandatory--border-color;
+
+    &:focus-within,
+    &:focus {
+      background: $advancedsearch__attribute-mandatory--bg-color;
+      outline-color: $advancedsearch__attribute-mandatory--outline-color;
+      border-color: $advancedsearch__attribute-mandatory--border-color;
+    }
+
+    &:hover {
+      background: $advancedsearch__attribute-mandatory-hover--background;
+      box-shadow: $advancedsearch__attribute-mandatory-hover--box-shadow;
+      border-color: $advancedsearch__attribute-mandatory--border-color;
+    }
+  }
+
+  .z-timebox .z-timebox-icon,
+  .z-spinner .z-spinner-icon,
+  .z-datebox .z-datebox-icon,
+  .z-combobox:not(.ye-as-lang-selector) .z-combobox-icon,
+  .z-bandbox .z-bandbox-icon {
+    color: $advancedsearch__attribute-mandatory--color;
+  }
+
+  .z-timebox .z-timebox-button,
+  .z-spinner .z-spinner-button,
+  .z-datebox .z-datebox-button,
+  .z-combobox:not(.ye-as-lang-selector) .z-combobox-button,
+  .z-bandbox .z-bandbox-button {
+    border-left-color: $advancedsearch__attribute-mandatory--border-color;
+  }
+}

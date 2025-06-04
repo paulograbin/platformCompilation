@@ -1,0 +1,297 @@
+
+@import "../support/_configurableFlow-mixins.scss";
+
+.yw-modal-configurableFlow {
+    min-width: $configurableflow__window--min-width;
+    height: auto;
+
+    .z-window-content {
+        height: auto !important;
+    }
+    .yw-wizard-breadcrumb {
+        color: $configurableflow__breadcrumb--color;
+        padding: $_configurableflow__breadcrumb--padding 0;
+        padding-right: 0.5rem;
+        position: relative;
+        display: table-cell;
+
+        &-wrapper {
+            position: relative;
+            background: $configurableflow__breadcrumb--bg-color;
+            padding: 0 $_configurableflow__breadcrumb--padding;
+            box-shadow: var(--bo-content-header-shadow);
+        }
+
+        &-cnt {
+            display: table;
+            table-layout: fixed;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            &:empty {
+                display: none;
+            }
+        }
+
+		&-container {
+		    display: flex;
+            align-items: center;
+            cursor: default;
+
+            &:hover,
+            &:focus,
+            &:active {
+            	text-decoration: none;
+            }
+		}
+		&-indicator {
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            min-width: $configurableflow__breadcrumb-indicator--size;
+            min-height: $configurableflow__breadcrumb-indicator--size;
+            background: $configurableflow__breadcrumb-indicator--bg-color;
+            border: $configurableflow__breadcrumb-indicator--border;
+            color: $configurableflow__breadcrumb-indicator-color;
+        }
+        &-label-container {
+			display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            //text-overflow: ellipsis;
+            //white-space: nowrap;
+            color: $configurableflow__breadcrumb--color;
+            margin-left: 0.5rem;
+        }
+
+		&-sublabel .z-label {
+            font-size: $configurableflow__breadcrumb-sublabel--font-size;
+            color: var(--bo-content-label-color);
+        }
+
+        &-label .z-label {
+            font-family: var(--bo-tab-text-font-family);
+            font-size: $configurableflow__breadcrumb-label--font-size;
+        }
+
+        &-active {
+
+			.yw-wizard-breadcrumb-container {
+				&:after {
+                    height: 3px;
+                    background: $_configurableflow__breadcrumb-active--color;
+                    content: "";
+                    position: absolute;
+                    width: $configurableflow__breadcrumb-indicator--size;
+                    border-top-left-radius: 0.125rem;
+                    border-top-right-radius: 0.125rem;
+                    bottom: 0;
+				}
+			}
+
+            .yw-wizard-breadcrumb-indicator {
+                color: var(--bo-contrast-text-color);
+                background-color: $_configurableflow__breadcrumb-active--color;
+            }
+
+            .yw-wizard-breadcrumb-label-container {
+            	color: $_configurableflow__breadcrumb-active--color;
+            }
+
+            .yw-wizard-breadcrumb-label {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    bottom: 0;
+                    border-bottom: $_configurableflow__breadcrumb-active--border-bottom;
+                    right: $_configurableflow__breadcrumb-label--right;
+                    left: $_configurableflow__breadcrumb-label--left;
+                    // height: 1px;
+                }
+            }
+
+            + .yw-wizard-breadcrumb-after {
+                .yw-wizard-breadcrumb-spacer {
+                    color: $configurableflow__info--color;
+                }
+            }
+        }
+
+        &-spacer {
+            flex: 1 1 auto;
+            margin: 0.5rem;
+            min-width: 1rem;
+            border-bottom: $configurableflow__breadcrumb-spacer--border-bottom;
+        }
+
+        &:last-child {
+            .yw-wizard-breadcrumb-spacer {
+                display: none;
+            }
+        }
+
+        &-before {
+
+			.yw-wizard-breadcrumb-container {
+				cursor: pointer;
+			}
+			.yw-wizard-breadcrumb-indicator {
+            	border-color: $_configurableflow__breadcrumb-active--color;
+            	color: $_configurableflow__breadcrumb-active--color;
+            }
+
+			.yw-wizard-breadcrumb-spacer {
+				border-bottom-color: $_configurableflow__breadcrumb-active--color;
+			}
+        }
+    }
+
+    .yw-wizard-msgArea-cnt {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .yw-labelstyle {
+        color: $configurableflow__info--color;
+    }
+
+    .yw-wizard-info {
+        padding: $_configurableflow__info--padding;
+        font-size: $_configurableflow__info--font-size;
+        color: $configurableflow__info--color;
+        overflow: auto;
+        background: $configurableflow__info--bg-color;
+        border-bottom: $_configurableflow__info--border-bottom;
+    }
+
+    .yw-wizard-tabpanel.z-tabpanel {
+        padding: 0;
+    }
+
+    .yw-wizard-tabs{
+        &> .z-tabs-header {
+            .z-tab-hm,.z-tab-hr, .z-tab-hl {
+                background: none;
+            }
+        }
+    }
+    .yw-wizard-layout {
+        > .z-vlayout-inner {
+            height: auto !important;
+            width: 100% !important;
+        }
+    }
+    .yw-wizard-content {
+        padding: $_configurbleflow__content--padding;
+        min-height: $configurableflow__content--min-height;
+        max-height: $configurableflow__content--max-height;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        height: auto !important;
+
+        @media screen and (min-height: $configurableflow__bp-m--min-height){
+            max-height: $configurableflow__content-bp-m--max-height;
+        }
+
+        .ye-qualifier-not-found-error.z-label {
+            border: $_configurableflow__z-label-error--border;
+            color: $configurableflow__z-label-error--color;
+            padding: $_configurableflow__z-label-error--padding;
+            display: block;
+        }
+    }
+
+    //To Do: should be set elsewhere
+    
+
+    .yw-wizard-property {
+        padding: $_configurableflow__wizard-property--padding;
+        margin-bottom: $_configurableflow__wizard-property--margin-bottom;
+        position: relative;
+        overflow: hidden;
+
+        &-label{
+            color: $_configurableflow__wizard-property-label--color;
+            font-weight: normal;
+            padding-top: $_container-spacing-default__small;
+
+            &-mandatory {
+                @include _addDefaultMandatoryFlag();
+            }
+        }
+        .z-spinner,
+        .z-timebox {
+            display: block;
+        }
+
+        textarea.z-textbox {
+            & + * button {
+                margin-top: $configurableflow__textarea-buttons--margin-top;
+            }
+        }
+
+        .ye-validation {
+            &-info, &-warn, &-error {
+                .yw-loceditor-row-wysiwyg {
+                    & > .yw-loceditor-row-locale{
+                        &:before, &:after{
+                            display: none;
+                        }
+                    }
+                }
+    
+                .ye-validation-exclamation-icon {
+                    position: absolute;
+                    top: $configurableflow__editor-validation-exclamation-icon--top; 
+                    right: $configurableflow__editor-validation-exclamation-icon--right;
+                    margin-right: $configurableflow__editor-validation-exclamation-icon--margin-right;
+                }
+                .ye-com_hybris_cockpitng_editor_localized {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .yw-wizard-navigation {
+        border-top: $configurableflow__navigation--border;
+        height: $configurableflow__navigation--height;
+
+        .yw-left-pack, .yw-right-pack {
+
+            //changed in sass-integration, on develop still .compontent-wrapper
+            .yw-component-wrapper, .component-wrapper{
+                display: inline-block;
+                .z-button {
+                    margin: $_configurableflow__navigation-button--margin;
+                }
+            }
+        }
+        .yw-right-pack {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .yw-component-wrapper + .yw-component-wrapper,
+            .component-wrapper + .component-wrapper {
+                .z-button {
+                    margin-left: 0;
+                }
+            }
+        }
+        .yw-left-pack {
+            .yw-component-wrapper + .yw-component-wrapper,
+            .component-wrapper + .component-wrapper {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .ye-com_hybris_cockpitng_editor_defaultboolean.z-radiogroup {
+        clear: both;
+        display: block;
+    }
+}

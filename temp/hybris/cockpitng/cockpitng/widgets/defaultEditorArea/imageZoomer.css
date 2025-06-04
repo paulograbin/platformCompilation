@@ -1,0 +1,9 @@
+/* Status */
+/* Button Color Scheme */
+/* ImageZoomer */
+.iz-zoom {
+  border: var(--bo-container-border-color) 1px solid;
+  position: absolute;
+  -moz-box-shadow: inset var(--bo-content-shadow-large);
+  -webkit-box-shadow: inset var(--bo-content-shadow-large);
+  box-shadow: inset var(--bo-content-shadow-large); }

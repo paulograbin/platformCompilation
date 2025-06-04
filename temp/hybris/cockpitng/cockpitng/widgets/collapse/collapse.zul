@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+	<widget style="min-height: 30px; height:100%" sclass="yw-collapse-widget">
+		<button sclass="collapse-button" id="collapseBtn"></button>
+	</widget>
+</zk>

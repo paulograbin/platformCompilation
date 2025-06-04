@@ -1,0 +1,57 @@
+[data-base-theme^="sap_fiori_3"] {
+
+	.yw-sideNavigation-widget {
+        padding: 0 !important;
+
+		.search-content {
+
+			&:hover {
+				background-color: var(--bo-list-hover-background) !important;
+			}
+			.search-button{
+				padding-top: 0 !important;
+
+				&:hover {
+					background-image: linear-gradient(to right, var(--bo-list-hover-background) 0.25rem, var(--bo-list-hover-background) 0.25rem) !important;
+				}
+			}
+		}
+
+        .yw-sideNavigation {
+        	.z-treecell .z-treecell-content {
+
+        		&:hover {
+        			background-color: transparent !important;
+        		}
+
+				&:before {
+					display: none !important;
+				}
+        	}
+
+			.z-treerow:hover {
+				background-color: var(--bo-list-hover-background) !important;
+			}
+            .z-treerow.yw-selected {
+            	background-color: var(--bo-list-selected-background) !important;
+
+            	&:hover {
+                    background-color: var(--bo-list-selected-hover-background) !important;
+
+                    .z-treecell .z-treecell-content {
+                    	background-color: transparent !important;
+                    }
+                }
+
+                .z-treecell {
+                	border-bottom: 1px solid var(--bo-list-selected-border-color);
+                }
+            }
+        }
+    }
+
+    .search-content {
+        margin-top: 0 !important;
+    }
+
+}
