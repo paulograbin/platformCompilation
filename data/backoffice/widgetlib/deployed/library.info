@@ -1,16 +1,14 @@
 #This files was generated. Do not change anything since it will be overwritten.
-#Mon May 12 09:11:30 BRT 2025
+#Wed Jun 04 14:45:38 BRT 2025
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/adaptivesearchbackoffice.jar=extension\://adaptivesearchbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/solrfacetsearchbackoffice.jar=extension\://solrfacetsearchbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/commerceservicesbackoffice.jar=extension\://commerceservicesbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/yacceleratorbackoffice.jar=extension\://yacceleratorbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/configurablebundlebackoffice.jar=extension\://configurablebundlebackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/couponbackoffice.jar=extension\://couponbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/apiregistrybackoffice.jar=extension\://apiregistrybackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/promotionenginebackoffice.jar=extension\://promotionenginebackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/voucherbackoffice.jar=extension\://voucherbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/personalizationservicesbackoffice.jar=extension\://personalizationservicesbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/subscriptionbackoffice.jar=extension\://subscriptionbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/personalizationintegrationbackoffice.jar=extension\://personalizationintegrationbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/webhookbackoffice.jar=extension\://webhookbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/warehousingbackoffice.jar=extension\://warehousingbackoffice
@@ -19,25 +17,15 @@
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/ybackoffice.jar=extension\://ybackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/ruleenginebackoffice.jar=extension\://ruleenginebackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/backofficesolrsearch.jar=extension\://backofficesolrsearch
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/personalizationsearchbackoffice.jar=extension\://personalizationsearchbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/integrationbackoffice.jar=extension\://integrationbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/personalizationcmsbackoffice.jar=extension\://personalizationcmsbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/customercouponbackoffice.jar=extension\://customercouponbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/platformbackoffice.jar=extension\://platformbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/integrationbackofficetest.jar=extension\://integrationbackofficetest
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/searchbackoffice.jar=extension\://searchbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/consignmenttrackingbackoffice.jar=extension\://consignmenttrackingbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/sapproductconfigrulesbackoffice.jar=extension\://sapproductconfigrulesbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/rulebuilderbackoffice.jar=extension\://rulebuilderbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/kymaintegrationbackoffice.jar=extension\://kymaintegrationbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/outboundsyncbackoffice.jar=extension\://outboundsyncbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/personalizationpromotionsbackoffice.jar=extension\://personalizationpromotionsbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/timedaccesspromotionenginebackoffice.jar=extension\://timedaccesspromotionenginebackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/promotionsbackoffice.jar=extension\://promotionsbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/backofficesearchservices.jar=extension\://backofficesearchservices
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/integrationmonitoringbackoffice.jar=extension\://integrationmonitoringbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/mediaconversionbackoffice.jar=extension\://mediaconversionbackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/b2bcommercebackoffice.jar=extension\://b2bcommercebackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/basecommercebackoffice.jar=extension\://basecommercebackoffice
-/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/merchandisingservicesbackoffice.jar=extension\://merchandisingservicesbackoffice
 /home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/data/backoffice/widgetlib/deployed/customersupportbackoffice.jar=extension\://customersupportbackoffice

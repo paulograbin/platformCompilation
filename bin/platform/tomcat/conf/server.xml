@@ -350,15 +350,6 @@
 				</JarScanner>
 			</Context>
 
-			<!-- 'merchandisingcmswebservices' extension's context for tenant 'master' -->
-			<Context path="/merchandisingcmswebservices" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/cds-merchandising/merchandisingcmswebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
-				</JarScanner>
-			</Context>
-
 			<!-- 'commercewebservices' extension's context for tenant 'master' -->
 			<Context path="/occ" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/commerce-services/commercewebservices/web/webroot" >
 				<Manager pathname="" />
@@ -392,15 +383,6 @@
 				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'datahubadapter' extension's context for tenant 'master' -->
-			<Context path="/datahubadapter" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/data-hub-adapter/datahubadapter/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,jstl-1*.jar" />
 				</JarScanner>
 			</Context>
 
@@ -539,35 +521,8 @@
 				</JarScanner>
 			</Context>
 
-			<!-- 'merchandisingsmartedit' extension's context for tenant 'master' -->
-			<Context path="/merchandisingsmartedit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/cds-merchandising/merchandisingsmartedit/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
-				</JarScanner>
-			</Context>
-
 			<!-- 'personalizationsmartedit' extension's context for tenant 'master' -->
 			<Context path="/personalizationsmartedit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/personalization/personalizationsmartedit/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'personalizationpromotionssmartedit' extension's context for tenant 'master' -->
-			<Context path="/personalizationpromotionssmartedit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'personalizationsearchsmartedit' extension's context for tenant 'master' -->
-			<Context path="/personalizationsearchsmartedit" docBase="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/modules/personalization-search/personalizationsearchsmartedit/web/webroot" >
 				<Manager pathname="" />
 				<Loader platformHome="/home/paulograbin/Hybris/hybris-commerce-suite-2211.38/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
