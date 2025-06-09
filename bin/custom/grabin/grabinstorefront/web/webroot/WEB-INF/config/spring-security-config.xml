@@ -17,7 +17,6 @@
 		http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<bean id="preLoginCheckFilter" class="com.paulograbin.storefront.filters.PreLoginCheckFilter">
-		<property name="bruteForceAttackCounter" ref="bruteForceAttackCounter" />
 		<property name="defaultErrorPage" value="/login?error=true" />
 		<property name="loginProcessingUrl" value="/j_spring_security_check" />
 	</bean>
@@ -216,7 +215,6 @@
 				<entry key="MOBILE" value="false"/>
 			</map>
 		</property>
-        <property name="bruteForceAttackCounter" ref="bruteForceAttackCounter" />
 		<property name="restrictedPages">
 			<list>
 				<value>/login</value>
@@ -246,7 +244,6 @@
 				<entry key="MOBILE" value="true"/>
 			</map>
 		</property>
-		<property name="bruteForceAttackCounter" ref="bruteForceAttackCounter" />
 		<property name="redirectStrategy" ref="commerceRedirectStrategy"/>
 		<property name="restrictedPages">
 			<list>
