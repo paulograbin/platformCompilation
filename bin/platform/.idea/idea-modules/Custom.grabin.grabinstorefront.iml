@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="deprecated" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="name" value="grabinstorefront" />
+        <option name="type" value="CUSTOM" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/grabinstorefront" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbnN0b3JlZnJvbnQ8L2lkPjxjbGFzc3BhdGg+PGRpciBuYW1lPSIvaG9tZS9wYXVsb2dyYWJpbi9IeWJyaXMvaHlicmlzLWNvbW1lcmNlLXN1aXRlLTIyMTEuMzgvaHlicmlzL2Jpbi9jdXN0b20vZ3JhYmluL2dyYWJpbnN0b3JlZnJvbnQvY2xhc3NlcyI+PC9kaXI+PC9jbGFzc3BhdGg+PC9hcHBsaWNhdGlvbj4=" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="grabinstorefrontspring" name="grabinstorefrontspring" removed="false">
+          <dependency>acceleratorstorefrontcommonsspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons</dependency>
+          <dependency>acceleratorstorefrontcommons.commonwebspring==Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons.commonweb</dependency>
+          <dependency>adaptivesearchsamplesaddonspring==Hybris.adaptive-search.deprecated.adaptivesearchsamplesaddon</dependency>
+          <dependency>assistedservicecustomerinterestsaddonspring==Hybris.assisted-services.deprecated.assistedservicecustomerinterestsaddon</dependency>
+          <dependency>assistedservicepromotionaddonspring==Hybris.assisted-services.deprecated.assistedservicepromotionaddon</dependency>
+          <dependency>assistedservicestorefrontspring==Hybris.assisted-services.deprecated.assistedservicestorefront</dependency>
+          <dependency>assistedserviceyprofileaddonspring==Hybris.assisted-services-integrations.deprecated.assistedserviceyprofileaddon</dependency>
+          <dependency>captchaaddonspring==Hybris.b2c-accelerator-addons.deprecated.captchaaddon</dependency>
+          <dependency>chineseaddressaddonspring==Hybris.china-accelerator-address.deprecated.chineseaddressaddon</dependency>
+          <dependency>configurablebundleaddonspring==Hybris.configurable-bundle.deprecated.configurablebundleaddon</dependency>
+          <dependency>consignmenttrackingaddonspring==Hybris.consignment-tracking.deprecated.consignmenttrackingaddon</dependency>
+          <dependency>customercouponaddonspring==Hybris.customer-coupon.deprecated.customercouponaddon</dependency>
+          <dependency>customercouponsamplesaddonspring==Hybris.customer-coupon.deprecated.customercouponsamplesaddon</dependency>
+          <dependency>customerinterestsaddonspring==Hybris.customer-interest.deprecated.customerinterestsaddon</dependency>
+          <dependency>customerticketingaddonspring==Hybris.customer-service.deprecated.customerticketingaddon</dependency>
+          <dependency>eventtrackingwsaddonspring==Hybris.event-tracking.deprecated.eventtrackingwsaddon</dependency>
+          <dependency>grabinfacadesspring==Custom.grabin.grabinfacades</dependency>
+          <dependency>merchandisingaddonspring==Hybris.cds-merchandising.deprecated.merchandisingaddon</dependency>
+          <dependency>merchandisingstorefrontsampledataaddonspring==Hybris.cds-merchandising.deprecated.merchandisingstorefrontsampledataaddon</dependency>
+          <dependency>multicountrysampledataaddonspring==Hybris.b2c-accelerator-addons.deprecated.multicountrysampledataaddon</dependency>
+          <dependency>notificationaddonspring==Hybris.notification.deprecated.notificationaddon</dependency>
+          <dependency>ordermanagementaddonspring==Hybris.order-management.deprecated.ordermanagementaddon</dependency>
+          <dependency>orderselfserviceaddonspring==Hybris.order-management.deprecated.orderselfserviceaddon</dependency>
+          <dependency>pcmbackofficesamplesaddonspring==Hybris.backoffice-addons.deprecated.pcmbackofficesamplesaddon</dependency>
+          <dependency>personalizationaddonspring==Hybris.personalization-integration.deprecated.personalizationaddon</dependency>
+          <dependency>personalizationsampledataaddonspring==Hybris.personalization.deprecated.personalizationsampledataaddon</dependency>
+          <dependency>personalizationyprofilesampledataaddonspring==Hybris.personalization-integration.deprecated.personalizationyprofilesampledataaddon</dependency>
+          <dependency>profiletagaddonspring==Hybris.cds-integration.deprecated.profiletagaddon</dependency>
+          <dependency>selectivecartsplitlistaddonspring==Hybris.selective-cart.deprecated.selectivecartsplitlistaddon</dependency>
+          <dependency>smarteditaddonspring==Hybris.smartedit.deprecated.smarteditaddon</dependency>
+          <dependency>stocknotificationaddonspring==Hybris.stock-notification.deprecated.stocknotificationaddon</dependency>
+          <dependency>textfieldconfiguratortemplateaddonspring==Hybris.text-field-configurator-template.deprecated.textfieldconfiguratortemplateaddon</dependency>
+          <dependency>timedaccesspromotionengineaddonspring==Hybris.timed-access-promotion-engine.deprecated.timedaccesspromotionengineaddon</dependency>
+          <dependency>timedaccesspromotionenginesamplesaddonspring==Hybris.timed-access-promotion-engine.deprecated.timedaccesspromotionenginesamplesaddon</dependency>
+          <dependency>xyformssamplesspring==Hybris.yforms.deprecated.xyformssamples</dependency>
+          <dependency>xyformsstorefrontcommonsspring==Hybris.yforms.deprecated.xyformsstorefrontcommons</dependency>
+          <dependency>ysapproductconfigaddonspring==Hybris.configurator-complex-products.deprecated.ysapproductconfigaddon</dependency>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/project.properties</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="grabinstorefront - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.deprecated.acceleratorstorefrontcommons.commonweb" exported="" />
+    <orderEntry type="module" module-name="Hybris.adaptive-search.deprecated.adaptivesearchsamplesaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services.deprecated.assistedservicecustomerinterestsaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services.deprecated.assistedservicepromotionaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services.deprecated.assistedservicestorefront" exported="" />
+    <orderEntry type="module" module-name="Hybris.assisted-services-integrations.deprecated.assistedserviceyprofileaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2c-accelerator-addons.deprecated.captchaaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.china-accelerator-address.deprecated.chineseaddressaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurable-bundle.deprecated.configurablebundleaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.consignment-tracking.deprecated.consignmenttrackingaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-coupon.deprecated.customercouponaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-coupon.deprecated.customercouponsamplesaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-interest.deprecated.customerinterestsaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-service.deprecated.customerticketingaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.event-tracking.deprecated.eventtrackingwsaddon" exported="" />
+    <orderEntry type="module" module-name="Custom.grabin.grabinfacades" exported="" />
+    <orderEntry type="module" module-name="Hybris.cds-merchandising.deprecated.merchandisingaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.cds-merchandising.deprecated.merchandisingstorefrontsampledataaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.b2c-accelerator-addons.deprecated.multicountrysampledataaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.notification.deprecated.notificationaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.order-management.deprecated.ordermanagementaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.order-management.deprecated.orderselfserviceaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-addons.deprecated.pcmbackofficesamplesaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization-integration.deprecated.personalizationaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization.deprecated.personalizationsampledataaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.personalization-integration.deprecated.personalizationyprofilesampledataaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.cds-integration.deprecated.profiletagaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.selective-cart.deprecated.selectivecartsplitlistaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.smartedit.deprecated.smarteditaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.stock-notification.deprecated.stocknotificationaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.text-field-configurator-template.deprecated.textfieldconfiguratortemplateaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.timed-access-promotion-engine.deprecated.timedaccesspromotionengineaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.timed-access-promotion-engine.deprecated.timedaccesspromotionenginesamplesaddon" exported="" />
+    <orderEntry type="module" module-name="Hybris.yforms.deprecated.xyformssamples" exported="" />
+    <orderEntry type="module" module-name="Hybris.yforms.deprecated.xyformsstorefrontcommons" exported="" />
+    <orderEntry type="module" module-name="Hybris.configurator-complex-products.deprecated.ysapproductconfigaddon" exported="" />
+  </component>
+</module>

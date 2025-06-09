@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="grabinbackoffice" />
+        <option name="packageRoot" value="org.grabinbackoffice" />
+        <option name="type" value="CUSTOM" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbmJhY2tvZmZpY2U8L2lkPjxjbGFzc3BhdGg+PGRpciBuYW1lPSIvaG9tZS9wYXVsb2dyYWJpbi9IeWJyaXMvaHlicmlzLWNvbW1lcmNlLXN1aXRlLTIyMTEuMzgvaHlicmlzL2Jpbi9jdXN0b20vZ3JhYmluL2dyYWJpbmJhY2tvZmZpY2UvY2xhc3NlcyI+PC9kaXI+PC9jbGFzc3BhdGg+PC9hcHBsaWNhdGlvbj4=" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="grabinbackofficespring" name="grabinbackofficespring" removed="false">
+          <dependency>acceleratorbackofficespring==Hybris.core-accelerator.acceleratorbackoffice</dependency>
+          <dependency>web application context==Hybris.backoffice-framework.backoffice.web</dependency>
+          <dependency>grabincorespring==Custom.grabin.grabincore</dependency>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/resources/grabinbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/resources/grabinbackoffice-backoffice-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="grabinbackoffice - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="grabinbackoffice - Backoffice Classes">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorbackoffice" exported="" />
+    <orderEntry type="module" module-name="Hybris.backoffice-framework.backoffice.web" exported="" />
+    <orderEntry type="module" module-name="Custom.grabin.grabincore" exported="" />
+  </component>
+</module>

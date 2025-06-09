@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="deprecated" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="name" value="grabinstorefront.web" />
+        <option name="subModuleType" value="WEB" />
+        <option name="type" value="CUSTOM" />
+        <option name="webModule" value="true" />
+        <option name="webRoot" value="/grabinstorefront" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbnN0b3JlZnJvbnQud2ViPC9pZD48Y2xhc3NwYXRoPjxkaXIgbmFtZT0iL2hvbWUvcGF1bG9ncmFiaW4vSHlicmlzL2h5YnJpcy1jb21tZXJjZS1zdWl0ZS0yMjExLjM4L2h5YnJpcy9iaW4vY3VzdG9tL2dyYWJpbi9ncmFiaW5zdG9yZWZyb250L3dlYi9jbGFzc2VzIj48L2Rpcj48L2NsYXNzcGF0aD48d2ViPjxsaW5rIHRhcmdldD0iLyI+PGRpciBuYW1lPSIvaG9tZS9wYXVsb2dyYWJpbi9IeWJyaXMvaHlicmlzLWNvbW1lcmNlLXN1aXRlLTIyMTEuMzgvaHlicmlzL2Jpbi9jdXN0b20vZ3JhYmluL2dyYWJpbnN0b3JlZnJvbnQvd2ViL3dlYnJvb3QiPjwvZGlyPjwvbGluaz48L3dlYj48L2FwcGxpY2F0aW9uPg==" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/src" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/groovysrc" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/kotlinsrc" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/scalasrc" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/gensrc" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/resources" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/commonwebsrc/acceleratorstorefrontcommons" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/configurablebundleaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/eventtrackingwsaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/merchandisingaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/notificationaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/ordermanagementaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/orderselfserviceaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/profiletagaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/textfieldconfiguratortemplateaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/personalizationaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/captchaaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/chineseaddressaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/consignmenttrackingaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customerinterestsaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/stocknotificationaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicecustomerinterestsaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicestorefront" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customerticketingaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicepromotionaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customercouponaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customercouponsamplesaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/timedaccesspromotionengineaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/smarteditaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/selectivecartsplitlistaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/xyformsstorefrontcommons" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/xyformssamples" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedserviceyprofileaddon" />
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/ysapproductconfigaddon" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="web application context" name="grabinstorefront.webspring" removed="false">
+          <dependency>grabinstorefrontspring==Custom.grabin.grabinstorefront</dependency>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/web-application-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/spring-filter-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/spring-security-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/spring-mvc-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../modules/core-accelerator/acceleratorcms/resources/acceleratorcms/spring/web-spring-context.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/spring-cms-config.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/config/multi-step-checkout-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/classes" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicecustomerinterestsaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicepromotionaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedservicestorefront" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/assistedserviceyprofileaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/captchaaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/chineseaddressaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/configurablebundleaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/consignmenttrackingaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customercouponaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customercouponsamplesaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customerinterestsaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/customerticketingaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/eventtrackingwsaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/merchandisingaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/notificationaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/ordermanagementaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/orderselfserviceaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/personalizationaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/profiletagaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/selectivecartsplitlistaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/smarteditaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/stocknotificationaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/textfieldconfiguratortemplateaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/timedaccesspromotionengineaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/xyformssamples" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/xyformsstorefrontcommons" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/addonsrc/ysapproductconfigaddon" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/commonwebsrc/acceleratorstorefrontcommons" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/classes" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="grabinstorefront.web - Web Library">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib" />
+          <root url="jar://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib/jsoup-1.16.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib/rhino-1.7.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib/wro4j-core-1.10.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../custom/grabin/grabinstorefront/web/webroot/WEB-INF/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Custom.grabin.grabinstorefront" exported="" />
+  </component>
+</module>

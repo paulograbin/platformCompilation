@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="name" value="grabininitialdata" />
+        <option name="packageRoot" value="com.paulograbin.initialdata" />
+        <option name="type" value="CUSTOM" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbmluaXRpYWxkYXRhPC9pZD48Y2xhc3NwYXRoPjxkaXIgbmFtZT0iL2hvbWUvcGF1bG9ncmFiaW4vSHlicmlzL2h5YnJpcy1jb21tZXJjZS1zdWl0ZS0yMjExLjM4L2h5YnJpcy9iaW4vY3VzdG9tL2dyYWJpbi9ncmFiaW5pbml0aWFsZGF0YS9jbGFzc2VzIj48L2Rpcj48L2NsYXNzcGF0aD48L2FwcGxpY2F0aW9uPg==" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="grabininitialdataspring" name="grabininitialdataspring" removed="false">
+          <dependency>grabincorespring==Custom.grabin.grabincore</dependency>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/resources/grabininitialdata-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="grabininitialdata - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../custom/grabin/grabininitialdata/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Custom.grabin.grabincore" exported="" />
+  </component>
+</module>

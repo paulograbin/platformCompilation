@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="coreModule" value="true" />
+        <option name="extGenTemplateExtension" value="true" />
+        <option name="name" value="grabinfulfilmentprocess" />
+        <option name="packageRoot" value="com.paulograbin.fulfilmentprocess" />
+        <option name="type" value="CUSTOM" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbmZ1bGZpbG1lbnRwcm9jZXNzPC9pZD48Y2xhc3NwYXRoPjxkaXIgbmFtZT0iL2hvbWUvcGF1bG9ncmFiaW4vSHlicmlzL2h5YnJpcy1jb21tZXJjZS1zdWl0ZS0yMjExLjM4L2h5YnJpcy9iaW4vY3VzdG9tL2dyYWJpbi9ncmFiaW5mdWxmaWxtZW50cHJvY2Vzcy9jbGFzc2VzIj48L2Rpcj48L2NsYXNzcGF0aD48L2FwcGxpY2F0aW9uPg==" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="grabinfulfilmentprocessspring" name="grabinfulfilmentprocessspring" removed="false">
+          <dependency>acceleratorservicesspring==Hybris.core-accelerator.acceleratorservices</dependency>
+          <dependency>ticketsystemspring==Hybris.customer-service.ticketsystem</dependency>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/project.properties</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/resources/grabinfulfilmentprocess-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/resources/grabinfulfilmentprocess/process/order-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/resources/grabinfulfilmentprocess/process/consignment-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/resources/grabinfulfilmentprocess/process/return-process-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="grabinfulfilmentprocess - lib">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../custom/grabin/grabinfulfilmentprocess/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorservices" exported="" />
+    <orderEntry type="module" module-name="Hybris.customer-service.ticketsystem" exported="" />
+  </component>
+</module>

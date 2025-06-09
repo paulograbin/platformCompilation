@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="SAP_COMMERCE_Y_FACET_ID" name="SAP Commerce">
+      <configuration>
+        <option name="backofficeModule" value="true" />
+        <option name="coreModule" value="true" />
+        <option name="name" value="grabinbackoffice.backoffice" />
+        <option name="packageRoot" value="org.grabinbackoffice" />
+        <option name="subModuleType" value="BACKOFFICE" />
+        <option name="type" value="CUSTOM" />
+      </configuration>
+    </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationInvariantToken" value="PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0iaW50ZWxsaWoiPjxpZD5DdXN0b20uZ3JhYmluLmdyYWJpbmJhY2tvZmZpY2UuYmFja29mZmljZTwvaWQ+PGNsYXNzcGF0aD48ZGlyIG5hbWU9Ii9ob21lL3BhdWxvZ3JhYmluL0h5YnJpcy9oeWJyaXMtY29tbWVyY2Utc3VpdGUtMjIxMS4zOC9oeWJyaXMvYmluL2N1c3RvbS9ncmFiaW4vZ3JhYmluYmFja29mZmljZS9iYWNrb2ZmaWNlL2NsYXNzZXMiPjwvZGlyPjwvY2xhc3NwYXRoPjwvYXBwbGljYXRpb24+" />
+          </map>
+        </option>
+        <option name="version" value="5" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/classes" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="https://help.sap.com/doc/9fef7037b3304324b8891e84f19f2bf3/2211/en-US" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice">
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/groovysrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/groovytestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/kotlinsrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/kotlintestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/scalasrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/scalatestsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/testsrc" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/jsTarget" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../custom/grabin/grabinbackoffice/backoffice/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Hybris.core-accelerator.acceleratorbackoffice.backoffice" exported="" />
+    <orderEntry type="module" module-name="Custom.grabin.grabinbackoffice" exported="" />
+  </component>
+</module>
